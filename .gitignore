@@ -1,0 +1,67 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Dependency directories
+node_modules/
+.bun/
+
+# JavaScript/TypeScript build output
+dist/
+build/
+.next/
+out/
+.nuxt/
+.svelte-kit/
+coverage/
+.cache/
+.parcel-cache/
+.turbo/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Swift/Xcode
+DerivedData/
+.build/
+.swiftpm/
+Package.resolved
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary/system files
+tmp/
+temp/
+*.tmp
+*.bak
