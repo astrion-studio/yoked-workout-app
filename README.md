@@ -1,13 +1,6 @@
 # Yoked
 
-Yoked is a launch-scope iPhone workout app defined by a spec-first repository.
-
-This repo currently contains:
-
-1. active product, engineering, and UX source-of-truth files,
-2. analysis and reference material,
-3. tooling and launch assets,
-4. GitHub and Codex operating-system scaffolding for the implementation phase.
+Yoked is a iPhone workout and logging app
 
 ## Authoritative Files
 
@@ -53,7 +46,3 @@ Codex setup instructions live in:
 - `docs/codex/setup.md`
 - `docs/codex/config.example.toml`
 - `docs/codex/agents/`
-
-## What Is Not Here Yet
-
-The app and backend implementation directories are not established yet. During the setup phase, the repo structure should remain additive and should not churn the existing numbered folders.
