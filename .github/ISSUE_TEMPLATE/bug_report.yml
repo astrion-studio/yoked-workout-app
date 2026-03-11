@@ -1,0 +1,61 @@
+name: Bug report
+description: Report a product, workflow, or tooling defect.
+title: "[Bug] "
+labels:
+  - kind/bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for reproducible defects only.
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected behavior
+      description: Describe what should have happened.
+    validations:
+      required: true
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: Actual behavior
+      description: Describe what actually happened.
+    validations:
+      required: true
+  - type: textarea
+    id: repro_steps
+    attributes:
+      label: Reproduction steps
+      description: Provide exact steps to reproduce.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Repo branch, local environment, GitHub page, device, or staging environment as relevant.
+      placeholder: main branch, macOS, GitHub project workflow
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - blocker
+        - high
+        - medium
+        - low
+    validations:
+      required: true
+  - type: input
+    id: suspected_area
+    attributes:
+      label: Suspected area
+      description: Example: area/train, area/backend, area/repo-ops
+      placeholder: area/repo-ops
+  - type: textarea
+    id: screenshots_logs
+    attributes:
+      label: Screenshots or logs
+      description: Paste logs or describe attached screenshots.

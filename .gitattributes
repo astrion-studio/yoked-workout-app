@@ -1,0 +1,2 @@
+05-assets/Competitors_screenshots/**/*.PNG filter=lfs diff=lfs merge=lfs -text
+05-assets/Competitors_screenshots/**/*.png filter=lfs diff=lfs merge=lfs -text

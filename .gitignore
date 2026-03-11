@@ -16,6 +16,7 @@ pnpm-debug.log*
 .env.*
 !.env.example
 !.env.sample
+.envrc
 
 # Dependency directories
 node_modules/
@@ -50,6 +51,7 @@ DerivedData/
 .build/
 .swiftpm/
 Package.resolved
+*.xcresult
 *.xcuserstate
 *.xcworkspace/xcuserdata/
 *.xcodeproj/project.xcworkspace/xcuserdata/
@@ -59,6 +61,7 @@ Package.resolved
 .idea/
 *.swp
 *.swo
+.codex/
 
 # Temporary/system files
 tmp/

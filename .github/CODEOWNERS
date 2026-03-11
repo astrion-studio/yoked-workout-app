@@ -1,0 +1,8 @@
+# Replace the placeholder below with your actual GitHub handle or team slug
+# before enabling required CODEOWNERS review in branch protection.
+#
+# Examples:
+# * @your-github-handle
+# * @your-org/ios-team
+
+* @YOUR_GITHUB_HANDLE

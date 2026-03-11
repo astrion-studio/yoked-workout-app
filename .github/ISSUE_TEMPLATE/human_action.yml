@@ -1,0 +1,40 @@
+name: Human action
+description: Track an external setup or manual action required from a human.
+title: "[Human Action] "
+labels:
+  - kind/human-action
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for GitHub, Apple, Supabase, billing, connector, or credential tasks that cannot be completed by Codex alone.
+  - type: input
+    id: portal_or_system
+    attributes:
+      label: Portal or system
+      description: Example: GitHub, App Store Connect, Apple Developer, Supabase, AdMob
+      placeholder: GitHub
+    validations:
+      required: true
+  - type: textarea
+    id: exact_task
+    attributes:
+      label: Exact task
+      description: Describe the manual action in exact terms.
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: Exact owner
+      description: Name the person who must perform this action.
+      placeholder: repo owner
+    validations:
+      required: true
+  - type: textarea
+    id: unblock_condition
+    attributes:
+      label: Unblock condition
+      description: State exactly what success looks like and what work it unblocks.
+    validations:
+      required: true

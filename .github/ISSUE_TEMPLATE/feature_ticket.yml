@@ -1,0 +1,64 @@
+name: Feature ticket
+description: Create an implementation-ready feature or infrastructure ticket.
+title: "[Feature] "
+labels:
+  - kind/feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for launch feature work, implementation slices, or infrastructure tasks that are not bug reports.
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: State the exact outcome this ticket must achieve.
+      placeholder: Implement the GitHub issue and PR governance scaffold for the repo.
+    validations:
+      required: true
+  - type: textarea
+    id: source_of_truth
+    attributes:
+      label: Source-of-truth files
+      description: List the exact authoritative files and relevant sections.
+      placeholder: |
+        01-product-foundation/source_of_truth_manifest.md
+        01-product-foundation/yoked_prd.md
+        01-product-foundation/yoked_engineering_spec.md
+        02-ux-spec/yoked_ux_spec.md
+    validations:
+      required: true
+  - type: textarea
+    id: in_scope
+    attributes:
+      label: In scope
+      description: Enumerate the exact work that belongs in this ticket.
+    validations:
+      required: true
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of scope
+      description: Enumerate what must not be changed in this ticket.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance criteria
+      description: List concrete pass conditions.
+    validations:
+      required: true
+  - type: textarea
+    id: test_plan
+    attributes:
+      label: Test plan
+      description: Describe how the work will be validated.
+    validations:
+      required: true
+  - type: input
+    id: area
+    attributes:
+      label: Suggested area label
+      description: Example: area/backend, area/train, area/repo-ops
+      placeholder: area/repo-ops

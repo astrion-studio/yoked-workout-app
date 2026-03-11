@@ -1,0 +1,30 @@
+# Example local Codex config for Yoked
+#
+# Save your real machine-local configuration in:
+# ~/.codex/config.toml
+#
+# Do not commit real tokens, MCP credentials, or machine-specific paths.
+
+model = "gpt-5"
+
+[profiles.planning]
+model = "gpt-5"
+
+[profiles.implementation]
+model = "gpt-5"
+
+[profiles.review]
+model = "gpt-5"
+
+[profiles.release]
+model = "gpt-5"
+
+# Example MCP placeholders. Replace with your real local setup only.
+#
+# [mcp_servers.github]
+# command = "/absolute/path/to/github-mcp"
+# args = ["serve"]
+#
+# [mcp_servers.supabase]
+# command = "/absolute/path/to/supabase-mcp"
+# args = ["serve", "--project-ref", "staging-only"]

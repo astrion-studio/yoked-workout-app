@@ -1,0 +1,131 @@
+feature_id,feature,hevy,jefit,smartgym,fitbod,gymverse,stronger,evidence_status
+MF-001,Auth with Apple Google Email,yes,unknown,unknown,yes,no_evidence,yes,from screenshots
+MF-002,Existing account email login,yes,unknown,unknown,yes,no_evidence,partial,from screenshots
+MF-003,Multi-step onboarding personalization,yes,yes,yes,yes,yes,yes,from screenshots
+MF-004,Onboarding goal selection,yes,yes,yes,yes,yes,yes,from screenshots
+MF-005,Onboarding experience level calibration,yes,yes,yes,yes,yes,yes,from screenshots
+MF-006,Onboarding equipment profiling,partial,yes,yes,yes,yes,no_evidence,from screenshots
+MF-007,Onboarding schedule by days per week,no_evidence,yes,yes,yes,yes,yes,from screenshots
+MF-008,Onboarding location training environment selection,no_evidence,no_evidence,partial,yes,yes,no_evidence,from screenshots
+MF-009,Onboarding body metrics capture,yes,partial,partial,yes,yes,yes,from screenshots
+MF-010,Onboarding manual data-entry fallback,no_evidence,no_evidence,no_evidence,yes,no_evidence,no_evidence,from screenshots
+MF-011,Onboarding source attribution question,yes,no_evidence,no_evidence,yes,yes,no_evidence,from screenshots
+MF-012,Onboarding loading progress states,no_evidence,partial,no_evidence,yes,yes,no_evidence,from screenshots
+MF-013,Notifications pre-permission value prompt,yes,no_evidence,yes,yes,yes,yes,from screenshots
+MF-014,Apple Health pre-permission step,yes,no_evidence,yes,yes,no_evidence,no_evidence,from screenshots
+MF-015,Onboarding paywall intercept,yes,no_evidence,yes,yes,yes,yes,from screenshots
+MF-016,Paywall yearly monthly selector,yes,partial,yes,yes,yes,partial,from screenshots
+MF-017,Paywall promo code entry,no_evidence,no_evidence,no_evidence,no_evidence,yes,no_evidence,from screenshots
+MF-018,Restore purchases on paywall,yes,no_evidence,yes,yes,no_evidence,partial,from screenshots
+MF-019,Trial reminder messaging in paywall,no_evidence,no_evidence,no_evidence,yes,no_evidence,yes,from screenshots
+MF-020,App Store subscription sheet handoff,no_evidence,no_evidence,no_evidence,yes,no_evidence,yes,from screenshots
+MF-021,Seasonal promo campaign banner,no_evidence,no_evidence,no_evidence,no_evidence,yes,no_evidence,from screenshots
+MF-022,Free pass invite flow,no_evidence,yes,no_evidence,yes,yes,no_evidence,from screenshots
+MF-023,Routine creation from scratch,yes,yes,yes,yes,yes,yes,from screenshots
+MF-024,AI routine generation,no_evidence,no_evidence,partial,yes,yes,yes,from screenshots
+MF-025,Routine template catalog,yes,yes,yes,no_evidence,yes,yes,from screenshots
+MF-026,Routine day assignment,partial,yes,partial,no_evidence,yes,yes,from screenshots
+MF-027,Add exercise via searchable library,yes,yes,yes,yes,yes,yes,from screenshots
+MF-028,Exercise filters by muscle,yes,yes,yes,yes,yes,yes,from screenshots
+MF-029,Exercise filters by equipment,yes,yes,yes,yes,yes,no_evidence,from screenshots
+MF-030,Exercise filters by duration,no_evidence,no_evidence,no_evidence,no_evidence,yes,partial,from screenshots
+MF-031,Favorite and excluded exercise lists,no_evidence,no_evidence,no_evidence,no_evidence,yes,no_evidence,from screenshots
+MF-032,Custom exercise creation,yes,yes,yes,no_evidence,no_evidence,yes,from screenshots
+MF-033,Superset creation in planner,yes,yes,yes,no_evidence,yes,yes,from screenshots
+MF-034,Replace or swap exercise,yes,yes,yes,yes,yes,yes,from screenshots
+MF-035,Reorder exercises drag and drop,yes,yes,yes,yes,yes,yes,from screenshots
+MF-036,Per-exercise rest timer defaults,yes,yes,partial,no_evidence,yes,yes,from screenshots
+MF-037,Warm-up set support,yes,partial,yes,yes,yes,no_evidence,from screenshots
+MF-038,Bodyweight-only mode toggle,no_evidence,partial,yes,yes,no_evidence,yes,from screenshots
+MF-039,Start empty workout flow,yes,partial,no_evidence,yes,no_evidence,yes,from screenshots
+MF-040,Workout quick-start from today card,partial,yes,yes,yes,yes,yes,from screenshots
+MF-041,Workout recommendation cards,no_evidence,yes,yes,yes,yes,yes,from screenshots
+MF-042,Workout swap current session,no_evidence,yes,partial,yes,partial,no_evidence,from screenshots
+MF-043,Live set table logging,yes,yes,yes,yes,yes,yes,from screenshots
+MF-044,Numeric keypad set entry,yes,yes,yes,yes,yes,yes,from screenshots
+MF-045,Set completion checkmarks,yes,partial,yes,yes,yes,yes,from screenshots
+MF-046,In-session set overflow actions,yes,yes,yes,yes,no_evidence,yes,from screenshots
+MF-047,RPE tracking in session,no_evidence,partial,no_evidence,no_evidence,no_evidence,yes,from screenshots
+MF-048,RPE guidance legend,no_evidence,no_evidence,no_evidence,no_evidence,no_evidence,yes,from screenshots
+MF-049,Rest timer auto-start,yes,yes,yes,yes,yes,yes,from screenshots
+MF-050,Rest timer quick adjust and skip,yes,yes,partial,yes,yes,yes,from screenshots
+MF-051,Rest timer per-exercise override sheet,yes,yes,no_evidence,yes,yes,no_evidence,from screenshots
+MF-052,Live session elapsed timer,yes,yes,yes,yes,yes,yes,from screenshots
+MF-053,Auto-load previous set values,partial,partial,no_evidence,yes,yes,yes,from screenshots
+MF-054,Coach tips within workout,no_evidence,partial,no_evidence,no_evidence,no_evidence,yes,from screenshots
+MF-055,New personal record detection,yes,partial,no_evidence,yes,yes,yes,from screenshots
+MF-056,Effort prompt reps-left question,no_evidence,no_evidence,no_evidence,no_evidence,yes,no_evidence,from screenshots
+MF-057,Workout finish confirmation modal,yes,no_evidence,yes,yes,no_evidence,yes,from screenshots
+MF-058,Workout discard confirmation modal,yes,yes,yes,no_evidence,no_evidence,yes,from screenshots
+MF-059,Save workout policy toggles,yes,yes,yes,yes,no_evidence,no_evidence,from screenshots
+MF-060,Post-workout processing loading,no_evidence,no_evidence,no_evidence,yes,no_evidence,no_evidence,from screenshots
+MF-061,Post-workout summary screen,yes,yes,no_evidence,yes,yes,yes,from screenshots
+MF-062,Shareable workout result card,yes,no_evidence,yes,yes,no_evidence,partial,from screenshots
+MF-063,Workout tutorial walkthrough,partial,no_evidence,no_evidence,no_evidence,no_evidence,yes,from screenshots
+MF-064,Workout settings sheet in session,no_evidence,no_evidence,no_evidence,yes,yes,yes,from screenshots
+MF-065,Exercise detail overview tab,yes,yes,no_evidence,yes,yes,partial,from screenshots
+MF-066,Exercise detail performance charts,yes,yes,no_evidence,yes,yes,partial,from screenshots
+MF-067,Exercise detail guide instructions,yes,yes,no_evidence,yes,yes,partial,from screenshots
+MF-068,Exercise demo media playback,partial,yes,partial,yes,yes,no_evidence,from screenshots
+MF-069,Exercise form cues and mistakes,no_evidence,partial,no_evidence,yes,no_evidence,yes,from screenshots
+MF-070,Strength score composite metric,no_evidence,no_evidence,no_evidence,yes,no_evidence,yes,from screenshots
+MF-071,Recovery readiness zone,no_evidence,no_evidence,no_evidence,yes,no_evidence,yes,from screenshots
+MF-072,Muscle balance radar chart,no_evidence,partial,no_evidence,no_evidence,no_evidence,yes,from screenshots
+MF-073,Body map analytics,yes,yes,no_evidence,yes,yes,yes,from screenshots
+MF-074,Weekly set target radar,no_evidence,no_evidence,no_evidence,yes,no_evidence,no_evidence,from screenshots
+MF-075,Progress dashboard weekly metrics,yes,yes,yes,yes,yes,yes,from screenshots
+MF-076,Volume trend charts,yes,yes,partial,yes,yes,yes,from screenshots
+MF-077,Top exercises ranking,yes,partial,no_evidence,yes,no_evidence,yes,from screenshots
+MF-078,Recent PR history list,yes,yes,no_evidence,yes,no_evidence,yes,from screenshots
+MF-079,Calendar workout history,yes,yes,yes,yes,yes,yes,from screenshots
+MF-080,Workout report by date range,partial,no_evidence,partial,yes,no_evidence,no_evidence,from screenshots
+MF-081,Body measurements logging,yes,partial,yes,partial,no_evidence,no_evidence,from screenshots
+MF-082,Body measurements charts,yes,no_evidence,yes,partial,yes,no_evidence,from screenshots
+MF-083,Before and after progress photos,no_evidence,no_evidence,no_evidence,no_evidence,yes,no_evidence,from screenshots
+MF-084,Nutrition target calculations,no_evidence,no_evidence,no_evidence,no_evidence,yes,no_evidence,from screenshots
+MF-085,Achievements and badges,no_evidence,yes,partial,yes,yes,yes,from screenshots
+MF-086,Milestone progress cards,no_evidence,yes,no_evidence,no_evidence,no_evidence,yes,from screenshots
+MF-087,Streak tracking and weekly goals,yes,yes,no_evidence,yes,yes,yes,from screenshots
+MF-088,Referral and sharing incentives,no_evidence,yes,no_evidence,yes,yes,no_evidence,from screenshots
+MF-089,Community feed and discover,yes,yes,no_evidence,no_evidence,no_evidence,yes,from screenshots
+MF-090,Likes and comments interactions,yes,partial,no_evidence,no_evidence,no_evidence,partial,from screenshots
+MF-091,Groups and communities,no_evidence,partial,no_evidence,no_evidence,no_evidence,yes,from screenshots
+MF-092,Follow athletes or users,yes,partial,no_evidence,no_evidence,no_evidence,yes,from screenshots
+MF-093,Privacy and social visibility controls,yes,yes,partial,no_evidence,no_evidence,yes,from screenshots
+MF-094,Blocked users management,no_evidence,no_evidence,no_evidence,no_evidence,no_evidence,yes,from screenshots
+MF-095,Profile editing name photo bio,yes,partial,partial,no_evidence,no_evidence,yes,from screenshots
+MF-096,Account deletion workflow,yes,yes,yes,no_evidence,no_evidence,yes,from screenshots
+MF-097,Subscription management page,yes,partial,yes,yes,no_evidence,yes,from screenshots
+MF-098,Theme and color customization,yes,yes,partial,no_evidence,no_evidence,yes,from screenshots
+MF-099,App icon customization,no_evidence,no_evidence,no_evidence,yes,no_evidence,no_evidence,from screenshots
+MF-100,Language controls,yes,no_evidence,partial,no_evidence,no_evidence,no_evidence,from screenshots
+MF-101,Unit controls kg lbs,yes,yes,yes,yes,yes,yes,from screenshots
+MF-102,Notification settings granularity,yes,partial,yes,yes,no_evidence,no_evidence,from screenshots
+MF-103,Live Activities and lock-screen support,partial,no_evidence,yes,yes,no_evidence,yes,from screenshots
+MF-104,Siri integration,partial,no_evidence,yes,yes,no_evidence,no_evidence,from screenshots
+MF-105,Alexa integration,no_evidence,no_evidence,no_evidence,yes,no_evidence,no_evidence,from screenshots
+MF-106,Fitbit integration,no_evidence,no_evidence,no_evidence,yes,no_evidence,no_evidence,from screenshots
+MF-107,Apple Health integration controls,yes,yes,yes,yes,no_evidence,no_evidence,from screenshots
+MF-108,Strava sync support,yes,yes,yes,yes,no_evidence,no_evidence,from screenshots
+MF-109,Apple Watch support,partial,yes,yes,no_evidence,no_evidence,no_evidence,from screenshots
+MF-110,ChatGPT integration,yes,no_evidence,no_evidence,no_evidence,no_evidence,no_evidence,from screenshots
+MF-111,Apple Intelligence integration,no_evidence,no_evidence,yes,no_evidence,no_evidence,no_evidence,from screenshots
+MF-112,Cloud sync positioning,no_evidence,no_evidence,yes,no_evidence,no_evidence,no_evidence,from screenshots
+MF-113,Export data capability,yes,no_evidence,yes,no_evidence,no_evidence,no_evidence,from screenshots
+MF-114,Import third-party workout CSV,yes,no_evidence,no_evidence,no_evidence,no_evidence,no_evidence,from screenshots
+MF-115,Feature request board voting,no_evidence,no_evidence,no_evidence,yes,no_evidence,no_evidence,from screenshots
+MF-116,Help center and FAQ hub,yes,yes,yes,yes,no_evidence,yes,from screenshots
+MF-117,Contact support entry,yes,yes,yes,yes,no_evidence,partial,from screenshots
+MF-118,About and version screen,yes,partial,yes,no_evidence,no_evidence,yes,from screenshots
+MF-119,Personal trainer or coach mode,yes,partial,yes,no_evidence,no_evidence,yes,from screenshots
+MF-120,Program explore library,yes,yes,yes,yes,yes,yes,from screenshots
+MF-121,Habit reminder scheduling,partial,partial,yes,yes,yes,yes,from screenshots
+MF-122,Account verification and recovery tools,yes,partial,no_evidence,yes,no_evidence,partial,from screenshots
+MF-123,Plan progression phases,no_evidence,partial,no_evidence,no_evidence,yes,yes,from screenshots
+MF-124,Custom workout builder with add-day controls,yes,yes,yes,no_evidence,yes,no_evidence,from screenshots
+MF-125,Promo discount and gift mechanics,no_evidence,no_evidence,yes,yes,yes,no_evidence,from screenshots
+MF-126,In-app goals and per-exercise targets,yes,yes,partial,yes,yes,yes,from screenshots
+MF-127,Workout streak leaderboard,no_evidence,yes,no_evidence,no_evidence,no_evidence,no_evidence,from screenshots
+MF-128,Data erase controls,partial,partial,yes,no_evidence,no_evidence,no_evidence,from screenshots
+MF-129,Cross-platform account transfer guidance,partial,yes,partial,no_evidence,no_evidence,no_evidence,from screenshots
+MF-130,Public API and external integration requests,no_evidence,no_evidence,no_evidence,yes,no_evidence,no_evidence,from screenshots

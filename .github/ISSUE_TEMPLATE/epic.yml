@@ -1,0 +1,50 @@
+name: Epic
+description: Track a large cross-ticket body of work.
+title: "[Epic] "
+labels:
+  - kind/epic
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for work that will be split into multiple child tickets.
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: Define the outcome of the epic.
+    validations:
+      required: true
+  - type: textarea
+    id: source_of_truth
+    attributes:
+      label: Source-of-truth files
+      description: List the active files that govern this epic.
+    validations:
+      required: true
+  - type: textarea
+    id: child_tickets
+    attributes:
+      label: Child-ticket breakdown
+      description: Enumerate the expected implementation slices.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List blocking dependencies, credentials, or platform setup items.
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks
+      description: List the primary risks or failure modes.
+    validations:
+      required: true
+  - type: textarea
+    id: rollout_gates
+    attributes:
+      label: Rollout gates
+      description: Describe the gates or milestones that must be passed.
+    validations:
+      required: true
