@@ -24,18 +24,18 @@ Rules:
 
 1. These four files govern product behavior, launch-versus-deferred scope, implementation mechanics, and launch UX.
 2. Archive, reference-only, and analysis files do not override these four files.
-3. If product truth changes, downstream planning artifacts must be regenerated from these four files.
+3. If product truth changes, downstream operational docs must be updated from these four files.
 
-## Derived Execution Artifacts
+## Operational Docs
 
-The repository may contain generated planning, roadmap, traceability, audit, issue-manifest, or other execution artifacts under `docs/`.
+The repository may contain planning, roadmap, traceability, audit, issue-manifest, or other operational docs under `docs/`.
 
 Rules:
 
-1. Generated execution artifacts are downstream work products, not upstream product truth.
-2. Generated execution artifacts may be used for issue creation, roadmap execution, tracking, and coverage validation.
-3. Generated execution artifacts never override the four upstream source-of-truth files.
-4. If a generated execution artifact conflicts with upstream product truth, the artifact must be regenerated.
+1. Operational docs are downstream work products, not upstream product truth.
+2. Operational docs may be used for issue creation, roadmap execution, tracking, and coverage validation.
+3. Operational docs never override the four upstream source-of-truth files.
+4. If an operational doc conflicts with upstream product truth, the operational doc must be updated.
 
 ## Current Repository Layout
 
@@ -49,14 +49,14 @@ Rules:
 - `07-future/`: non-launch placeholders or future planning material
 - `.github/`: GitHub issue, PR, label, and workflow scaffolding
 - `docs/codex/`: Codex setup docs, config example, and canonical agent prompt source files
-- `docs/`: derived planning artifacts, execution docs, and repo-specific operational docs
+- `docs/`: operational docs, execution docs, and repo-specific supporting docs
 
 ## How Work Should Be Tracked
 
 Use GitHub-native workflow:
 
 1. create or select a GitHub issue,
-2. if a generated execution artifact exists for roadmap or issue creation, use it as the operational issue-definition source,
+2. if an operational doc exists for roadmap or issue creation, use it as the operational issue-definition source,
 3. implement against that issue,
 4. open a pull request linked to the issue,
 5. include exact source-of-truth references,
