@@ -1,0 +1,2 @@
+-- TKT-OPS-001 scaffold migration placeholder.
+-- Real schema implementation is deferred to backend and persistence tickets.

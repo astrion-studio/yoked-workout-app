@@ -73,6 +73,8 @@ Codex setup instructions live in:
 - `docs/codex/config.example.toml`
 - `docs/codex/agents/`
 
-## What Is Not Here Yet
+## Implementation Scaffold Status
 
-The app and backend implementation directories are not established yet. During the setup phase, the repo structure should remain additive and should not churn the existing numbered folders.
+The additive implementation scaffold for app, backend, and workspace structure is now established for `TKT-OPS-001`.
+
+See `docs/workspace_layout.md` for the documented workspace layout and placeholder targets.

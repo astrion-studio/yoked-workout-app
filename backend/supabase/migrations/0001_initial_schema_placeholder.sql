@@ -1,0 +1,2 @@
+-- TKT-OPS-001 Supabase migration scaffold placeholder.
+-- Replace with launch schema migrations in backend foundation tickets.
