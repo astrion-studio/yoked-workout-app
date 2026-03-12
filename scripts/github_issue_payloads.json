@@ -1,0 +1,1323 @@
+{
+  "repo": "astrion-studio/yoked-workout-app",
+  "generated_from": "docs/full_roadmap_backlog_pack.md",
+  "issue_count": 94,
+  "issues": [
+    {
+      "ticket_id": "EPIC-001",
+      "heading": "EPIC-001 Shell, Identity, and Onboarding",
+      "title": "Shell, Identity, and Onboarding",
+      "issue_title": "EPIC-001 Shell, Identity, and Onboarding",
+      "kind": "kind/epic",
+      "priority": "priority/p0",
+      "areas": [
+        "area/ios-foundation"
+      ],
+      "phase": "P0",
+      "epic": "self",
+      "body": "## EPIC-001 Shell, Identity, and Onboarding\n\n- Ticket ID: `EPIC-001`\n- Title: `Shell, Identity, and Onboarding`\n- Kind: `kind/epic`\n- Priority: `priority/p0`\n- Area: `area/ios-foundation`\n- Phase: `P0`\n- Epic: `self`\n- Covered Requirement IDs: `PRD-001`, `PRD-003`, `PRD-004`, `PRD-005`, `PRD-006`, `PRD-007`, `UX-001`, `UX-002`, `UX-003`\n- Objective: Deliver the launch shell, auth entry, onboarding funnel, and paywall gate without violating tab ownership or post-onboarding monetization rules.\n- In Scope: App startup routing; auth providers; onboarding steps; pre-permission education; starter-plan finalization; paywall presentation; entitlement-aware root navigation.\n- Out of Scope: Train logging internals; builder flows; Explore ranking; deferred promotions or referrals.\n- Dependencies: `TKT-OPS-001`, `TKT-OPS-002`, `TKT-HUM-004`\n- Source-of-Truth References: `source_of_truth_manifest.md`, `yoked_prd.md \u00a710-\u00a711.2`, `yoked_ux_spec.md \u00a72-\u00a79`\n- Acceptance Criteria: Child tickets collectively implement the exact five-tab launch shell, all auth paths, the deterministic onboarding contract, and launch paywall behavior with no launch-deferred leakage.\n- Test Evidence Required: Root-flow UI coverage; auth integration tests; onboarding completion tests; paywall state tests.\n- Human Actions Required: Auth-provider console setup and StoreKit product setup.\n- Notes: Home remains informational-only and Train remains the exclusive workout-execution owner.\n"
+    },
+    {
+      "ticket_id": "EPIC-002",
+      "heading": "EPIC-002 Train Runtime and Session Integrity",
+      "title": "Train Runtime and Session Integrity",
+      "issue_title": "EPIC-002 Train Runtime and Session Integrity",
+      "kind": "kind/epic",
+      "priority": "priority/p0",
+      "areas": [
+        "area/train"
+      ],
+      "phase": "P0",
+      "epic": "self",
+      "body": "## EPIC-002 Train Runtime and Session Integrity\n\n- Ticket ID: `EPIC-002`\n- Title: `Train Runtime and Session Integrity`\n- Kind: `kind/epic`\n- Priority: `priority/p0`\n- Area: `area/train`\n- Phase: `P0`\n- Epic: `self`\n- Covered Requirement IDs: `PRD-013`, `PRD-014`, `PRD-015`, `UX-005`, `UX-012`\n- Objective: Ship the live session runtime with local-first safety, exact load-entry behavior, timing, summary, and completion integrity.\n- In Scope: Train entry; resume handling; set logging; load helper; timers; warm-up handling; PR derivation; finish and discard rules; completion ledger.\n- Out of Scope: P1 intensity capture; Live Activity; Apple Watch; social celebration.\n- Dependencies: `TKT-OPS-001`, `TKT-P0-035`, `TKT-P0-037`\n- Source-of-Truth References: `yoked_prd.md \u00a711.5, \u00a715, \u00a727`, `yoked_engineering_spec.md \u00a71.6, \u00a74, \u00a76`, `yoked_ux_spec.md \u00a711, \u00a720-\u00a725`\n- Acceptance Criteria: Child tickets collectively deliver a recoverable, offline-safe Train flow with correct load-entry modes, timer behavior, and summary outputs.\n- Test Evidence Required: Train UI tests; local restore integration tests; offline completion tests; performance checks for rapid logging.\n- Human Actions Required: None beyond normal release approvals.\n- Notes: No in-session paywall and no Home-owned execution affordances are allowed.\n"
+    },
+    {
+      "ticket_id": "EPIC-003",
+      "heading": "EPIC-003 Asset Library, Builders, and AI Generation",
+      "title": "Asset Library, Builders, and AI Generation",
+      "issue_title": "EPIC-003 Asset Library, Builders, and AI Generation",
+      "kind": "kind/epic",
+      "priority": "priority/p0",
+      "areas": [
+        "area/catalog"
+      ],
+      "phase": "P0",
+      "epic": "self",
+      "body": "## EPIC-003 Asset Library, Builders, and AI Generation\n\n- Ticket ID: `EPIC-003`\n- Title: `Asset Library, Builders, and AI Generation`\n- Kind: `kind/epic`\n- Priority: `priority/p0`\n- Area: `area/catalog`\n- Phase: `P0`\n- Epic: `self`\n- Covered Requirement IDs: `PRD-008`, `PRD-009`, `PRD-012`, `ENG-010`, `UX-006`\n- Objective: Deliver My Workouts ownership, builder flows, publish management, and premium AI asset generation.\n- In Scope: My Workouts root; slot usage; workout, routine, and program details; builder composition; publish management; AI generation service and UI handoff.\n- Out of Scope: Explore consumer workout-template discovery; P1 favorites; P1 coach surfaces.\n- Dependencies: `TKT-OPS-001`, `TKT-P0-035`, `TKT-P0-038`\n- Source-of-Truth References: `yoked_prd.md \u00a711.3, \u00a712.6, \u00a712.7, \u00a714.6`, `yoked_engineering_spec.md \u00a77`, `yoked_ux_spec.md \u00a712, \u00a719`\n- Acceptance Criteria: Child tickets collectively support owned-asset management, builder editing, publish controls, and AI-generated asset creation as saved executable assets.\n- Test Evidence Required: Builder UI tests; persistence tests; AI validation tests; entitlement gate tests.\n- Human Actions Required: None.\n- Notes: The onboarding-generated starter plan is separate from premium post-onboarding AI generation.\n"
+    },
+    {
+      "ticket_id": "EPIC-004",
+      "heading": "EPIC-004 Exercise Catalog and Knowledge",
+      "title": "Exercise Catalog and Knowledge",
+      "issue_title": "EPIC-004 Exercise Catalog and Knowledge",
+      "kind": "kind/epic",
+      "priority": "priority/p0",
+      "areas": [
+        "area/catalog"
+      ],
+      "phase": "P0",
+      "epic": "self",
+      "body": "## EPIC-004 Exercise Catalog and Knowledge\n\n- Ticket ID: `EPIC-004`\n- Title: `Exercise Catalog and Knowledge`\n- Kind: `kind/epic`\n- Priority: `priority/p0`\n- Area: `area/catalog`\n- Phase: `P0`\n- Epic: `self`\n- Covered Requirement IDs: `PRD-010`, `PRD-011`, `ENG-006`, `UX-011`\n- Objective: Build the internal text-first exercise knowledge system, search, custom authoring, and exact-variation exercise detail analytics.\n- In Scope: Catalog ingest; local runtime bundle; fuzzy search; similar exercises; exclude-only preferences; custom exercises; exercise detail projections.\n- Out of Scope: Launch media assets; favorites; third-party dataset branding; external catalog imports.\n- Dependencies: `TKT-OPS-005`, `TKT-P0-035`\n- Source-of-Truth References: `yoked_prd.md \u00a711.4.1, \u00a711.4`, `yoked_engineering_spec.md \u00a73.3-\u00a73.7`, `yoked_ux_spec.md \u00a715-\u00a716`\n- Acceptance Criteria: Child tickets collectively deliver a deterministic, no-media launch catalog with fast local search and complete exercise detail screens.\n- Test Evidence Required: Catalog pipeline validation; search ranking tests; custom exercise persistence tests; exercise detail UI state tests.\n- Human Actions Required: None.\n- Notes: Media URLs remain null at launch and custom exercises remain private.\n"
+    },
+    {
+      "ticket_id": "EPIC-005",
+      "heading": "EPIC-005 Explore Marketplace, Creator, and Rating Trust",
+      "title": "Explore Marketplace, Creator, and Rating Trust",
+      "issue_title": "EPIC-005 Explore Marketplace, Creator, and Rating Trust",
+      "kind": "kind/epic",
+      "priority": "priority/p0",
+      "areas": [
+        "area/marketplace"
+      ],
+      "phase": "P0",
+      "epic": "self",
+      "body": "## EPIC-005 Explore Marketplace, Creator, and Rating Trust\n\n- Ticket ID: `EPIC-005`\n- Title: `Explore Marketplace, Creator, and Rating Trust`\n- Kind: `kind/epic`\n- Priority: `priority/p0`\n- Area: `area/marketplace`\n- Phase: `P0`\n- Epic: `self`\n- Covered Requirement IDs: `PRD-018`, `PRD-019`, `PRD-020`, `ENG-011`, `UX-007`\n- Objective: Deliver marketplace discovery, asset detail actions, creator profile detail, rating trust, and launch-safe ranking.\n- In Scope: Explore root; lanes and ranked feed; asset detail CTAs; creator profile detail; completion-gated ratings; credibility tiers; moderation projections.\n- Out of Scope: Follow; comments; social feed; workout-template consumer discovery.\n- Dependencies: `TKT-P0-036`, `TKT-P0-037`\n- Source-of-Truth References: `yoked_prd.md \u00a711.7, \u00a712, \u00a713`, `yoked_engineering_spec.md \u00a78`, `yoked_ux_spec.md \u00a713, \u00a717, \u00a718`\n- Acceptance Criteria: Child tickets collectively deliver trusted marketplace discovery with correct CTA order, rating gates, and creator-safety controls.\n- Test Evidence Required: Explore UI tests; marketplace detail tests; ranking algorithm tests; moderation suppression tests.\n- Human Actions Required: None.\n- Notes: Ratings are numeric-only at launch and follow remains deferred.\n"
+    },
+    {
+      "ticket_id": "EPIC-006",
+      "heading": "EPIC-006 Home, Progress, and Reporting Analytics",
+      "title": "Home, Progress, and Reporting Analytics",
+      "issue_title": "EPIC-006 Home, Progress, and Reporting Analytics",
+      "kind": "kind/epic",
+      "priority": "priority/p0",
+      "areas": [
+        "area/analytics"
+      ],
+      "phase": "P0",
+      "epic": "self",
+      "body": "## EPIC-006 Home, Progress, and Reporting Analytics\n\n- Ticket ID: `EPIC-006`\n- Title: `Home, Progress, and Reporting Analytics`\n- Kind: `kind/epic`\n- Priority: `priority/p0`\n- Area: `area/analytics`\n- Phase: `P0`\n- Epic: `self`\n- Covered Requirement IDs: `PRD-016`, `PRD-017`, `UX-004`, `UX-008`, `UX-009`\n- Objective: Deliver the informational Home surface and the launch analytics stack for KPIs, muscle distribution, history, reports, and body metrics.\n- In Scope: Home modules; KPI materialization; You Progress overview; muscle distribution; history calendar; date-range reports; measurements; goals and targets.\n- Out of Scope: Strength score; rankings; achievements; streaks; coach/trainer modules.\n- Dependencies: `TKT-P0-035`, `TKT-P0-039`\n- Source-of-Truth References: `yoked_prd.md \u00a711.6, \u00a716`, `yoked_engineering_spec.md \u00a73.3`, `yoked_ux_spec.md \u00a710, \u00a714`\n- Acceptance Criteria: Child tickets collectively provide the launch analytics surfaces and data projections without leaking deferred advanced analytics.\n- Test Evidence Required: KPI projection tests; analytics UI tests; report generation tests; data-range correctness tests.\n- Human Actions Required: None.\n- Notes: Home is informational and may navigate into Train but cannot initiate execution directly.\n"
+    },
+    {
+      "ticket_id": "EPIC-007",
+      "heading": "EPIC-007 Integrations, Notifications, Support, and Governance",
+      "title": "Integrations, Notifications, Support, and Governance",
+      "issue_title": "EPIC-007 Integrations, Notifications, Support, and Governance",
+      "kind": "kind/epic",
+      "priority": "priority/p0",
+      "areas": [
+        "area/backend"
+      ],
+      "phase": "P0",
+      "epic": "self",
+      "body": "## EPIC-007 Integrations, Notifications, Support, and Governance\n\n- Ticket ID: `EPIC-007`\n- Title: `Integrations, Notifications, Support, and Governance`\n- Kind: `kind/epic`\n- Priority: `priority/p0`\n- Area: `area/backend`\n- Phase: `P0`\n- Epic: `self`\n- Covered Requirement IDs: `PRD-021`, `UX-010`, `AGT-007`, `AGT-009`\n- Objective: Ship the You settings subtree for notifications, Apple Health, support, account governance, and related human-controlled integrations.\n- In Scope: Profile and creator settings; notification preferences; reminder delivery; Apple Health status; support flows; erase and transfer guidance; account actions.\n- Out of Scope: Strava; Fitbit; Watch; export jobs; import jobs; theme/icon/language overrides.\n- Dependencies: `TKT-P0-036`, `TKT-P0-037`, `TKT-HUM-004`, `TKT-HUM-005`, `TKT-HUM-006`\n- Source-of-Truth References: `yoked_prd.md \u00a711.8, \u00a711.9, \u00a718-\u00a720`, `yoked_engineering_spec.md \u00a75.9-\u00a75.11, \u00a79, \u00a710.1`, `yoked_ux_spec.md \u00a714`\n- Acceptance Criteria: Child tickets collectively deliver launch-safe notification, integration, support, and governance surfaces with correct unavailable-status treatment for deferred providers.\n- Test Evidence Required: Settings UI tests; notification delivery tests; HealthKit integration tests; support submission tests.\n- Human Actions Required: OAuth, APNs, HealthKit, and AdMob console setup.\n- Notes: Apple Health is the only launch integration provider surfaced to users.\n"
+    },
+    {
+      "ticket_id": "EPIC-008",
+      "heading": "EPIC-008 Backend Platform, Sync, and Runtime Configuration",
+      "title": "Backend Platform, Sync, and Runtime Configuration",
+      "issue_title": "EPIC-008 Backend Platform, Sync, and Runtime Configuration",
+      "kind": "kind/epic",
+      "priority": "priority/p0",
+      "areas": [
+        "area/backend"
+      ],
+      "phase": "P0",
+      "epic": "self",
+      "body": "## EPIC-008 Backend Platform, Sync, and Runtime Configuration\n\n- Ticket ID: `EPIC-008`\n- Title: `Backend Platform, Sync, and Runtime Configuration`\n- Kind: `kind/epic`\n- Priority: `priority/p0`\n- Area: `area/backend`\n- Phase: `P0`\n- Epic: `self`\n- Covered Requirement IDs: `PRD-002`, `PRD-022`, `ENG-001`, `ENG-002`, `ENG-003`, `ENG-005`, `ENG-007`, `ENG-008`, `ENG-009`, `AGT-008`\n- Objective: Establish the local schema, APIs, sync engine, runtime configuration, entitlement mirror, and operational backend contracts that all product surfaces depend on.\n- In Scope: SQLite schema; DTOs; repositories; REST endpoints; mutation queue; background sync; runtime config; entitlement mirror; moderation cache; analytics queue support.\n- Out of Scope: Deferred public API; import jobs; Apple Watch session continuity; non-launch provider integrations.\n- Dependencies: `TKT-OPS-001`, `TKT-OPS-004`, `TKT-HUM-003`\n- Source-of-Truth References: `yoked_prd.md \u00a79, \u00a721-\u00a724, \u00a728`, `yoked_engineering_spec.md \u00a71-\u00a76`, `AGENTS.md Human-Gated Tasks`\n- Acceptance Criteria: Child tickets collectively deliver the local-first persistence and sync backbone with documented API coverage and launch-safe runtime config behavior.\n- Test Evidence Required: Repository tests; sync integration tests; API contract tests; runtime-config fallback tests.\n- Human Actions Required: Supabase staging project provisioning and secret distribution.\n- Notes: Runtime config must fail to last-known-good data and may not block core local execution.\n"
+    },
+    {
+      "ticket_id": "EPIC-009",
+      "heading": "EPIC-009 Repo, CI, and Delivery Operations",
+      "title": "Repo, CI, and Delivery Operations",
+      "issue_title": "EPIC-009 Repo, CI, and Delivery Operations",
+      "kind": "kind/epic",
+      "priority": "priority/p0",
+      "areas": [
+        "area/repo-ops"
+      ],
+      "phase": "P0",
+      "epic": "self",
+      "body": "## EPIC-009 Repo, CI, and Delivery Operations\n\n- Ticket ID: `EPIC-009`\n- Title: `Repo, CI, and Delivery Operations`\n- Kind: `kind/epic`\n- Priority: `priority/p0`\n- Area: `area/repo-ops`\n- Phase: `P0`\n- Epic: `self`\n- Covered Requirement IDs: `MAN-001`, `AGT-001`, `AGT-002`, `AGT-003`, `RDM-001`, `CON-001`, `TPL-001`, `LBL-001`, `CDX-001`, `AGT-005`, `AGT-010`, `CDX-002`, `CDX-003`\n- Objective: Make the repository execution-ready while preserving issue-first workflow, label taxonomy, source-of-truth discipline, and human-gated console boundaries.\n- In Scope: Repo scaffold; template alignment; CI checks; config examples; catalog tooling docs; GitHub project automation guidance; placeholder resolution tasks.\n- Out of Scope: Product feature implementation; hidden local-machine config; destructive repo restructuring.\n- Dependencies: None.\n- Source-of-Truth References: `AGENTS.md`, `README.md`, `CONTRIBUTING.md`, `.github/*`, `docs/codex/setup.md`\n- Acceptance Criteria: Child tickets collectively establish the expected repo workflow, issue structure, CI enforcement, and human-console task set before large-scale implementation begins.\n- Test Evidence Required: Workflow syntax validation; docs reference validation; sample issue-body compatibility checks.\n- Human Actions Required: GitHub UI configuration and placeholder resolution.\n- Notes: This epic gates disciplined execution of every other epic.\n"
+    },
+    {
+      "ticket_id": "EPIC-010",
+      "heading": "EPIC-010 P1 Deferred Differentiators",
+      "title": "P1 Deferred Differentiators",
+      "issue_title": "EPIC-010 P1 Deferred Differentiators",
+      "kind": "kind/epic",
+      "priority": "priority/p1",
+      "areas": [
+        "area/ios-foundation"
+      ],
+      "phase": "P1",
+      "epic": "self",
+      "body": "## EPIC-010 P1 Deferred Differentiators\n\n- Ticket ID: `EPIC-010`\n- Title: `P1 Deferred Differentiators`\n- Kind: `kind/epic`\n- Priority: `priority/p1`\n- Area: `area/ios-foundation`\n- Phase: `P1`\n- Epic: `self`\n- Covered Requirement IDs: `PRD-023`, `PRD-024`, `PRD-025`, `PRD-026`, `PRD-027`, `PRD-028`, `PRD-029`, `PRD-030`, `PRD-031`, `PRD-032`, `PRD-033`, `PRD-034`, `PRD-035`, `ENG-013`, `UX-013`\n- Objective: Group the explicit P1 roadmap features that extend Yoked after launch without back-editing the P0 launch boundary.\n- In Scope: Promotions; favorites; Train intensity and PR feedback; advanced analytics; creator follow; appearance overrides; Live Activity; export; coach surfaces.\n- Out of Scope: P0 launch surface changes; P2 platform expansion; social feeds or comments.\n- Dependencies: Completion of all P0 epics and release hardening.\n- Source-of-Truth References: `yoked_prd.md \u00a725.2`, `yoked_engineering_spec.md deferred compatibility references`, `yoked_ux_spec.md \u00a726`\n- Acceptance Criteria: Child tickets collectively cover every explicit P1 capability and keep launch scopes unchanged until the P1 work is intentionally scheduled.\n- Test Evidence Required: Per-feature tests added when P1 implementation begins.\n- Human Actions Required: Live Activity capability approval and any export-policy review.\n- Notes: This epic exists now for traceability even though implementation is deferred.\n"
+    },
+    {
+      "ticket_id": "EPIC-011",
+      "heading": "EPIC-011 P2 Ecosystem and Platform Expansion",
+      "title": "P2 Ecosystem and Platform Expansion",
+      "issue_title": "EPIC-011 P2 Ecosystem and Platform Expansion",
+      "kind": "kind/epic",
+      "priority": "priority/p2",
+      "areas": [
+        "area/ios-foundation"
+      ],
+      "phase": "P2",
+      "epic": "self",
+      "body": "## EPIC-011 P2 Ecosystem and Platform Expansion\n\n- Ticket ID: `EPIC-011`\n- Title: `P2 Ecosystem and Platform Expansion`\n- Kind: `kind/epic`\n- Priority: `priority/p2`\n- Area: `area/ios-foundation`\n- Phase: `P2`\n- Epic: `self`\n- Covered Requirement IDs: `PRD-036`, `PRD-037`, `PRD-038`, `PRD-039`, `PRD-040`, `PRD-041`, `ENG-014`, `ENG-015`, `UX-014`\n- Objective: Group the explicit P2 growth, integration, portability, and platform-expansion work streams without implying earlier delivery.\n- In Scope: Referrals; voice assistant integrations; Strava; Fitbit; Apple Watch; import flows; public API; iPad/AirPlay; exercise visuals and media packs.\n- Out of Scope: P0 or P1 commitments; launch Apple Health behavior; launch navigation changes.\n- Dependencies: Stable P0 product, stable P1 deferred differentiator foundation where applicable, and separate technical design passes for watch and platform expansion.\n- Source-of-Truth References: `yoked_prd.md \u00a725.3`, `yoked_engineering_spec.md \u00a710.2 and P2-only contracts`, `yoked_ux_spec.md \u00a72, \u00a726`\n- Acceptance Criteria: Child tickets collectively cover every explicit P2 capability while preserving the iPhone-only, text-first, Apple-Health-only launch boundary.\n- Test Evidence Required: Per-feature tests added when P2 implementation begins.\n- Human Actions Required: Provider-partner approvals, wearable provisioning, and platform-release decisions.\n- Notes: No P2 ticket is allowed to reserve dormant launch UI or modify launch acceptance gates.\n"
+    },
+    {
+      "ticket_id": "EPIC-012",
+      "heading": "EPIC-012 QA, Security, Performance, and Release Readiness",
+      "title": "QA, Security, Performance, and Release Readiness",
+      "issue_title": "EPIC-012 QA, Security, Performance, and Release Readiness",
+      "kind": "kind/epic",
+      "priority": "priority/p0",
+      "areas": [
+        "area/release"
+      ],
+      "phase": "P0",
+      "epic": "self",
+      "body": "## EPIC-012 QA, Security, Performance, and Release Readiness\n\n- Ticket ID: `EPIC-012`\n- Title: `QA, Security, Performance, and Release Readiness`\n- Kind: `kind/epic`\n- Priority: `priority/p0`\n- Area: `area/release`\n- Phase: `P0`\n- Epic: `self`\n- Covered Requirement IDs: `PRD-042`, `PRD-043`, `ENG-012`, `ENG-016`, `ENG-017`, `UX-015`, `AGT-004`, `CON-002`\n- Objective: Convert release gates, deferred-scope exclusions, validation rules, and nonfunctional targets into a concrete launch-readiness program.\n- In Scope: UX acceptance; route ownership; offline recovery; monetization and ad boundaries; marketplace/ranking validation; security; performance; analytics integrity; reviewer checklist.\n- Out of Scope: Feature implementation; P1 and P2 delivery; console provisioning tasks except release-console preparation.\n- Dependencies: All P0 implementation epics plus human release-console tickets.\n- Source-of-Truth References: `yoked_prd.md \u00a726-\u00a728`, `yoked_engineering_spec.md \u00a711-\u00a713`, `yoked_ux_spec.md \u00a725-\u00a726`, `AGENTS.md`, `CONTRIBUTING.md`\n- Acceptance Criteria: Child tickets collectively prove launch-critical behavior, prove deferred-scope absence, and document the exact release evidence required for PR approval and GA readiness.\n- Test Evidence Required: Consolidated QA evidence across UI, integration, performance, analytics, and security checks.\n- Human Actions Required: App Store release-console setup and policy confirmations.\n- Notes: This epic is the final gate before direct launch execution.\n\n## P0 Ticket Inventory\n"
+    },
+    {
+      "ticket_id": "TKT-OPS-001",
+      "heading": "TKT-OPS-001 App, Backend, and Workspace Scaffold per Engineering Repo Structure",
+      "title": "App, Backend, and Workspace Scaffold per Engineering Repo Structure",
+      "issue_title": "TKT-OPS-001 App, Backend, and Workspace Scaffold per Engineering Repo Structure",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/repo-ops"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-009",
+      "body": "## TKT-OPS-001 App, Backend, and Workspace Scaffold per Engineering Repo Structure\n\n- Ticket ID: `TKT-OPS-001`\n- Title: `App, Backend, and Workspace Scaffold per Engineering Repo Structure`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/repo-ops`\n- Phase: `P0`\n- Epic: `EPIC-009`\n- Covered Requirement IDs: `ENG-004`, `ENG-005`, `AGT-003`, `RDM-001`\n- Objective: Create the implementation scaffold implied by the engineering spec without restructuring the numbered top-level directories.\n- In Scope: `ios/` app scaffold; backend or migrations scaffold; test-target placeholders; documented workspace layout; additive directory creation only.\n- Out of Scope: Large-scale product implementation; moving existing numbered folders.\n- Dependencies: None.\n- Source-of-Truth References: `README.md`, `AGENTS.md Repository Change Rules`, `yoked_engineering_spec.md \u00a72-\u00a73`\n- Acceptance Criteria: The repo contains the expected additive implementation directories and target placeholders while preserving existing spec directories and documentation.\n- Test Evidence Required: Tree listing validation and project-file or workspace sanity checks.\n- Human Actions Required: None.\n- Notes: This is the structural starting point for subsequent implementation tickets.\n"
+    },
+    {
+      "ticket_id": "TKT-OPS-002",
+      "heading": "TKT-OPS-002 Issue Forms, Label Taxonomy, PR Template, and Workflow Docs Alignment with Backlog Pack",
+      "title": "Issue Forms, Label Taxonomy, PR Template, and Workflow Docs Alignment with Backlog Pack",
+      "issue_title": "TKT-OPS-002 Issue Forms, Label Taxonomy, PR Template, and Workflow Docs Alignment with Backlog Pack",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/repo-ops"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-009",
+      "body": "## TKT-OPS-002 Issue Forms, Label Taxonomy, PR Template, and Workflow Docs Alignment with Backlog Pack\n\n- Ticket ID: `TKT-OPS-002`\n- Title: `Issue Forms, Label Taxonomy, PR Template, and Workflow Docs Alignment with Backlog Pack`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/repo-ops`\n- Phase: `P0`\n- Epic: `EPIC-009`\n- Covered Requirement IDs: `MAN-001`, `AGT-001`, `AGT-002`, `CON-001`, `TPL-001`, `LBL-001`\n- Objective: Align repo workflow metadata with the closed-loop roadmap so future issue creation follows the documented discipline.\n- In Scope: Issue template verification; PR template verification; label taxonomy alignment; workflow doc updates; source-of-truth citation expectations; issue-first reminders.\n- Out of Scope: GitHub UI settings that require admin clicks.\n- Dependencies: None.\n- Source-of-Truth References: `AGENTS.md`, `CONTRIBUTING.md`, `.github/ISSUE_TEMPLATE/*.yml`, `.github/PULL_REQUEST_TEMPLATE.md`, `.github/labels.yml`\n- Acceptance Criteria: The issue forms and PR template can represent the tickets in this backlog pack without missing fields, and the docs reflect the same workflow rules.\n- Test Evidence Required: YAML syntax validation; template field coverage check; sample issue-body dry run.\n- Human Actions Required: `TKT-HUM-001` and `TKT-HUM-002` for GitHub UI settings.\n- Notes: This ticket is the workflow bridge between the planning package and real issue creation.\n"
+    },
+    {
+      "ticket_id": "TKT-OPS-003",
+      "heading": "TKT-OPS-003 CI and Check Scaffolding for Docs, Schema, and Test-Evidence Enforcement",
+      "title": "CI and Check Scaffolding for Docs, Schema, and Test-Evidence Enforcement",
+      "issue_title": "TKT-OPS-003 CI and Check Scaffolding for Docs, Schema, and Test-Evidence Enforcement",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/repo-ops"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-009",
+      "body": "## TKT-OPS-003 CI and Check Scaffolding for Docs, Schema, and Test-Evidence Enforcement\n\n- Ticket ID: `TKT-OPS-003`\n- Title: `CI and Check Scaffolding for Docs, Schema, and Test-Evidence Enforcement`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/repo-ops`\n- Phase: `P0`\n- Epic: `EPIC-009`\n- Covered Requirement IDs: `AGT-004`\n- Objective: Add automated checks that enforce the repo validation expectations documented in the workflow files.\n- In Scope: Markdown lint or link validation as appropriate; workflow syntax validation; schema check stubs; test-evidence reminder checks; PR gating documentation.\n- Out of Scope: Product UI tests themselves; GitHub admin settings.\n- Dependencies: `TKT-OPS-001`, `TKT-OPS-002`\n- Source-of-Truth References: `AGENTS.md Testing and Validation Rules`\n- Acceptance Criteria: CI runs the documented repo checks and makes it difficult to merge workflow or docs changes without basic validation evidence.\n- Test Evidence Required: Successful workflow runs and failing-sample demonstrations where practical.\n- Human Actions Required: Branch protection in `TKT-HUM-002`.\n- Notes: Keep the first version lean but aligned with the workflow contract.\n"
+    },
+    {
+      "ticket_id": "TKT-OPS-004",
+      "heading": "TKT-OPS-004 Config and Environment Scaffolding with Staging-First Separation and Secret-Safe Examples",
+      "title": "Config and Environment Scaffolding with Staging-First Separation and Secret-Safe Examples",
+      "issue_title": "TKT-OPS-004 Config and Environment Scaffolding with Staging-First Separation and Secret-Safe Examples",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/repo-ops"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-009",
+      "body": "## TKT-OPS-004 Config and Environment Scaffolding with Staging-First Separation and Secret-Safe Examples\n\n- Ticket ID: `TKT-OPS-004`\n- Title: `Config and Environment Scaffolding with Staging-First Separation and Secret-Safe Examples`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/repo-ops`\n- Phase: `P0`\n- Epic: `EPIC-009`\n- Covered Requirement IDs: `AGT-003`, `CDX-001`\n- Objective: Create tracked example configs and environment-loading conventions that keep secrets and local Codex state out of Git.\n- In Scope: Example env files; staging-vs-production config separation; secret-loading documentation; local config ignore rules; connector guidance references.\n- Out of Scope: Real secret values; personal machine paths committed to repo.\n- Dependencies: `TKT-OPS-001`, `TKT-HUM-003`, `TKT-HUM-007`\n- Source-of-Truth References: `AGENTS.md Repository Change Rules`, `docs/codex/setup.md`\n- Acceptance Criteria: Developers can understand how to run against staging using tracked examples only; no committed file requires secret values to be present in Git.\n- Test Evidence Required: Example-config validation; startup sanity checks using placeholder values where possible.\n- Human Actions Required: Environment secret provisioning and placeholder resolution.\n- Notes: This ticket is a prerequisite for safe backend and auth work.\n"
+    },
+    {
+      "ticket_id": "TKT-OPS-005",
+      "heading": "TKT-OPS-005 Catalog Tooling Commands and Codex Workflow Bootstrap Docs",
+      "title": "Catalog Tooling Commands and Codex Workflow Bootstrap Docs",
+      "issue_title": "TKT-OPS-005 Catalog Tooling Commands and Codex Workflow Bootstrap Docs",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/repo-ops"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-009",
+      "body": "## TKT-OPS-005 Catalog Tooling Commands and Codex Workflow Bootstrap Docs\n\n- Ticket ID: `TKT-OPS-005`\n- Title: `Catalog Tooling Commands and Codex Workflow Bootstrap Docs`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/repo-ops`\n- Phase: `P0`\n- Epic: `EPIC-009`\n- Covered Requirement IDs: `CDX-001`\n- Objective: Document the local commands and repo conventions needed to operate catalog tooling and approved local workflows.\n- In Scope: Catalog ingest command docs; bootstrap instructions; local workflow sequencing; connector priority references; tool prerequisites.\n- Out of Scope: Private machine-specific setup steps that do not belong in the repo.\n- Dependencies: `TKT-P0-016`, `TKT-OPS-004`\n- Source-of-Truth References: `docs/codex/setup.md`, `README.md`\n- Acceptance Criteria: A maintainer can follow the repo docs to run catalog tooling and the documented local workflow without needing hidden context from prior contributors.\n- Test Evidence Required: Doc-link validation and one dry-run of the documented command sequence.\n- Human Actions Required: None.\n- Notes: Keep this documentation additive and repo-safe.\n\n## QA / Validation / Release Ticket Inventory\n"
+    },
+    {
+      "ticket_id": "TKT-HUM-001",
+      "heading": "TKT-HUM-001 GitHub Projects Auto-Add Workflows and Status Defaults in GitHub UI",
+      "title": "GitHub Projects Auto-Add Workflows and Status Defaults in GitHub UI",
+      "issue_title": "TKT-HUM-001 GitHub Projects Auto-Add Workflows and Status Defaults in GitHub UI",
+      "kind": "kind/human-action",
+      "priority": "priority/p0",
+      "areas": [
+        "area/repo-ops"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-009",
+      "body": "## TKT-HUM-001 GitHub Projects Auto-Add Workflows and Status Defaults in GitHub UI\n\n- Ticket ID: `TKT-HUM-001`\n- Title: `GitHub Projects Auto-Add Workflows and Status Defaults in GitHub UI`\n- Kind: `kind/human-action`\n- Priority: `priority/p0`\n- Area: `area/repo-ops`\n- Phase: `P0`\n- Epic: `EPIC-009`\n- Covered Requirement IDs: `AGT-005`, `CDX-001`, `CDX-002`\n- Objective: Configure the documented GitHub Project automation that cannot be safely created from repo files alone.\n- In Scope: Auto-add filters; default-status routing; project-field defaults; GitHub UI verification.\n- Out of Scope: Repo file edits; speculative workflow automation outside documented UI capabilities.\n- Dependencies: `TKT-OPS-002`\n- Source-of-Truth References: `AGENTS.md Human-Gated Tasks`, `docs/codex/setup.md GitHub Project Automation`\n- Acceptance Criteria: New issues with the documented label combinations land in the correct project views and initial status columns.\n- Test Evidence Required: Screenshot or screen-recording evidence of project automation behavior.\n- Human Actions Required: GitHub maintainer access.\n- Notes: This is deliberately a human-action ticket because the setup is UI-driven.\n"
+    },
+    {
+      "ticket_id": "TKT-HUM-002",
+      "heading": "TKT-HUM-002 GitHub Branch Protection, Required Checks, and No-Direct-Push Settings",
+      "title": "GitHub Branch Protection, Required Checks, and No-Direct-Push Settings",
+      "issue_title": "TKT-HUM-002 GitHub Branch Protection, Required Checks, and No-Direct-Push Settings",
+      "kind": "kind/human-action",
+      "priority": "priority/p0",
+      "areas": [
+        "area/repo-ops"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-009",
+      "body": "## TKT-HUM-002 GitHub Branch Protection, Required Checks, and No-Direct-Push Settings\n\n- Ticket ID: `TKT-HUM-002`\n- Title: `GitHub Branch Protection, Required Checks, and No-Direct-Push Settings`\n- Kind: `kind/human-action`\n- Priority: `priority/p0`\n- Area: `area/repo-ops`\n- Phase: `P0`\n- Epic: `EPIC-009`\n- Covered Requirement IDs: `AGT-005`, `CON-001`\n- Objective: Apply repository protection settings that enforce the documented contribution rules.\n- In Scope: Protected default branch; required review counts; required checks; no-direct-push settings; merge policy review.\n- Out of Scope: Changing contribution policy text without repo review.\n- Dependencies: `TKT-OPS-003`\n- Source-of-Truth References: `AGENTS.md Human-Gated Tasks`, `CONTRIBUTING.md`\n- Acceptance Criteria: The repo blocks unreviewed direct pushes and enforces the documented minimum checks before merge.\n- Test Evidence Required: Screenshot evidence of branch protection settings.\n- Human Actions Required: GitHub admin access.\n- Notes: This ticket closes the loop between policy docs and actual repo enforcement.\n"
+    },
+    {
+      "ticket_id": "TKT-HUM-003",
+      "heading": "TKT-HUM-003 Provision Supabase Staging Project, Secrets, and Service Credentials",
+      "title": "Provision Supabase Staging Project, Secrets, and Service Credentials",
+      "issue_title": "TKT-HUM-003 Provision Supabase Staging Project, Secrets, and Service Credentials",
+      "kind": "kind/human-action",
+      "priority": "priority/p0",
+      "areas": [
+        "area/backend"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-008",
+      "body": "## TKT-HUM-003 Provision Supabase Staging Project, Secrets, and Service Credentials\n\n- Ticket ID: `TKT-HUM-003`\n- Title: `Provision Supabase Staging Project, Secrets, and Service Credentials`\n- Kind: `kind/human-action`\n- Priority: `priority/p0`\n- Area: `area/backend`\n- Phase: `P0`\n- Epic: `EPIC-008`\n- Covered Requirement IDs: `AGT-003`, `AGT-008`, `CDX-003`\n- Objective: Create the staging backend environment and distribute the approved credentials required by implementation tickets.\n- In Scope: Staging project creation; service-role and anon key distribution; environment naming; secret handoff through approved channels.\n- Out of Scope: Production environment creation; hard-coding secrets into the repo.\n- Dependencies: `TKT-OPS-004`\n- Source-of-Truth References: `AGENTS.md Repository Change Rules, Human-Gated Tasks`, `docs/codex/setup.md Connectors and MCP Priority`\n- Acceptance Criteria: A staging environment exists, the required secrets are available to maintainers through approved channels, and no secret values are committed to Git.\n- Test Evidence Required: Secret placeholders filled in local untracked config and successful staging connectivity proof.\n- Human Actions Required: Supabase owner access.\n- Notes: Use staging before any production environment.\n"
+    },
+    {
+      "ticket_id": "TKT-HUM-004",
+      "heading": "TKT-HUM-004 Configure Apple Sign In, Google OAuth, App Store Connect Products, and App Store Server Notifications",
+      "title": "Configure Apple Sign In, Google OAuth, App Store Connect Products, and App Store Server Notifications",
+      "issue_title": "TKT-HUM-004 Configure Apple Sign In, Google OAuth, App Store Connect Products, and App Store Server Notifications",
+      "kind": "kind/human-action",
+      "priority": "priority/p0",
+      "areas": [
+        "area/backend"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-007",
+      "body": "## TKT-HUM-004 Configure Apple Sign In, Google OAuth, App Store Connect Products, and App Store Server Notifications\n\n- Ticket ID: `TKT-HUM-004`\n- Title: `Configure Apple Sign In, Google OAuth, App Store Connect Products, and App Store Server Notifications`\n- Kind: `kind/human-action`\n- Priority: `priority/p0`\n- Area: `area/backend`\n- Phase: `P0`\n- Epic: `EPIC-007`\n- Covered Requirement IDs: `AGT-006`, `AGT-007`\n- Objective: Complete the external console work required for auth and billing to function.\n- In Scope: Apple Sign In app registration; Google OAuth app registration; subscription product creation; App Store Server Notifications setup.\n- Out of Scope: In-repo auth code changes; subscription copy rewrites beyond console metadata.\n- Dependencies: `TKT-P0-002`, `TKT-P0-004`\n- Source-of-Truth References: `AGENTS.md Human-Gated Tasks`\n- Acceptance Criteria: Auth providers and StoreKit products are configured, callback URLs match implementation, and billing server notifications reach the configured environment.\n- Test Evidence Required: Console screenshots and successful end-to-end sandbox purchase or provider-login proof.\n- Human Actions Required: Apple Developer, Google Cloud, and App Store Connect access.\n- Notes: This is a prerequisite for full launch auth and billing validation.\n"
+    },
+    {
+      "ticket_id": "TKT-HUM-005",
+      "heading": "TKT-HUM-005 Configure APNs and HealthKit Capabilities and Entitlements",
+      "title": "Configure APNs and HealthKit Capabilities and Entitlements",
+      "issue_title": "TKT-HUM-005 Configure APNs and HealthKit Capabilities and Entitlements",
+      "kind": "kind/human-action",
+      "priority": "priority/p0",
+      "areas": [
+        "area/health"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-007",
+      "body": "## TKT-HUM-005 Configure APNs and HealthKit Capabilities and Entitlements\n\n- Ticket ID: `TKT-HUM-005`\n- Title: `Configure APNs and HealthKit Capabilities and Entitlements`\n- Kind: `kind/human-action`\n- Priority: `priority/p0`\n- Area: `area/health`\n- Phase: `P0`\n- Epic: `EPIC-007`\n- Covered Requirement IDs: `AGT-009`\n- Objective: Enable the platform capabilities required by launch notifications and Apple Health integration.\n- In Scope: Push capability; APNs token setup; HealthKit capability; entitlement review; provisioning refresh.\n- Out of Scope: Strava or Fitbit partner setup; Apple Watch capability.\n- Dependencies: `TKT-P0-031`, `TKT-P0-032`\n- Source-of-Truth References: `AGENTS.md Human-Gated Tasks`\n- Acceptance Criteria: Notification and HealthKit capabilities are enabled for the app target and verified against the bundle identifiers used by the project.\n- Test Evidence Required: Capability screenshots and successful local entitlement validation.\n- Human Actions Required: Apple Developer access.\n- Notes: This is a hard blocker for end-to-end notification and HealthKit testing.\n"
+    },
+    {
+      "ticket_id": "TKT-HUM-006",
+      "heading": "TKT-HUM-006 Create AdMob App, Banner Units, and Contextual-Ad Policy Settings",
+      "title": "Create AdMob App, Banner Units, and Contextual-Ad Policy Settings",
+      "issue_title": "TKT-HUM-006 Create AdMob App, Banner Units, and Contextual-Ad Policy Settings",
+      "kind": "kind/human-action",
+      "priority": "priority/p0",
+      "areas": [
+        "area/release"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-012",
+      "body": "## TKT-HUM-006 Create AdMob App, Banner Units, and Contextual-Ad Policy Settings\n\n- Ticket ID: `TKT-HUM-006`\n- Title: `Create AdMob App, Banner Units, and Contextual-Ad Policy Settings`\n- Kind: `kind/human-action`\n- Priority: `priority/p0`\n- Area: `area/release`\n- Phase: `P0`\n- Epic: `EPIC-012`\n- Covered Requirement IDs: `AGT-009`\n- Objective: Provision the AdMob resources required by the launch banner-ad plan.\n- In Scope: AdMob app registration; banner unit creation; test-device setup; policy review for contextual placements.\n- Out of Scope: Interstitial or rewarded inventory.\n- Dependencies: `TKT-P0-040`\n- Source-of-Truth References: `AGENTS.md Human-Gated Tasks`\n- Acceptance Criteria: Banner unit IDs exist for the approved environments and policy review confirms only launch-approved placements will be used.\n- Test Evidence Required: AdMob console screenshots and successful test-banner proof.\n- Human Actions Required: AdMob account access.\n- Notes: Keep policy sign-off attached to this ticket because ad misuse is a release blocker.\n"
+    },
+    {
+      "ticket_id": "TKT-HUM-007",
+      "heading": "TKT-HUM-007 Resolve Repo, Team, and Environment Placeholders and Assign Exact Owners",
+      "title": "Resolve Repo, Team, and Environment Placeholders and Assign Exact Owners",
+      "issue_title": "TKT-HUM-007 Resolve Repo, Team, and Environment Placeholders and Assign Exact Owners",
+      "kind": "kind/human-action",
+      "priority": "priority/p0",
+      "areas": [
+        "area/repo-ops"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-009",
+      "body": "## TKT-HUM-007 Resolve Repo, Team, and Environment Placeholders and Assign Exact Owners\n\n- Ticket ID: `TKT-HUM-007`\n- Title: `Resolve Repo, Team, and Environment Placeholders and Assign Exact Owners`\n- Kind: `kind/human-action`\n- Priority: `priority/p0`\n- Area: `area/repo-ops`\n- Phase: `P0`\n- Epic: `EPIC-009`\n- Covered Requirement IDs: `AGT-010`, `CDX-003`\n- Objective: Replace every documented placeholder that cannot be safely inferred from local repo context.\n- In Scope: GitHub usernames; team slugs; repo URLs; environment IDs; connector-account ownership mapping.\n- Out of Scope: Guessing placeholder values in code or docs without human confirmation.\n- Dependencies: `TKT-OPS-002`, `TKT-OPS-004`\n- Source-of-Truth References: `AGENTS.md Escalation Rule`, `docs/codex/setup.md`\n- Acceptance Criteria: All placeholders blocking issue creation, CI setup, or environment configuration have an explicit confirmed value and owner.\n- Test Evidence Required: Updated issue pack or config examples referencing the resolved values.\n- Human Actions Required: Maintainer confirmation.\n- Notes: This ticket prevents silent assumptions from leaking into implementation work.\n"
+    },
+    {
+      "ticket_id": "TKT-HUM-008",
+      "heading": "TKT-HUM-008 App Store Privacy Declarations, Billing Metadata, and Release-Console Setup",
+      "title": "App Store Privacy Declarations, Billing Metadata, and Release-Console Setup",
+      "issue_title": "TKT-HUM-008 App Store Privacy Declarations, Billing Metadata, and Release-Console Setup",
+      "kind": "kind/human-action",
+      "priority": "priority/p0",
+      "areas": [
+        "area/release"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-012",
+      "body": "## TKT-HUM-008 App Store Privacy Declarations, Billing Metadata, and Release-Console Setup\n\n- Ticket ID: `TKT-HUM-008`\n- Title: `App Store Privacy Declarations, Billing Metadata, and Release-Console Setup`\n- Kind: `kind/human-action`\n- Priority: `priority/p0`\n- Area: `area/release`\n- Phase: `P0`\n- Epic: `EPIC-012`\n- Covered Requirement IDs: `AGT-006`\n- Objective: Complete the release-console tasks needed before App Store submission.\n- In Scope: Privacy nutrition labels; subscription metadata review; app release settings; screenshots and compliance placeholders; release train setup.\n- Out of Scope: In-repo privacy copy generation; production rollout execution itself.\n- Dependencies: `TKT-QA-006`\n- Source-of-Truth References: `AGENTS.md Human-Gated Tasks`\n- Acceptance Criteria: Required App Store submission metadata exists and is consistent with the implemented launch feature set and permissions.\n- Test Evidence Required: App Store Connect screenshots and release-checklist sign-off.\n- Human Actions Required: App Store Connect access.\n- Notes: This ticket should close only after the final release checklist is green.\n\n## Repo / CI / Tooling Ticket Inventory\n"
+    },
+    {
+      "ticket_id": "TKT-P0-035",
+      "heading": "TKT-P0-035 Core SQLite Schema, Repositories, DTO Mappers, and Local Cache Tables",
+      "title": "Core SQLite Schema, Repositories, DTO Mappers, and Local Cache Tables",
+      "issue_title": "TKT-P0-035 Core SQLite Schema, Repositories, DTO Mappers, and Local Cache Tables",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/backend"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-008",
+      "body": "## TKT-P0-035 Core SQLite Schema, Repositories, DTO Mappers, and Local Cache Tables\n\n- Ticket ID: `TKT-P0-035`\n- Title: `Core SQLite Schema, Repositories, DTO Mappers, and Local Cache Tables`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/backend`\n- Phase: `P0`\n- Epic: `EPIC-008`\n- Covered Requirement IDs: `PRD-002`, `ENG-001`, `ENG-005`\n- Objective: Implement the local persistence layer that backs every launch surface and supports local-first execution.\n- In Scope: SQLite migrations; repository interfaces; DTO mappers; FTS tables; completion tables; rating cache; moderation cache; analytics queue; integration-status cache.\n- Out of Scope: Public API endpoints; remote sync scheduler; import jobs.\n- Dependencies: `TKT-OPS-001`\n- Source-of-Truth References: `yoked_prd.md \u00a79`, `yoked_engineering_spec.md \u00a73.1-\u00a73.2, \u00a74.1`\n- Acceptance Criteria: The local schema covers all launch entities and caches; migrations are deterministic from clean install and upgrade paths; repositories expose the documented query patterns without forcing network access.\n- Test Evidence Required: Migration tests; repository tests; DTO mapping tests; clean-install and upgrade validation.\n- Human Actions Required: None.\n- Notes: This ticket is a prerequisite for nearly all product-surface work.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-036",
+      "heading": "TKT-P0-036 REST API Surface for Auth, Users, Exercises, Assets, Ratings, Integrations, Support, and Governance",
+      "title": "REST API Surface for Auth, Users, Exercises, Assets, Ratings, Integrations, Support, and Governance",
+      "issue_title": "TKT-P0-036 REST API Surface for Auth, Users, Exercises, Assets, Ratings, Integrations, Support, and Governance",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/backend"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-008",
+      "body": "## TKT-P0-036 REST API Surface for Auth, Users, Exercises, Assets, Ratings, Integrations, Support, and Governance\n\n- Ticket ID: `TKT-P0-036`\n- Title: `REST API Surface for Auth, Users, Exercises, Assets, Ratings, Integrations, Support, and Governance`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/backend`\n- Phase: `P0`\n- Epic: `EPIC-008`\n- Covered Requirement IDs: `PRD-002`, `ENG-008`\n- Objective: Implement the documented launch API families that synchronize user, asset, rating, integration, and governance state.\n- In Scope: Auth/session endpoints; user profile endpoints; exercise catalog fetch; owned-asset CRUD endpoints; creator and Explore endpoints; ratings endpoints; support ticket endpoint; governance erase endpoint.\n- Out of Scope: Import job endpoints; public API keys; Apple Watch continuity endpoints.\n- Dependencies: `TKT-HUM-003`, `TKT-OPS-004`\n- Source-of-Truth References: `yoked_engineering_spec.md \u00a75.1-\u00a75.11`, `yoked_prd.md \u00a721-\u00a724`\n- Acceptance Criteria: Each documented P0 endpoint family exists with the documented payload shape; unsupported P1 or P2 endpoints are not exposed as active launch dependencies; auth and governance endpoints satisfy the product flows that depend on them.\n- Test Evidence Required: API contract tests; endpoint smoke tests; schema and auth validation logs.\n- Human Actions Required: Supabase project and secret provisioning.\n- Notes: Keep endpoint naming and envelope conventions aligned with the engineering spec.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-037",
+      "heading": "TKT-P0-037 Sync Engine, Mutation Queue, Background Tasks, Runtime-Config Cache, and Moderation Cache",
+      "title": "Sync Engine, Mutation Queue, Background Tasks, Runtime-Config Cache, and Moderation Cache",
+      "issue_title": "TKT-P0-037 Sync Engine, Mutation Queue, Background Tasks, Runtime-Config Cache, and Moderation Cache",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/backend"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-008",
+      "body": "## TKT-P0-037 Sync Engine, Mutation Queue, Background Tasks, Runtime-Config Cache, and Moderation Cache\n\n- Ticket ID: `TKT-P0-037`\n- Title: `Sync Engine, Mutation Queue, Background Tasks, Runtime-Config Cache, and Moderation Cache`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/backend`\n- Phase: `P0`\n- Epic: `EPIC-008`\n- Covered Requirement IDs: `PRD-022`, `ENG-001`, `ENG-003`, `ENG-007`, `ENG-009`\n- Objective: Implement the local-first sync backbone, queue ordering, background refresh policy, and supporting caches required for continuity.\n- In Scope: Mutation queue; priority ordering; push-then-pull sync; per-scope cursors; background refresh tasks; runtime-config cache; moderation cache; retry policy; conflict resolution; stale markers.\n- Out of Scope: Live Activity projection; Apple Watch session sync; public API exports.\n- Dependencies: `TKT-P0-035`, `TKT-P0-036`, `TKT-HUM-003`\n- Source-of-Truth References: `yoked_prd.md \u00a721-\u00a724`, `yoked_engineering_spec.md \u00a74.2-\u00a74.7, \u00a76`\n- Acceptance Criteria: Local writes succeed when offline; background sync respects documented priorities and retry limits; active sessions are never overwritten by remote state; moderation and runtime-config caches fall back to last-known-good values.\n- Test Evidence Required: Queue-order tests; sync conflict tests; background-task integration tests; stale-config tests.\n- Human Actions Required: Supabase staging credentials.\n- Notes: This ticket is the core continuity contract for launch reliability.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-038",
+      "heading": "TKT-P0-038 AI Generator Service, Deterministic Validator, and Fallback Templates",
+      "title": "AI Generator Service, Deterministic Validator, and Fallback Templates",
+      "issue_title": "TKT-P0-038 AI Generator Service, Deterministic Validator, and Fallback Templates",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/backend"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-003",
+      "body": "## TKT-P0-038 AI Generator Service, Deterministic Validator, and Fallback Templates\n\n- Ticket ID: `TKT-P0-038`\n- Title: `AI Generator Service, Deterministic Validator, and Fallback Templates`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/backend`\n- Phase: `P0`\n- Epic: `EPIC-003`\n- Covered Requirement IDs: `PRD-009`, `ENG-010`\n- Objective: Implement the hybrid AI generation pipeline that creates workouts, routines, and programs within the allowed launch schema.\n- In Scope: Prompt assembly; preprocessing; response parsing; schema validation; repair pass; fallback template generation; explanation metadata; save-ready output contract.\n- Out of Scope: Conversational coach; autonomous plan evolution; unsupported asset types.\n- Dependencies: `TKT-P0-035`, `TKT-P0-036`\n- Source-of-Truth References: `yoked_prd.md \u00a711.3 CF-012, \u00a714.1, \u00a714.6`, `yoked_engineering_spec.md \u00a77`\n- Acceptance Criteria: Generated assets always conform to the executable schema or fall back to deterministic templates; explanation metadata is preserved; unsupported content is rejected rather than silently saved.\n- Test Evidence Required: Validator unit tests; repair-path tests; fallback-template tests; sample generation fixtures.\n- Human Actions Required: None.\n- Notes: Keep launch prompts tightly constrained to documented inputs and outputs.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-039",
+      "heading": "TKT-P0-039 Analytics Event Queue, Batch Ingest, KPI Materialization Pipeline, and Integrity Validation",
+      "title": "Analytics Event Queue, Batch Ingest, KPI Materialization Pipeline, and Integrity Validation",
+      "issue_title": "TKT-P0-039 Analytics Event Queue, Batch Ingest, KPI Materialization Pipeline, and Integrity Validation",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/analytics"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-008",
+      "body": "## TKT-P0-039 Analytics Event Queue, Batch Ingest, KPI Materialization Pipeline, and Integrity Validation\n\n- Ticket ID: `TKT-P0-039`\n- Title: `Analytics Event Queue, Batch Ingest, KPI Materialization Pipeline, and Integrity Validation`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/analytics`\n- Phase: `P0`\n- Epic: `EPIC-008`\n- Covered Requirement IDs: `PRD-022`\n- Objective: Implement analytics event capture and downstream materialization so progress surfaces and release validation can trust the data.\n- In Scope: Canonical event envelope; local analytics queue; batch ingest; materialized KPI jobs; stale detection; event dedupe; integrity validation hooks.\n- Out of Scope: Marketing growth loops; referral attribution; deferred advanced analytics modules.\n- Dependencies: `TKT-P0-035`, `TKT-P0-036`, `TKT-P0-037`\n- Source-of-Truth References: `yoked_prd.md \u00a728`, `yoked_engineering_spec.md \u00a713`\n- Acceptance Criteria: Approved launch events enqueue locally, upload in batches, and materialize the KPI data needed by launch surfaces; malformed or unsupported events are rejected; integrity checks surface gaps before release.\n- Test Evidence Required: Event-schema tests; batch-ingest tests; KPI materialization tests; integrity-check output.\n- Human Actions Required: None.\n- Notes: This ticket supports both product analytics and QA release evidence.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-001",
+      "heading": "TKT-P0-001 App Shell, Five-Tab Routing, Root Flow Ownership, and Deep-Link Handoff",
+      "title": "App Shell, Five-Tab Routing, Root Flow Ownership, and Deep-Link Handoff",
+      "issue_title": "TKT-P0-001 App Shell, Five-Tab Routing, Root Flow Ownership, and Deep-Link Handoff",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/ios-foundation"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-001",
+      "body": "## TKT-P0-001 App Shell, Five-Tab Routing, Root Flow Ownership, and Deep-Link Handoff\n\n- Ticket ID: `TKT-P0-001`\n- Title: `App Shell, Five-Tab Routing, Root Flow Ownership, and Deep-Link Handoff`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/ios-foundation`\n- Phase: `P0`\n- Epic: `EPIC-001`\n- Covered Requirement IDs: `PRD-001`, `PRD-003`, `ENG-001`, `UX-001`\n- Objective: Build the root coordinator that decides between auth, onboarding, paywall handoff, and the five-tab shell while preserving exact route ownership.\n- In Scope: Splash and bootstrap routing; fixed tab order; root navigation coordinator; full-screen cover ownership; deep-link dispatch to owning root; Home non-execution guarantee; iPhone-only target assumptions.\n- Out of Scope: Auth credential flows; onboarding form state; purchase processing; Train logging internals.\n- Dependencies: `TKT-OPS-001`, `TKT-OPS-002`\n- Source-of-Truth References: `source_of_truth_manifest.md`, `yoked_prd.md \u00a710, \u00a725.1, \u00a726`, `yoked_engineering_spec.md \u00a71.1-\u00a71.4`, `yoked_ux_spec.md \u00a72-\u00a76`\n- Acceptance Criteria: Cold start routes correctly for signed-out, onboarding-incomplete, onboarding-complete, and entitled users; five tabs render in the order `Home`, `Train`, `My Workouts`, `Explore`, `You`; Home never exposes a direct start button; deep links land on owning surfaces without duplicate stacks.\n- Test Evidence Required: Root-flow UI tests; deep-link integration tests; cold-start offline tests; tab-order screenshot evidence.\n- Human Actions Required: None.\n- Notes: This ticket establishes the navigation contract used by every downstream feature ticket.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-002",
+      "heading": "TKT-P0-002 Authentication Providers, Email Auth, Session Restore, and Recovery Entry",
+      "title": "Authentication Providers, Email Auth, Session Restore, and Recovery Entry",
+      "issue_title": "TKT-P0-002 Authentication Providers, Email Auth, Session Restore, and Recovery Entry",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/ios-foundation"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-001",
+      "body": "## TKT-P0-002 Authentication Providers, Email Auth, Session Restore, and Recovery Entry\n\n- Ticket ID: `TKT-P0-002`\n- Title: `Authentication Providers, Email Auth, Session Restore, and Recovery Entry`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/ios-foundation`\n- Phase: `P0`\n- Epic: `EPIC-001`\n- Covered Requirement IDs: `PRD-004`, `UX-002`\n- Objective: Implement launch authentication with Apple, Google, and email plus durable session restore and password-reset entry.\n- In Scope: Sign in with Apple; Google sign-in; email sign-up; email login; password-reset request; provider-collision handling; canceled-auth handling; existing-account routing.\n- Out of Scope: Onboarding questionnaire logic; billing; creator profile editing; account deletion.\n- Dependencies: `TKT-P0-001`, `TKT-P0-036`, `TKT-HUM-004`\n- Source-of-Truth References: `yoked_prd.md \u00a711.1 CF-001`, `yoked_engineering_spec.md \u00a75.1`, `yoked_ux_spec.md \u00a77-\u00a78`\n- Acceptance Criteria: Each provider creates or resumes the correct user session; failed auth keeps the user on the auth surface with actionable error copy; existing sessions restore into onboarding or the tab root according to stored state.\n- Test Evidence Required: Auth integration tests for Apple, Google, and email; session-restore tests; reset-email trigger test stubs.\n- Human Actions Required: Apple and Google provider configuration in the auth backend.\n- Notes: Keep provider secrets and client IDs out of Git and example configs.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-003",
+      "heading": "TKT-P0-003 Onboarding Questionnaires, Local Draft Persistence, Progress, and Starter-Plan Finalization",
+      "title": "Onboarding Questionnaires, Local Draft Persistence, Progress, and Starter-Plan Finalization",
+      "issue_title": "TKT-P0-003 Onboarding Questionnaires, Local Draft Persistence, Progress, and Starter-Plan Finalization",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/ios-foundation"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-001",
+      "body": "## TKT-P0-003 Onboarding Questionnaires, Local Draft Persistence, Progress, and Starter-Plan Finalization\n\n- Ticket ID: `TKT-P0-003`\n- Title: `Onboarding Questionnaires, Local Draft Persistence, Progress, and Starter-Plan Finalization`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/ios-foundation`\n- Phase: `P0`\n- Epic: `EPIC-001`\n- Covered Requirement IDs: `PRD-005`, `PRD-006`, `ENG-002`, `UX-002`\n- Objective: Implement the full onboarding sequence from goals through starter-plan completion with deterministic step order and resumable local drafts.\n- In Scope: Step state model; back-navigation persistence; local draft storage; equipment, frequency, environment, and body-metric capture; pre-permission education screens; starter-plan completion and failure fallback.\n- Out of Scope: Post-onboarding AI generation; editable onboarding starter-plan preview; reroll or rebuild controls; notification scheduling implementation.\n- Dependencies: `TKT-P0-001`, `TKT-P0-035`, `TKT-P0-038`\n- Source-of-Truth References: `yoked_prd.md \u00a711.1 CF-002 to CF-006, \u00a714.1`, `yoked_engineering_spec.md \u00a71.5, \u00a71.6.0`, `yoked_ux_spec.md \u00a78`\n- Acceptance Criteria: Users can leave and resume onboarding without losing answers; step order is fixed; onboarding completes only after a valid starter plan is saved locally and to the account state; AI failure falls back to the deterministic starter template path.\n- Test Evidence Required: Onboarding UI tests across all steps; local-resume tests; starter-plan generation and fallback tests.\n- Human Actions Required: None.\n- Notes: Onboarding must not auto-open the premium paywall after completion.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-004",
+      "heading": "TKT-P0-004 Paywall, StoreKit, Subscription Management, Restore, and Entitlement-Aware UI",
+      "title": "Paywall, StoreKit, Subscription Management, Restore, and Entitlement-Aware UI",
+      "issue_title": "TKT-P0-004 Paywall, StoreKit, Subscription Management, Restore, and Entitlement-Aware UI",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/ios-foundation"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-001",
+      "body": "## TKT-P0-004 Paywall, StoreKit, Subscription Management, Restore, and Entitlement-Aware UI\n\n- Ticket ID: `TKT-P0-004`\n- Title: `Paywall, StoreKit, Subscription Management, Restore, and Entitlement-Aware UI`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/ios-foundation`\n- Phase: `P0`\n- Epic: `EPIC-001`\n- Covered Requirement IDs: `PRD-007`, `UX-003`\n- Objective: Implement the launch premium paywall and subscription-management surfaces with correct restore, trial, grace, and expired-state behavior.\n- In Scope: Monthly and annual plan cards; restore purchases; legal links; subscription-management deep link; grace-state rendering; expired-state rendering; purchase-block reason copy.\n- Out of Scope: Promotions; referrals; non-StoreKit billing; runtime slot-cap enforcement logic.\n- Dependencies: `TKT-P0-001`, `TKT-P0-005`, `TKT-HUM-004`\n- Source-of-Truth References: `yoked_prd.md \u00a711.2 CF-007, CF-009, \u00a717.1-\u00a717.2`, `yoked_ux_spec.md \u00a79`\n- Acceptance Criteria: Paywall renders the correct active plan options; restore updates entitlement state without relaunch; expired and grace states display the mandated copy and management CTA; paywall is opened only by approved triggers.\n- Test Evidence Required: StoreKit local test-plan evidence; paywall UI tests; restore-flow tests; entitlement-state screenshot matrix.\n- Human Actions Required: App Store Connect product creation and billing metadata setup.\n- Notes: Premium users must never see banner ads after entitlement refresh settles.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-005",
+      "heading": "TKT-P0-005 Entitlement Mirror, Routine Slot-Cap Gate, Runtime Config Premium Triggers, and Starter-Plan Consumption",
+      "title": "Entitlement Mirror, Routine Slot-Cap Gate, Runtime Config Premium Triggers, and Starter-Plan Consumption",
+      "issue_title": "TKT-P0-005 Entitlement Mirror, Routine Slot-Cap Gate, Runtime Config Premium Triggers, and Starter-Plan Consumption",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/backend"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-008",
+      "body": "## TKT-P0-005 Entitlement Mirror, Routine Slot-Cap Gate, Runtime Config Premium Triggers, and Starter-Plan Consumption\n\n- Ticket ID: `TKT-P0-005`\n- Title: `Entitlement Mirror, Routine Slot-Cap Gate, Runtime Config Premium Triggers, and Starter-Plan Consumption`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/backend`\n- Phase: `P0`\n- Epic: `EPIC-008`\n- Covered Requirement IDs: `PRD-007`, `PRD-022`, `ENG-003`\n- Objective: Implement the local entitlement mirror and runtime-config-driven monetization rules that gate slot caps, premium actions, and ad suppression.\n- In Scope: Local entitlement table; server entitlement sync; starter-plan free entitlement consumption state; free-user five-routine slot-cap enforcement; runtime-config premium gates; stale-config fallback behavior.\n- Out of Scope: Paywall rendering; ad view implementation; promotions; referral grants.\n- Dependencies: `TKT-P0-035`, `TKT-P0-036`, `TKT-P0-037`\n- Source-of-Truth References: `yoked_prd.md \u00a711.2, \u00a717, \u00a722`, `yoked_engineering_spec.md \u00a71.8-\u00a71.10`\n- Acceptance Criteria: Slot-cap evaluation happens before insert or copy commits; runtime config can tighten or loosen approved gates without app update; premium state changes suppress ads and unlock premium-only flows within one refresh cycle.\n- Test Evidence Required: Repository tests for slot-cap logic; runtime-config fallback tests; entitlement-sync integration tests.\n- Human Actions Required: None beyond billing product setup handled in `TKT-HUM-004`.\n- Notes: The included onboarding starter plan is free but does not unlock non-starter premium programs.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-006",
+      "heading": "TKT-P0-006 Train Root Entry, Resume Flows, and Single Active-Session Enforcement",
+      "title": "Train Root Entry, Resume Flows, and Single Active-Session Enforcement",
+      "issue_title": "TKT-P0-006 Train Root Entry, Resume Flows, and Single Active-Session Enforcement",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/train"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-002",
+      "body": "## TKT-P0-006 Train Root Entry, Resume Flows, and Single Active-Session Enforcement\n\n- Ticket ID: `TKT-P0-006`\n- Title: `Train Root Entry, Resume Flows, and Single Active-Session Enforcement`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/train`\n- Phase: `P0`\n- Epic: `EPIC-002`\n- Covered Requirement IDs: `PRD-013`, `ENG-002`, `UX-005`\n- Objective: Implement Train root entry points for Today, Instant, Recent, marketplace handoff, and active-session resume with one authoritative session at a time.\n- In Scope: Train root layout; today recommendation CTA; instant workout start; recent list; pending marketplace handoff; existing active-session detection; start-vs-resume conflict resolution.\n- Out of Scope: Set logging rows; timer controls; summary rendering; Home direct-start controls.\n- Dependencies: `TKT-P0-001`, `TKT-P0-035`, `TKT-P0-037`\n- Source-of-Truth References: `yoked_prd.md \u00a711.5 CF-020, \u00a727`, `yoked_engineering_spec.md \u00a71.6.1, \u00a74.2`, `yoked_ux_spec.md \u00a711 Train Root`\n- Acceptance Criteria: Starting from Train, Explore, or resume always lands in the same active-session authority; if an active session exists, new starts are blocked until the user resolves resume or discard; Home may route into Train but may not bypass this gate.\n- Test Evidence Required: Train root UI tests; active-session conflict tests; marketplace-handoff route tests.\n- Human Actions Required: None.\n- Notes: This ticket owns the routing contract, not the logging UI.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-007",
+      "heading": "TKT-P0-007 Active-Session Logging Engine: Set Rows, Load-Entry Modes, Keypad, and Overflow Actions",
+      "title": "Active-Session Logging Engine: Set Rows, Load-Entry Modes, Keypad, and Overflow Actions",
+      "issue_title": "TKT-P0-007 Active-Session Logging Engine: Set Rows, Load-Entry Modes, Keypad, and Overflow Actions",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/train"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-002",
+      "body": "## TKT-P0-007 Active-Session Logging Engine: Set Rows, Load-Entry Modes, Keypad, and Overflow Actions\n\n- Ticket ID: `TKT-P0-007`\n- Title: `Active-Session Logging Engine: Set Rows, Load-Entry Modes, Keypad, and Overflow Actions`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/train`\n- Phase: `P0`\n- Epic: `EPIC-002`\n- Covered Requirement IDs: `PRD-014`, `UX-005`\n- Objective: Build the core active-session interaction model for logging sets quickly with the required entry modes and inline affordances.\n- In Scope: Set-row rendering; rep entry; weight entry; numeric keypad; `single`, `per_dumbbell`, and `left_right` weight modes; inline `Each` and `L/R` labels; rest-start action; note and replace overflow actions.\n- Out of Scope: Load helper computation; timer scheduling engine; finish and discard flows.\n- Dependencies: `TKT-P0-006`, `TKT-P0-035`\n- Source-of-Truth References: `yoked_prd.md \u00a711.5 CF-021, \u00a715.4`, `yoked_ux_spec.md \u00a711 Active Session`\n- Acceptance Criteria: Set entry remains responsive under repeated rapid input; the correct input UI appears for each exercise load mode; canonical total load is computed correctly from side-aware inputs; overflow actions never break session continuity.\n- Test Evidence Required: Logging reducer tests; UI tests for each load-entry mode; performance trace for rapid consecutive entries.\n- Human Actions Required: None.\n- Notes: Keep the interaction path optimized for one-handed logging on iPhone.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-008",
+      "heading": "TKT-P0-008 Timer Stack, Runtime Checkpoints, Background Recovery, and Local-Only Completion Resilience",
+      "title": "Timer Stack, Runtime Checkpoints, Background Recovery, and Local-Only Completion Resilience",
+      "issue_title": "TKT-P0-008 Timer Stack, Runtime Checkpoints, Background Recovery, and Local-Only Completion Resilience",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/train"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-002",
+      "body": "## TKT-P0-008 Timer Stack, Runtime Checkpoints, Background Recovery, and Local-Only Completion Resilience\n\n- Ticket ID: `TKT-P0-008`\n- Title: `Timer Stack, Runtime Checkpoints, Background Recovery, and Local-Only Completion Resilience`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/train`\n- Phase: `P0`\n- Epic: `EPIC-002`\n- Covered Requirement IDs: `PRD-015`, `UX-005`\n- Objective: Implement the session timer stack and recovery checkpoints so Train can survive backgrounding and intermittent connectivity.\n- In Scope: Rest timer state machine; app-background persistence; scene-reentry restoration; runtime checkpoints; local completion before sync; timer drift guardrails.\n- Out of Scope: Load helper UI; PR summary copy; discard confirmation modal.\n- Dependencies: `TKT-P0-006`, `TKT-P0-037`\n- Source-of-Truth References: `yoked_prd.md \u00a711.5 CF-023, \u00a715`, `yoked_engineering_spec.md \u00a74.2-\u00a74.7, \u00a712`, `yoked_ux_spec.md \u00a711`\n- Acceptance Criteria: Timers restore accurately after brief backgrounding; session completion can finish offline; recovery does not duplicate sets or sessions; timer drift stays inside the documented engineering tolerance.\n- Test Evidence Required: Background/foreground integration tests; offline completion tests; timer accuracy measurements.\n- Human Actions Required: None.\n- Notes: Local durability is more important than immediate server acknowledgment.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-009",
+      "heading": "TKT-P0-009 Load Helper Sheet and User Preset-Library Settings Contract",
+      "title": "Load Helper Sheet and User Preset-Library Settings Contract",
+      "issue_title": "TKT-P0-009 Load Helper Sheet and User Preset-Library Settings Contract",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/train"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-002",
+      "body": "## TKT-P0-009 Load Helper Sheet and User Preset-Library Settings Contract\n\n- Ticket ID: `TKT-P0-009`\n- Title: `Load Helper Sheet and User Preset-Library Settings Contract`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/train`\n- Phase: `P0`\n- Epic: `EPIC-002`\n- Covered Requirement IDs: `PRD-014`, `UX-005`, `UX-012`\n- Objective: Implement the launch load helper sheet and settings that calculate plate or dumbbell suggestions only in approved contexts.\n- In Scope: Load helper entry; plate-stack suggestion algorithm; per-dumbbell support; left-right support; plate inventory and barbell settings; persistent presets; sheet presentation and dismissal behavior.\n- Out of Scope: Custom equipment import; P1 theme settings; workout-builder defaults beyond documented training settings.\n- Dependencies: `TKT-P0-007`, `TKT-P0-030`, `TKT-P0-035`\n- Source-of-Truth References: `yoked_prd.md Plate Calculator and Load Helper`, `yoked_engineering_spec.md \u00a71.7`, `yoked_ux_spec.md \u00a711, \u00a720`\n- Acceptance Criteria: The sheet opens only from supported exercises and contexts; suggested loading respects the saved bar and plate inventory; settings persist across sessions; unsupported contexts explain why the helper is unavailable.\n- Test Evidence Required: Algorithm unit tests; sheet UI tests; settings persistence tests.\n- Human Actions Required: None.\n- Notes: The helper is a decision aid, not a blocking dependency for set completion.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-010",
+      "heading": "TKT-P0-010 Warm-Up Classification, Same-Workout Preload, PR Detection, and Post-Workout Summary Outputs",
+      "title": "Warm-Up Classification, Same-Workout Preload, PR Detection, and Post-Workout Summary Outputs",
+      "issue_title": "TKT-P0-010 Warm-Up Classification, Same-Workout Preload, PR Detection, and Post-Workout Summary Outputs",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/train"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-002",
+      "body": "## TKT-P0-010 Warm-Up Classification, Same-Workout Preload, PR Detection, and Post-Workout Summary Outputs\n\n- Ticket ID: `TKT-P0-010`\n- Title: `Warm-Up Classification, Same-Workout Preload, PR Detection, and Post-Workout Summary Outputs`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/train`\n- Phase: `P0`\n- Epic: `EPIC-002`\n- Covered Requirement IDs: `PRD-015`, `UX-005`\n- Objective: Implement the non-UI business logic that distinguishes warm-up sets, preloads working weights, derives PR outputs, and prepares summary data.\n- In Scope: Warm-up flagging; working-set qualification; same-workout preload rules; PR calculation against completion history; summary payload assembly; no-share launch summary data model.\n- Out of Scope: In-session PR celebration; achievements; cross-exercise rankings.\n- Dependencies: `TKT-P0-007`, `TKT-P0-011`, `TKT-P0-035`\n- Source-of-Truth References: `yoked_prd.md \u00a711.5 CF-024 to CF-026, \u00a715`, `yoked_engineering_spec.md \u00a73.3.1`, `yoked_ux_spec.md \u00a711 Post-Workout Summary`\n- Acceptance Criteria: Warm-up sets never affect muscle-distribution or PR calculations; preload only uses the current workout's relevant prior entries; PR outputs appear only after successful session completion; summary payload contains the exact data needed by the summary screen.\n- Test Evidence Required: Business-logic unit tests for warm-up and PR derivation; summary data snapshot tests.\n- Human Actions Required: None.\n- Notes: This ticket is logic-focused; the summary surface itself is completed with `TKT-P0-011`.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-011",
+      "heading": "TKT-P0-011 Finish and Discard Safeguards, Completion Ledger, Routine and Program Progress, and Rating Eligibility Snapshots",
+      "title": "Finish and Discard Safeguards, Completion Ledger, Routine and Program Progress, and Rating Eligibility Snapshots",
+      "issue_title": "TKT-P0-011 Finish and Discard Safeguards, Completion Ledger, Routine and Program Progress, and Rating Eligibility Snapshots",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/train"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-002",
+      "body": "## TKT-P0-011 Finish and Discard Safeguards, Completion Ledger, Routine and Program Progress, and Rating Eligibility Snapshots\n\n- Ticket ID: `TKT-P0-011`\n- Title: `Finish and Discard Safeguards, Completion Ledger, Routine and Program Progress, and Rating Eligibility Snapshots`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/train`\n- Phase: `P0`\n- Epic: `EPIC-002`\n- Covered Requirement IDs: `PRD-015`, `UX-005`\n- Objective: Finalize the end-of-session transaction so completion records, routine progress, program progress, and marketplace rating eligibility are consistent.\n- In Scope: Finish confirmation; discard confirmation; completion-record write path; routine-program progress counters; summary handoff; rating-eligibility snapshot flags.\n- Out of Scope: Rating submission UI; streaks; achievements; export jobs.\n- Dependencies: `TKT-P0-008`, `TKT-P0-010`, `TKT-P0-035`, `TKT-P0-037`\n- Source-of-Truth References: `yoked_prd.md \u00a711.5 CF-025-CF-026, \u00a712.3, \u00a715`, `yoked_engineering_spec.md \u00a74.2-\u00a74.7`, `yoked_ux_spec.md \u00a711`\n- Acceptance Criteria: Finishing writes a single authoritative completion record; discarding removes the in-flight session without corrupting prior history; routine and program progress update once; rating eligibility appears only after qualifying completion.\n- Test Evidence Required: Completion-transaction integration tests; discard-path tests; routine/program progress tests.\n- Human Actions Required: None.\n- Notes: This is the integrity boundary between Train and marketplace trust.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-012",
+      "heading": "TKT-P0-012 My Workouts Root and Active-Slot UI",
+      "title": "My Workouts Root and Active-Slot UI",
+      "issue_title": "TKT-P0-012 My Workouts Root and Active-Slot UI",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/train"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-003",
+      "body": "## TKT-P0-012 My Workouts Root and Active-Slot UI\n\n- Ticket ID: `TKT-P0-012`\n- Title: `My Workouts Root and Active-Slot UI`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/train`\n- Phase: `P0`\n- Epic: `EPIC-003`\n- Covered Requirement IDs: `PRD-008`, `UX-006`\n- Objective: Implement the My Workouts root with owned-asset segmentation, active routine slot usage, and creation entry points.\n- In Scope: Root segmented control; owned workouts, routines, and programs lists; active routine slot count; empty states; creation CTAs; `Published by Me` surfacing.\n- Out of Scope: Builder internals; AI generation progress; marketplace discovery surfaces.\n- Dependencies: `TKT-P0-001`, `TKT-P0-035`\n- Source-of-Truth References: `yoked_prd.md \u00a711.3, \u00a712.6, \u00a712.7`, `yoked_ux_spec.md \u00a712 My Workouts Root`\n- Acceptance Criteria: The root shows the correct asset families and slot usage; free users see the five-routine cap state; empty states route into the correct builders; published workout templates are visible only in author-owned contexts.\n- Test Evidence Required: Root list UI tests; slot-usage state tests; empty-state routing tests.\n- Human Actions Required: None.\n- Notes: This ticket owns inventory and navigation, not asset editing.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-013",
+      "heading": "TKT-P0-013 Workout Builder, Workout Detail, and Publish Management",
+      "title": "Workout Builder, Workout Detail, and Publish Management",
+      "issue_title": "TKT-P0-013 Workout Builder, Workout Detail, and Publish Management",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/train"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-003",
+      "body": "## TKT-P0-013 Workout Builder, Workout Detail, and Publish Management\n\n- Ticket ID: `TKT-P0-013`\n- Title: `Workout Builder, Workout Detail, and Publish Management`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/train`\n- Phase: `P0`\n- Epic: `EPIC-003`\n- Covered Requirement IDs: `PRD-008`, `PRD-012`, `UX-006`, `UX-012`\n- Objective: Implement workout authoring, editing, detail viewing, and author-only publish-state management.\n- In Scope: Workout detail; workout builder; exercise add/replace; reorder; superset grouping; notes; draft autosave; author-only publish and unpublish controls; return-to-origin behavior.\n- Out of Scope: Consumer workout-template discovery; routine sequencing; program week structure.\n- Dependencies: `TKT-P0-012`, `TKT-P0-017`, `TKT-P0-035`\n- Source-of-Truth References: `yoked_prd.md \u00a711.3 CF-011, \u00a711.4 CF-018, \u00a712.6`, `yoked_ux_spec.md \u00a712, \u00a719, \u00a721-\u00a724`\n- Acceptance Criteria: Users can create and edit workouts without losing draft state; grouped-set structure is preserved; publish controls show only when the asset meets eligibility rules; published workouts remain author-managed only at launch.\n- Test Evidence Required: Builder reducer tests; workout detail UI tests; publish gating tests.\n- Human Actions Required: None.\n- Notes: Reuse the shared exercise search and modal inventory rather than inventing new builder flows.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-014",
+      "heading": "TKT-P0-014 Routine Builder, Routine Detail, and Publish Management",
+      "title": "Routine Builder, Routine Detail, and Publish Management",
+      "issue_title": "TKT-P0-014 Routine Builder, Routine Detail, and Publish Management",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/train"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-003",
+      "body": "## TKT-P0-014 Routine Builder, Routine Detail, and Publish Management\n\n- Ticket ID: `TKT-P0-014`\n- Title: `Routine Builder, Routine Detail, and Publish Management`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/train`\n- Phase: `P0`\n- Epic: `EPIC-003`\n- Covered Requirement IDs: `PRD-008`, `PRD-012`, `UX-006`, `UX-012`\n- Objective: Implement routine authoring and detail flows, including day ordering, attached workouts, active-state rules, and marketplace publish controls.\n- In Scope: Routine detail; day reorder; workout assignment; draft autosave; active-routine state; publish and unpublish controls; copy-from-marketplace source attribution retention.\n- Out of Scope: Program multi-week structure; follow; ratings; coach recommendations.\n- Dependencies: `TKT-P0-012`, `TKT-P0-013`, `TKT-P0-035`\n- Source-of-Truth References: `yoked_prd.md \u00a711.3 CF-013, \u00a711.4 CF-018, \u00a712.5-\u00a712.7`, `yoked_ux_spec.md \u00a712, \u00a719, \u00a721-\u00a724`\n- Acceptance Criteria: Routines can be created, reordered, edited, activated, and published according to eligibility rules; free-user slot caps are honored; copied marketplace routines preserve source attribution.\n- Test Evidence Required: Routine CRUD tests; active-slot gating tests; publish-state tests.\n- Human Actions Required: None.\n- Notes: Active-state mutations must respect the entitlement mirror from `TKT-P0-005`.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-015",
+      "heading": "TKT-P0-015 Program Detail, Builder, Included Starter Plan, and AI Preview Handling",
+      "title": "Program Detail, Builder, Included Starter Plan, and AI Preview Handling",
+      "issue_title": "TKT-P0-015 Program Detail, Builder, Included Starter Plan, and AI Preview Handling",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/train"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-003",
+      "body": "## TKT-P0-015 Program Detail, Builder, Included Starter Plan, and AI Preview Handling\n\n- Ticket ID: `TKT-P0-015`\n- Title: `Program Detail, Builder, Included Starter Plan, and AI Preview Handling`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/train`\n- Phase: `P0`\n- Epic: `EPIC-003`\n- Covered Requirement IDs: `PRD-008`, `PRD-009`, `UX-006`, `UX-012`\n- Objective: Implement program detail and builder flows, including the onboarding-generated included starter plan and the premium AI preview path.\n- In Scope: Program detail; multi-week structure; start and save handling; included starter-plan rendering; AI generation preview and confirmation; versioned save as owned asset.\n- Out of Scope: Promotions; coach-generated adaptive plans; program comments; public workout-template browsing.\n- Dependencies: `TKT-P0-003`, `TKT-P0-012`, `TKT-P0-038`\n- Source-of-Truth References: `yoked_prd.md \u00a711.3 CF-012, CF-014, \u00a714.1, \u00a714.6`, `yoked_ux_spec.md \u00a712, \u00a719`\n- Acceptance Criteria: The onboarding starter plan appears as the included free generated program; premium AI program generation can preview and save a new revision without mutating prior assets; program detail respects premium gating and save-state rules.\n- Test Evidence Required: Program detail UI tests; AI preview confirmation tests; starter-plan ownership tests.\n- Human Actions Required: None.\n- Notes: Saved AI outputs must remain executable owned assets, not transient suggestions.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-016",
+      "heading": "TKT-P0-016 Canonical Catalog Pipeline, Runtime Bundle, and Deterministic Ingest Freeze Tooling",
+      "title": "Canonical Catalog Pipeline, Runtime Bundle, and Deterministic Ingest Freeze Tooling",
+      "issue_title": "TKT-P0-016 Canonical Catalog Pipeline, Runtime Bundle, and Deterministic Ingest Freeze Tooling",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/catalog"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-004",
+      "body": "## TKT-P0-016 Canonical Catalog Pipeline, Runtime Bundle, and Deterministic Ingest Freeze Tooling\n\n- Ticket ID: `TKT-P0-016`\n- Title: `Canonical Catalog Pipeline, Runtime Bundle, and Deterministic Ingest Freeze Tooling`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/catalog`\n- Phase: `P0`\n- Epic: `EPIC-004`\n- Covered Requirement IDs: `PRD-010`, `ENG-006`\n- Objective: Implement the source catalog ingest and runtime bundle generation pipeline for the internal Yoked Exercise Catalog.\n- In Scope: Catalog source format; ingest command; validation rules; deterministic ordering; no-media enforcement; runtime bundle output; internal catalog-gap reports; versioned bundle freeze for launch.\n- Out of Scope: Third-party branded dataset import; media assets; user-authored custom exercise ingestion into the canonical catalog.\n- Dependencies: `TKT-OPS-005`\n- Source-of-Truth References: `yoked_prd.md \u00a711.4.1`, `yoked_engineering_spec.md \u00a73.4-\u00a73.7`\n- Acceptance Criteria: A repeatable pipeline produces the same runtime bundle from the same source input; validation fails on missing required sections or any media payload at launch; the bundle can be loaded locally without network dependence.\n- Test Evidence Required: Pipeline validation outputs; deterministic snapshot tests; bundle-load integration tests.\n- Human Actions Required: None.\n- Notes: Catalog tooling must stay in the repo and operate without hidden local dependencies.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-017",
+      "heading": "TKT-P0-017 Exercise Search, Filter, Similar Exercises, and Exclude-Only Preferences",
+      "title": "Exercise Search, Filter, Similar Exercises, and Exclude-Only Preferences",
+      "issue_title": "TKT-P0-017 Exercise Search, Filter, Similar Exercises, and Exclude-Only Preferences",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/catalog"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-004",
+      "body": "## TKT-P0-017 Exercise Search, Filter, Similar Exercises, and Exclude-Only Preferences\n\n- Ticket ID: `TKT-P0-017`\n- Title: `Exercise Search, Filter, Similar Exercises, and Exclude-Only Preferences`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/catalog`\n- Phase: `P0`\n- Epic: `EPIC-004`\n- Covered Requirement IDs: `PRD-011`, `UX-011`\n- Objective: Build the shared exercise search system used by builders and replacement flows with fast local ranking and the launch preference model.\n- In Scope: Search UI; local FTS and fuzzy ranking; alias support; movement-family similar suggestions; exclude-only preference toggles; no-result handling; builder and Train replace-entry integration.\n- Out of Scope: Favorites; remote search dependency; public marketplace exercise search.\n- Dependencies: `TKT-P0-016`, `TKT-P0-035`\n- Source-of-Truth References: `yoked_prd.md \u00a711.4 CF-015-CF-016`, `yoked_engineering_spec.md \u00a73.5-\u00a73.7`, `yoked_ux_spec.md \u00a715`\n- Acceptance Criteria: Search remains low-latency offline; similar exercises reflect movement-family logic; exclude preferences affect ranking and recommendation contexts; zero-result states expose the custom-exercise CTA.\n- Test Evidence Required: Search ranking tests; UI tests for filter and zero-result paths; local-performance measurements.\n- Human Actions Required: None.\n- Notes: This ticket is reused by builders, Train replace, and custom exercise authoring.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-018",
+      "heading": "TKT-P0-018 Private Custom Exercise Authoring and Dependency-Aware Delete",
+      "title": "Private Custom Exercise Authoring and Dependency-Aware Delete",
+      "issue_title": "TKT-P0-018 Private Custom Exercise Authoring and Dependency-Aware Delete",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/catalog"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-004",
+      "body": "## TKT-P0-018 Private Custom Exercise Authoring and Dependency-Aware Delete\n\n- Ticket ID: `TKT-P0-018`\n- Title: `Private Custom Exercise Authoring and Dependency-Aware Delete`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/catalog`\n- Phase: `P0`\n- Epic: `EPIC-004`\n- Covered Requirement IDs: `PRD-011`, `UX-011`\n- Objective: Implement custom exercise creation, editing, and safe deletion as a private user-owned catalog extension.\n- In Scope: Custom exercise authoring form; alias capture; movement pattern metadata; save and edit flows; private visibility enforcement; dependency-aware delete warnings; replace-or-remove guidance when referenced by assets.\n- Out of Scope: Marketplace publishing; community custom exercises; exercise media.\n- Dependencies: `TKT-P0-017`, `TKT-P0-035`\n- Source-of-Truth References: `yoked_prd.md \u00a711.4 CF-017`, `yoked_engineering_spec.md \u00a73.2`, `yoked_ux_spec.md \u00a715`\n- Acceptance Criteria: Custom exercises can be created and reused in owned assets; they never appear in marketplace publish payloads; deleting a referenced custom exercise requires explicit resolution of dependent assets.\n- Test Evidence Required: CRUD tests; dependency-warning tests; builder integration tests.\n- Human Actions Required: None.\n- Notes: Custom exercises should feel first-party in builders while remaining private by rule.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-019",
+      "heading": "TKT-P0-019 Text-First Exercise Detail with Exact-Variation Performance and History",
+      "title": "Text-First Exercise Detail with Exact-Variation Performance and History",
+      "issue_title": "TKT-P0-019 Text-First Exercise Detail with Exact-Variation Performance and History",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/catalog"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-004",
+      "body": "## TKT-P0-019 Text-First Exercise Detail with Exact-Variation Performance and History\n\n- Ticket ID: `TKT-P0-019`\n- Title: `Text-First Exercise Detail with Exact-Variation Performance and History`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/catalog`\n- Phase: `P0`\n- Epic: `EPIC-004`\n- Covered Requirement IDs: `PRD-010`, `PRD-017`, `ENG-006`, `UX-011`\n- Objective: Implement the exercise detail screen with launch text-first content and exact-variation analytics views.\n- In Scope: Ordered instructional sections; muscle tags; equipment and movement metadata; recent-history list; 1RM curve; date-window selector; empty, sparse, and offline states; no-media layout.\n- Out of Scope: Cross-exercise ranking; future media packs; favorites.\n- Dependencies: `TKT-P0-016`, `TKT-P0-035`, `TKT-P0-039`\n- Source-of-Truth References: `yoked_prd.md \u00a711.4.1, \u00a711.6 CF-031`, `yoked_engineering_spec.md \u00a73.3.1, \u00a73.6`, `yoked_ux_spec.md \u00a716`\n- Acceptance Criteria: Exercise detail renders complete instructional content without placeholders; the analytics views are scoped to exact exercise variation history only; empty states explain insufficient history rather than showing broken charts.\n- Test Evidence Required: Exercise-detail UI tests; projection tests for exact-variation history; sparse-data state screenshots.\n- Human Actions Required: None.\n- Notes: Keep the screen stable even when the device is fully offline.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-020",
+      "heading": "TKT-P0-020 Explore Root, Search, Ranked Lanes, and Browse Caching",
+      "title": "Explore Root, Search, Ranked Lanes, and Browse Caching",
+      "issue_title": "TKT-P0-020 Explore Root, Search, Ranked Lanes, and Browse Caching",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/marketplace"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-005",
+      "body": "## TKT-P0-020 Explore Root, Search, Ranked Lanes, and Browse Caching\n\n- Ticket ID: `TKT-P0-020`\n- Title: `Explore Root, Search, Ranked Lanes, and Browse Caching`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/marketplace`\n- Phase: `P0`\n- Epic: `EPIC-005`\n- Covered Requirement IDs: `PRD-018`, `ENG-002`, `UX-007`\n- Objective: Implement the Explore root browsing model with category rails, ranked feed content, lightweight search, and browse cache behavior.\n- In Scope: Explore root layout; ranked content lanes; search entry; browse cache; pull-to-refresh; offline browse fallback; marketplace-only asset and creator result types.\n- Out of Scope: Immersive social feed; consumer workout-template discovery; follow feed; comments.\n- Dependencies: `TKT-P0-024`, `TKT-P0-036`, `TKT-P0-037`\n- Source-of-Truth References: `yoked_prd.md \u00a711.7 CF-038, \u00a712.1-\u00a712.2`, `yoked_engineering_spec.md \u00a71.6.2, \u00a75.5`, `yoked_ux_spec.md \u00a713`\n- Acceptance Criteria: Explore loads marketplace content with stable lane ordering; offline mode shows last successful browse cache with stale markers; search returns only allowed marketplace entity types; no social-feed patterns appear.\n- Test Evidence Required: Explore UI tests; cache fallback tests; browse API integration tests.\n- Human Actions Required: None.\n- Notes: Ranking logic is implemented in `TKT-P0-024`; this ticket owns the surface and browse behavior.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-021",
+      "heading": "TKT-P0-021 Marketplace Asset Detail Actions with Save, Copy, Start, and Paywall Gating",
+      "title": "Marketplace Asset Detail Actions with Save, Copy, Start, and Paywall Gating",
+      "issue_title": "TKT-P0-021 Marketplace Asset Detail Actions with Save, Copy, Start, and Paywall Gating",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/marketplace"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-005",
+      "body": "## TKT-P0-021 Marketplace Asset Detail Actions with Save, Copy, Start, and Paywall Gating\n\n- Ticket ID: `TKT-P0-021`\n- Title: `Marketplace Asset Detail Actions with Save, Copy, Start, and Paywall Gating`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/marketplace`\n- Phase: `P0`\n- Epic: `EPIC-005`\n- Covered Requirement IDs: `PRD-018`, `PRD-019`, `UX-007`\n- Objective: Implement routine and program marketplace detail surfaces with the exact launch CTA order and lock-state explanations.\n- In Scope: Asset detail header; CTA stack in `Start`, `Save`, `Copy`, `Rate` order; premium-gated program handling; saved and copied state; source attribution persistence; Explore-to-Train handoff.\n- Out of Scope: Follow; comments; non-marketplace workout detail consumption.\n- Dependencies: `TKT-P0-004`, `TKT-P0-005`, `TKT-P0-020`\n- Source-of-Truth References: `yoked_prd.md \u00a711.7 CF-039, \u00a712.5`, `yoked_ux_spec.md \u00a717`\n- Acceptance Criteria: Locked actions explain the reason before paywall handoff; routines can start directly into Train; saved and copied states persist to My Workouts with source attribution; rating entry appears only after qualifying completion exists.\n- Test Evidence Required: Marketplace-detail UI tests; paywall-gate tests; copy/save persistence tests.\n- Human Actions Required: None.\n- Notes: The CTA order is fixed and must not be reinterpreted by design implementation.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-022",
+      "heading": "TKT-P0-022 Creator Profile Detail and Block Flows",
+      "title": "Creator Profile Detail and Block Flows",
+      "issue_title": "TKT-P0-022 Creator Profile Detail and Block Flows",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/marketplace"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-005",
+      "body": "## TKT-P0-022 Creator Profile Detail and Block Flows\n\n- Ticket ID: `TKT-P0-022`\n- Title: `Creator Profile Detail and Block Flows`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/marketplace`\n- Phase: `P0`\n- Epic: `EPIC-005`\n- Covered Requirement IDs: `PRD-020`, `UX-012`\n- Objective: Implement the launch creator profile detail surface with credibility signals, published asset inventory, and blocking controls.\n- In Scope: Creator header; credibility tier display; program and routine inventory; basic stats; block creator action; blocked-state consequences on marketplace visibility.\n- Out of Scope: Follow; messaging; creator feed; comments.\n- Dependencies: `TKT-P0-024`, `TKT-P0-037`\n- Source-of-Truth References: `yoked_prd.md \u00a712.4, \u00a713`, `yoked_ux_spec.md \u00a718`\n- Acceptance Criteria: Creator profiles show only launch-approved metrics and assets; blocking hides creator content from Explore and detail entry points after cache refresh; blocked creators cannot be followed because follow does not exist at launch.\n- Test Evidence Required: Creator-profile UI tests; block-flow integration tests; browse suppression tests.\n- Human Actions Required: None.\n- Notes: This ticket is user-facing while moderation operator tooling remains read-only and internal.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-023",
+      "heading": "TKT-P0-023 Completion-Gated Ratings and Aggregate Summaries",
+      "title": "Completion-Gated Ratings and Aggregate Summaries",
+      "issue_title": "TKT-P0-023 Completion-Gated Ratings and Aggregate Summaries",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/marketplace"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-005",
+      "body": "## TKT-P0-023 Completion-Gated Ratings and Aggregate Summaries\n\n- Ticket ID: `TKT-P0-023`\n- Title: `Completion-Gated Ratings and Aggregate Summaries`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/marketplace`\n- Phase: `P0`\n- Epic: `EPIC-005`\n- Covered Requirement IDs: `PRD-019`, `PRD-020`\n- Objective: Implement launch ratings as numeric-only, post-completion marketplace feedback with aggregate rollups.\n- In Scope: Rating eligibility check; rate action; numeric selection; aggregate average and count projections; update handling; anti-duplicate submission rules.\n- Out of Scope: Text reviews; comments; likes; social PR celebrations.\n- Dependencies: `TKT-P0-011`, `TKT-P0-021`, `TKT-P0-036`\n- Source-of-Truth References: `yoked_prd.md \u00a711.7 CF-040, \u00a712.3`, `yoked_engineering_spec.md \u00a75.4-\u00a75.5`\n- Acceptance Criteria: A user can rate only after qualifying completion; ratings remain numeric-only; duplicate submissions follow the documented update rules; marketplace summaries refresh correctly after submission.\n- Test Evidence Required: Rating eligibility tests; API contract tests; UI tests for submit and edit flows.\n- Human Actions Required: None.\n- Notes: Keep the UX lightweight and marketplace-oriented.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-024",
+      "heading": "TKT-P0-024 Creator Eligibility, Credibility, Visibility Tiers, Ranking, and Moderation Projections",
+      "title": "Creator Eligibility, Credibility, Visibility Tiers, Ranking, and Moderation Projections",
+      "issue_title": "TKT-P0-024 Creator Eligibility, Credibility, Visibility Tiers, Ranking, and Moderation Projections",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/marketplace"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-005",
+      "body": "## TKT-P0-024 Creator Eligibility, Credibility, Visibility Tiers, Ranking, and Moderation Projections\n\n- Ticket ID: `TKT-P0-024`\n- Title: `Creator Eligibility, Credibility, Visibility Tiers, Ranking, and Moderation Projections`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/marketplace`\n- Phase: `P0`\n- Epic: `EPIC-005`\n- Covered Requirement IDs: `PRD-020`, `ENG-011`\n- Objective: Implement the ranking and moderation-read model that determines which creators and assets appear in Explore.\n- In Scope: Eligibility calculation; credibility score inputs; visibility tiers; lane-specific ordering; stable tiebreakers; moderation suppression consumption; blocked-user suppression.\n- Out of Scope: Manual operator dashboard UI; follow graph; comments moderation.\n- Dependencies: `TKT-P0-036`, `TKT-P0-037`\n- Source-of-Truth References: `yoked_prd.md \u00a712.3-\u00a713`, `yoked_engineering_spec.md \u00a78`\n- Acceptance Criteria: Explore ordering matches the ranking contract; suppressed or blocked creators disappear from launch discovery surfaces; publish ineligibility is explained in creator-owned management contexts.\n- Test Evidence Required: Ranking algorithm tests; moderation projection tests; browse ordering integration tests.\n- Human Actions Required: None.\n- Notes: Operator-entered safety controls are consumed read-only at launch.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-025",
+      "heading": "TKT-P0-025 Home Root Informational Modules and Approved Banner Placement",
+      "title": "Home Root Informational Modules and Approved Banner Placement",
+      "issue_title": "TKT-P0-025 Home Root Informational Modules and Approved Banner Placement",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/analytics"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-006",
+      "body": "## TKT-P0-025 Home Root Informational Modules and Approved Banner Placement\n\n- Ticket ID: `TKT-P0-025`\n- Title: `Home Root Informational Modules and Approved Banner Placement`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/analytics`\n- Phase: `P0`\n- Epic: `EPIC-006`\n- Covered Requirement IDs: `UX-004`, `UX-008`\n- Objective: Implement the Home screen as a fixed informational surface with no execution ownership and one approved banner slot.\n- In Scope: Today summary; active program snapshot; KPI card; recommendation rail; one contextual banner slot after required modules; empty and loading states.\n- Out of Scope: Workout start button; social feed; advanced analytics cards; multiple ads.\n- Dependencies: `TKT-P0-001`, `TKT-P0-026`, `TKT-P0-040`\n- Source-of-Truth References: `yoked_ux_spec.md \u00a710`, `yoked_prd.md \u00a725.1, \u00a727`\n- Acceptance Criteria: Home renders only the approved informational modules; the banner appears only in the approved position and only for eligible free users; any route from Home into execution lands in Train rather than starting directly.\n- Test Evidence Required: Home UI tests; banner-placement tests; route-ownership tests.\n- Human Actions Required: None.\n- Notes: This ticket intentionally keeps Home lightweight and non-authoritative.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-026",
+      "heading": "TKT-P0-026 KPI Materialization and You Progress Overview",
+      "title": "KPI Materialization and You Progress Overview",
+      "issue_title": "TKT-P0-026 KPI Materialization and You Progress Overview",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/analytics"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-006",
+      "body": "## TKT-P0-026 KPI Materialization and You Progress Overview\n\n- Ticket ID: `TKT-P0-026`\n- Title: `KPI Materialization and You Progress Overview`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/analytics`\n- Phase: `P0`\n- Epic: `EPIC-006`\n- Covered Requirement IDs: `PRD-017`, `ENG-002`, `UX-008`\n- Objective: Implement launch KPI computation and the You Progress overview that surfaces the basic analytics stack.\n- In Scope: Weekly KPI snapshot materialization; progress overview cards; progress freshness markers; exact launch metric set; overview navigation to drill-downs.\n- Out of Scope: Strength score; rankings; achievements; streaks; coach recommendations.\n- Dependencies: `TKT-P0-035`, `TKT-P0-039`\n- Source-of-Truth References: `yoked_prd.md \u00a711.6 CF-030, \u00a716`, `yoked_engineering_spec.md \u00a71.6.2, \u00a73.3`, `yoked_ux_spec.md \u00a714 You Progress Overview`\n- Acceptance Criteria: KPI cards render only the launch-approved metrics; stale or missing data states are explicit; drill-down entry points navigate to the correct progress sub-surfaces.\n- Test Evidence Required: KPI materialization tests; overview UI tests; stale-state screenshot coverage.\n- Human Actions Required: None.\n- Notes: This ticket owns the overview, not every detailed analytics screen.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-027",
+      "heading": "TKT-P0-027 Muscle Distribution Analytics and Body-Map Drill-In",
+      "title": "Muscle Distribution Analytics and Body-Map Drill-In",
+      "issue_title": "TKT-P0-027 Muscle Distribution Analytics and Body-Map Drill-In",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/analytics"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-006",
+      "body": "## TKT-P0-027 Muscle Distribution Analytics and Body-Map Drill-In\n\n- Ticket ID: `TKT-P0-027`\n- Title: `Muscle Distribution Analytics and Body-Map Drill-In`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/analytics`\n- Phase: `P0`\n- Epic: `EPIC-006`\n- Covered Requirement IDs: `PRD-016`, `ENG-006`, `UX-009`\n- Objective: Implement the muscle-distribution analytics surface and allocation logic from completed non-warmup working sets only.\n- In Scope: Front and back body views; five-band legend; range selector; contributing-exercise filter; workload-allocation algorithm; empty and low-data states.\n- Out of Scope: Recovery score; body-fat visuals; exercise media overlays.\n- Dependencies: `TKT-P0-010`, `TKT-P0-039`\n- Source-of-Truth References: `yoked_prd.md \u00a711.6 CF-028`, `yoked_engineering_spec.md \u00a73.3.2`, `yoked_ux_spec.md \u00a714 Muscle Distribution`\n- Acceptance Criteria: Warm-up sets never count; each working set allocates workload according to the documented muscle map; range switching updates both body map and contributing-exercise list on the same screen.\n- Test Evidence Required: Allocation-algorithm tests; UI tests for each range; screenshot evidence for front and back views.\n- Human Actions Required: None.\n- Notes: Exact explanation text for low-confidence states belongs on the screen, not hidden in logs.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-028",
+      "heading": "TKT-P0-028 History Calendar, Date-Range Reports, and Completed-Workout Detail",
+      "title": "History Calendar, Date-Range Reports, and Completed-Workout Detail",
+      "issue_title": "TKT-P0-028 History Calendar, Date-Range Reports, and Completed-Workout Detail",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/analytics"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-006",
+      "body": "## TKT-P0-028 History Calendar, Date-Range Reports, and Completed-Workout Detail\n\n- Ticket ID: `TKT-P0-028`\n- Title: `History Calendar, Date-Range Reports, and Completed-Workout Detail`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/analytics`\n- Phase: `P0`\n- Epic: `EPIC-006`\n- Covered Requirement IDs: `PRD-017`, `UX-009`\n- Objective: Implement history navigation from calendar selection through completed-workout detail and range-based reporting.\n- In Scope: History calendar; date selection; completed-workout detail; range report filters; completed-workout list grouping; read-only detail rendering.\n- Out of Scope: Export; import; streak badges; achievements.\n- Dependencies: `TKT-P0-011`, `TKT-P0-039`\n- Source-of-Truth References: `yoked_prd.md \u00a711.6 CF-032-CF-033`, `yoked_ux_spec.md \u00a714 History Calendar, Completed Workout Detail, Date Range Report`\n- Acceptance Criteria: Users can navigate from overview to calendar to exact completed-workout detail; reports reflect the selected time range; history remains readable offline from local records.\n- Test Evidence Required: History UI tests; report filter tests; offline history-read tests.\n- Human Actions Required: None.\n- Notes: Use local completion records as the primary source and sync as secondary.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-029",
+      "heading": "TKT-P0-029 Body Measurements and Goals or Targets",
+      "title": "Body Measurements and Goals or Targets",
+      "issue_title": "TKT-P0-029 Body Measurements and Goals or Targets",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/analytics"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-006",
+      "body": "## TKT-P0-029 Body Measurements and Goals or Targets\n\n- Ticket ID: `TKT-P0-029`\n- Title: `Body Measurements and Goals or Targets`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/analytics`\n- Phase: `P0`\n- Epic: `EPIC-006`\n- Covered Requirement IDs: `PRD-017`, `UX-009`\n- Objective: Implement body-measurement tracking and goals or targets management within the launch progress scope.\n- In Scope: Measurement list; add and edit sheet; date history; units display; goals and targets creation; target status rendering; empty states.\n- Out of Scope: Nutrition logging; transformation photos; advanced body-composition analytics.\n- Dependencies: `TKT-P0-035`, `TKT-P0-039`\n- Source-of-Truth References: `yoked_prd.md \u00a711.6 CF-037`, `yoked_ux_spec.md \u00a714 Goals and Targets, Body Measurements`\n- Acceptance Criteria: Measurements can be added and edited with persisted history; goals or targets surface current status; units match user preference; sparse history states remain comprehensible.\n- Test Evidence Required: CRUD tests for measurements and targets; UI tests for measurement entry and edit; unit-conversion tests.\n- Human Actions Required: None.\n- Notes: Keep this scope strictly within the launch progress surface and avoid transformation features.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-030",
+      "heading": "TKT-P0-030 Profile, Edit, Creator Management, Account, and Training Settings",
+      "title": "Profile, Edit, Creator Management, Account, and Training Settings",
+      "issue_title": "TKT-P0-030 Profile, Edit, Creator Management, Account, and Training Settings",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/ios-foundation"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-007",
+      "body": "## TKT-P0-030 Profile, Edit, Creator Management, Account, and Training Settings\n\n- Ticket ID: `TKT-P0-030`\n- Title: `Profile, Edit, Creator Management, Account, and Training Settings`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/ios-foundation`\n- Phase: `P0`\n- Epic: `EPIC-007`\n- Covered Requirement IDs: `PRD-020`, `PRD-021`, `ENG-003`, `UX-008`, `UX-010`\n- Objective: Implement the user and creator settings surfaces that own identity preferences, creator metadata, unit preference, and training configuration.\n- In Scope: Profile overview; edit profile; creator profile management; unit preference; training settings; load-helper defaults; account summary; creator-state empty and enabled flows.\n- Out of Scope: Theme override; app icon override; manual language override; follow settings.\n- Dependencies: `TKT-P0-035`, `TKT-P0-036`\n- Source-of-Truth References: `yoked_prd.md \u00a711.8 CF-042-CF-044, \u00a713`, `yoked_engineering_spec.md \u00a71.8-\u00a71.9`, `yoked_ux_spec.md \u00a714`\n- Acceptance Criteria: Users can update launch-approved profile and creator fields; unit preference applies consistently across analytics and training surfaces; unsupported future settings are absent rather than disabled placeholders.\n- Test Evidence Required: Settings form tests; unit-preference propagation tests; creator-management UI tests.\n- Human Actions Required: None.\n- Notes: Keep appearance and language overrides strictly out of launch UI.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-031",
+      "heading": "TKT-P0-031 Notification Settings, Scheduler, Deep-Link Payloads, and Reminder Delivery",
+      "title": "Notification Settings, Scheduler, Deep-Link Payloads, and Reminder Delivery",
+      "issue_title": "TKT-P0-031 Notification Settings, Scheduler, Deep-Link Payloads, and Reminder Delivery",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/ios-foundation"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-007",
+      "body": "## TKT-P0-031 Notification Settings, Scheduler, Deep-Link Payloads, and Reminder Delivery\n\n- Ticket ID: `TKT-P0-031`\n- Title: `Notification Settings, Scheduler, Deep-Link Payloads, and Reminder Delivery`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/ios-foundation`\n- Phase: `P0`\n- Epic: `EPIC-007`\n- Covered Requirement IDs: `PRD-006`, `PRD-021`, `ENG-012`, `UX-010`\n- Objective: Implement reminder permissions, notification preferences, and delivery payloads that deep-link back into the app safely.\n- In Scope: Pre-permission education follow-through; notifications settings screen; reminder scheduling; local and remote payload routing; deep-link destinations; authorization-state rendering.\n- Out of Scope: Streak recovery nudges; promotional offers; referral notifications.\n- Dependencies: `TKT-P0-001`, `TKT-P0-036`, `TKT-HUM-005`\n- Source-of-Truth References: `yoked_prd.md \u00a711.1 CF-005, \u00a711.8 CF-045`, `yoked_engineering_spec.md \u00a79`, `yoked_ux_spec.md \u00a714 Notification Settings`\n- Acceptance Criteria: Users can opt in or out cleanly; reminder timing follows saved preference rules; tapping a delivered notification lands on the correct owning surface without duplicate stacks; disabled states explain how to re-enable system permission.\n- Test Evidence Required: Notification scheduling tests; deep-link payload tests; authorization-state UI tests.\n- Human Actions Required: APNs configuration and certificate or token setup.\n- Notes: Notification controls live in You and must not leak into onboarding beyond the approved pre-permission screens.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-032",
+      "heading": "TKT-P0-032 Apple Health Settings and HealthKit Pipeline",
+      "title": "Apple Health Settings and HealthKit Pipeline",
+      "issue_title": "TKT-P0-032 Apple Health Settings and HealthKit Pipeline",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/health"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-007",
+      "body": "## TKT-P0-032 Apple Health Settings and HealthKit Pipeline\n\n- Ticket ID: `TKT-P0-032`\n- Title: `Apple Health Settings and HealthKit Pipeline`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/health`\n- Phase: `P0`\n- Epic: `EPIC-007`\n- Covered Requirement IDs: `PRD-006`, `PRD-021`, `ENG-008`, `ENG-012`, `UX-010`\n- Objective: Implement the Apple Health integration surface and HealthKit read-write pipeline as the only launch external health integration.\n- In Scope: Apple Health education state; connection status UI; authorization request; sync-state machine; data mapping; retry handling; disconnect handling.\n- Out of Scope: Strava; Fitbit; Apple Watch; import jobs.\n- Dependencies: `TKT-P0-003`, `TKT-P0-036`, `TKT-HUM-005`\n- Source-of-Truth References: `yoked_prd.md \u00a711.1 CF-006, \u00a711.9 CF-050, \u00a718`, `yoked_engineering_spec.md \u00a75.9, \u00a710.1`, `yoked_ux_spec.md \u00a714 Integrations`\n- Acceptance Criteria: Apple Health is the only visible provider; authorization state, sync progress, and error states render correctly; revoked permission returns the integration to a recoverable disconnected state without corrupting local data.\n- Test Evidence Required: HealthKit mapping tests; authorization-state UI tests; retry-state tests.\n- Human Actions Required: HealthKit capability approval and entitlements.\n- Notes: Keep all non-Apple providers absent from launch settings rows.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-033",
+      "heading": "TKT-P0-033 Support, Help, Feedback, About, and Support Ticket Submission",
+      "title": "Support, Help, Feedback, About, and Support Ticket Submission",
+      "issue_title": "TKT-P0-033 Support, Help, Feedback, About, and Support Ticket Submission",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/ios-foundation"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-007",
+      "body": "## TKT-P0-033 Support, Help, Feedback, About, and Support Ticket Submission\n\n- Ticket ID: `TKT-P0-033`\n- Title: `Support, Help, Feedback, About, and Support Ticket Submission`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/ios-foundation`\n- Phase: `P0`\n- Epic: `EPIC-007`\n- Covered Requirement IDs: `PRD-021`, `UX-010`\n- Objective: Implement the support subtree so users can read help content and submit support or feedback without leaving the product context unexpectedly.\n- In Scope: Support index; FAQ; contact support form; feedback form; about screen; support submission API; success and retry states.\n- Out of Scope: Community forums; live chat; social messaging.\n- Dependencies: `TKT-P0-036`\n- Source-of-Truth References: `yoked_prd.md \u00a719`, `yoked_ux_spec.md \u00a714 Support and Help surfaces`\n- Acceptance Criteria: Users can navigate to help content and submit structured support requests; failed submissions are retryable; about and policy links are visible from the support tree.\n- Test Evidence Required: Support form UI tests; API request tests; offline submission failure-state tests.\n- Human Actions Required: None.\n- Notes: Keep support flows first-party and lightweight for launch.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-034",
+      "heading": "TKT-P0-034 Data Settings, Erase Flow, Transfer Guidance, and Sync Visibility",
+      "title": "Data Settings, Erase Flow, Transfer Guidance, and Sync Visibility",
+      "issue_title": "TKT-P0-034 Data Settings, Erase Flow, Transfer Guidance, and Sync Visibility",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/backend"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-007",
+      "body": "## TKT-P0-034 Data Settings, Erase Flow, Transfer Guidance, and Sync Visibility\n\n- Ticket ID: `TKT-P0-034`\n- Title: `Data Settings, Erase Flow, Transfer Guidance, and Sync Visibility`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/backend`\n- Phase: `P0`\n- Epic: `EPIC-007`\n- Covered Requirement IDs: `PRD-021`, `UX-010`\n- Objective: Implement the governance surfaces that let users understand sync state, request erasure, and read transfer limitations.\n- In Scope: Data settings screen; sync-last-updated display; erase-account request flow; erase confirmation; transfer guidance surface; export unavailable-state copy.\n- Out of Scope: CSV export jobs; import execution; public API access.\n- Dependencies: `TKT-P0-036`, `TKT-P0-037`\n- Source-of-Truth References: `yoked_prd.md \u00a720`, `yoked_ux_spec.md \u00a714 Data Settings, Erase Confirmation, Transfer Guidance`\n- Acceptance Criteria: Users can request erase with explicit confirmation; transfer guidance clearly states launch portability limitations; sync visibility reflects real local-vs-cloud freshness indicators.\n- Test Evidence Required: Governance UI tests; erase-request API tests; sync-visibility state tests.\n- Human Actions Required: None.\n- Notes: Export and import remain absent except for unavailable guidance text mandated by the product docs.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-040",
+      "heading": "TKT-P0-040 Ad Subsystem with AdMob Banner Gating and Suppression",
+      "title": "Ad Subsystem with AdMob Banner Gating and Suppression",
+      "issue_title": "TKT-P0-040 Ad Subsystem with AdMob Banner Gating and Suppression",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/release"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-008",
+      "body": "## TKT-P0-040 Ad Subsystem with AdMob Banner Gating and Suppression\n\n- Ticket ID: `TKT-P0-040`\n- Title: `Ad Subsystem with AdMob Banner Gating and Suppression`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/release`\n- Phase: `P0`\n- Epic: `EPIC-008`\n- Covered Requirement IDs: `PRD-022`, `ENG-003`\n- Objective: Implement the launch banner-ad subsystem with strict area allowlisting and entitlement suppression.\n- In Scope: Ad load wrapper; approved-surface placement logic; premium suppression; runtime-config gating; failure fallback; empty-container avoidance; AdMob IDs from config.\n- Out of Scope: Interstitials; rewarded ads; video ads; ads in builders or active sessions.\n- Dependencies: `TKT-P0-005`, `TKT-P0-025`, `TKT-HUM-006`\n- Source-of-Truth References: `yoked_prd.md \u00a717.4, \u00a725.1, \u00a726`, `yoked_engineering_spec.md \u00a71.10`\n- Acceptance Criteria: Ads render only on approved surfaces for eligible free users; premium state suppresses ads within the documented refresh window; ad-load failure never leaves broken spacing or blocks navigation.\n- Test Evidence Required: Placement tests; entitlement-suppression tests; no-empty-slot UI validation; AdMob test-device evidence.\n- Human Actions Required: AdMob app and banner-unit setup.\n- Notes: The ad system is a release concern as much as an implementation concern because policy mistakes are launch blockers.\n"
+    },
+    {
+      "ticket_id": "TKT-P0-041",
+      "heading": "TKT-P0-041 Security, Token Storage, Data Protection, and Permission-Minimization Hardening",
+      "title": "Security, Token Storage, Data Protection, and Permission-Minimization Hardening",
+      "issue_title": "TKT-P0-041 Security, Token Storage, Data Protection, and Permission-Minimization Hardening",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/ios-foundation"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-012",
+      "body": "## TKT-P0-041 Security, Token Storage, Data Protection, and Permission-Minimization Hardening\n\n- Ticket ID: `TKT-P0-041`\n- Title: `Security, Token Storage, Data Protection, and Permission-Minimization Hardening`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/ios-foundation`\n- Phase: `P0`\n- Epic: `EPIC-012`\n- Covered Requirement IDs: `ENG-012`\n- Objective: Implement the app-side hardening controls required by the engineering spec before release.\n- In Scope: Keychain token storage; file protection settings; ATS compliance; permission minimization; secure logging rules; security configuration review items.\n- Out of Scope: External penetration test procurement; server firewall administration; non-launch provider permissions.\n- Dependencies: `TKT-P0-002`, `TKT-P0-032`, `TKT-OPS-004`\n- Source-of-Truth References: `yoked_engineering_spec.md \u00a711`, `yoked_prd.md \u00a723`\n- Acceptance Criteria: Sensitive tokens are never stored in plain local preferences; file protection and network policy align with the engineering spec; user permissions are requested only for launch-approved capabilities.\n- Test Evidence Required: Security configuration checklist; storage inspection evidence; ATS and permission audit logs.\n- Human Actions Required: None.\n- Notes: This ticket is implementation hardening; final proof is captured under `TKT-QA-006`.\n\n## P1 Ticket Inventory\n"
+    },
+    {
+      "ticket_id": "TKT-QA-001",
+      "heading": "TKT-QA-001 Navigation, Route-Ownership, Modal Inventory, and Launch UX Acceptance Suite",
+      "title": "Navigation, Route-Ownership, Modal Inventory, and Launch UX Acceptance Suite",
+      "issue_title": "TKT-QA-001 Navigation, Route-Ownership, Modal Inventory, and Launch UX Acceptance Suite",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/release"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-012",
+      "body": "## TKT-QA-001 Navigation, Route-Ownership, Modal Inventory, and Launch UX Acceptance Suite\n\n- Ticket ID: `TKT-QA-001`\n- Title: `Navigation, Route-Ownership, Modal Inventory, and Launch UX Acceptance Suite`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/release`\n- Phase: `P0`\n- Epic: `EPIC-012`\n- Covered Requirement IDs: `PRD-001`, `PRD-003`, `UX-001`, `UX-012`, `PRD-042`, `PRD-043`, `ENG-017`, `UX-015`\n- Objective: Validate the launch shell, route ownership, modal inventory, and explicit absence of deferred controls from the UX layer.\n- In Scope: Five-tab order; Home non-execution; Train route ownership; modal and sheet inventory; creator profile and load-helper sheets; deferred-control absence checks.\n- Out of Scope: Deep backend performance tuning; post-launch features.\n- Dependencies: `TKT-P0-001` through `TKT-P0-015`, `TKT-P0-022`, `TKT-P0-025`\n- Source-of-Truth References: `yoked_prd.md \u00a727`, `yoked_ux_spec.md \u00a72-\u00a76, \u00a720-\u00a726`, `yoked_engineering_spec.md \u00a72.3`\n- Acceptance Criteria: UX behavior matches the spec across roots, drill-downs, and modal transitions, and no deferred feature affordance appears in launch UI.\n- Test Evidence Required: UI regression suite; route-ownership checklist; screenshot evidence per root surface.\n- Human Actions Required: None.\n- Notes: This is the primary UX gate for launch scope compliance.\n"
+    },
+    {
+      "ticket_id": "TKT-QA-002",
+      "heading": "TKT-QA-002 Train Local-First, Offline, and Sync-Recovery Validation Suite",
+      "title": "Train Local-First, Offline, and Sync-Recovery Validation Suite",
+      "issue_title": "TKT-QA-002 Train Local-First, Offline, and Sync-Recovery Validation Suite",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/release"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-012",
+      "body": "## TKT-QA-002 Train Local-First, Offline, and Sync-Recovery Validation Suite\n\n- Ticket ID: `TKT-QA-002`\n- Title: `Train Local-First, Offline, and Sync-Recovery Validation Suite`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/release`\n- Phase: `P0`\n- Epic: `EPIC-012`\n- Covered Requirement IDs: `ENG-007`, `PRD-043`, `ENG-017`\n- Objective: Validate that active sessions, local completion, and sync recovery satisfy the launch reliability contract.\n- In Scope: Offline start and completion; background and foreground recovery; conflict resolution; queue replay; no-data-loss checks.\n- Out of Scope: P1 Live Activity or Apple Watch behavior.\n- Dependencies: `TKT-P0-006` through `TKT-P0-011`, `TKT-P0-037`\n- Source-of-Truth References: `yoked_prd.md \u00a727`, `yoked_engineering_spec.md \u00a74.2-\u00a74.7, \u00a76, \u00a72.3`\n- Acceptance Criteria: Train remains functional offline, recovery paths restore the correct active session, and sync replay never duplicates or loses logged sets.\n- Test Evidence Required: Device or simulator offline test logs; background-recovery recordings; sync-conflict evidence.\n- Human Actions Required: None.\n- Notes: This is one of the highest-risk launch validation suites.\n"
+    },
+    {
+      "ticket_id": "TKT-QA-003",
+      "heading": "TKT-QA-003 Monetization, Slot-Cap, Paywall, and Ad-Boundary Validation Suite",
+      "title": "Monetization, Slot-Cap, Paywall, and Ad-Boundary Validation Suite",
+      "issue_title": "TKT-QA-003 Monetization, Slot-Cap, Paywall, and Ad-Boundary Validation Suite",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/release"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-012",
+      "body": "## TKT-QA-003 Monetization, Slot-Cap, Paywall, and Ad-Boundary Validation Suite\n\n- Ticket ID: `TKT-QA-003`\n- Title: `Monetization, Slot-Cap, Paywall, and Ad-Boundary Validation Suite`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/release`\n- Phase: `P0`\n- Epic: `EPIC-012`\n- Covered Requirement IDs: `PRD-022`, `PRD-042`, `PRD-043`, `ENG-017`, `UX-015`\n- Objective: Validate that monetization boundaries, entitlement updates, routine slot caps, and ad placements behave exactly as specified.\n- In Scope: Free and premium states; starter-plan free rules; program paywall gating; five-routine cap; banner allowlist; premium ad suppression; restore behavior.\n- Out of Scope: P1 promotions; P2 referrals.\n- Dependencies: `TKT-P0-004`, `TKT-P0-005`, `TKT-P0-012`, `TKT-P0-021`, `TKT-P0-040`\n- Source-of-Truth References: `yoked_prd.md \u00a717, \u00a726-\u00a727`, `yoked_engineering_spec.md \u00a71.9-\u00a71.10, \u00a72.3`, `yoked_ux_spec.md \u00a79, \u00a710, \u00a712, \u00a717, \u00a725-\u00a726`\n- Acceptance Criteria: Every premium gate and ad boundary matches the documented launch rules, and no ad appears on a forbidden surface or for a premium user.\n- Test Evidence Required: StoreKit sandbox evidence; entitlement transition logs; banner placement screenshots; slot-cap scenario matrix.\n- Human Actions Required: Billing and AdMob console setup completed.\n- Notes: Treat any boundary violation as launch-blocking.\n"
+    },
+    {
+      "ticket_id": "TKT-QA-004",
+      "heading": "TKT-QA-004 Exercise Search, Custom Exercise, Builder Publish, and No-Media Validation Suite",
+      "title": "Exercise Search, Custom Exercise, Builder Publish, and No-Media Validation Suite",
+      "issue_title": "TKT-QA-004 Exercise Search, Custom Exercise, Builder Publish, and No-Media Validation Suite",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/release"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-012",
+      "body": "## TKT-QA-004 Exercise Search, Custom Exercise, Builder Publish, and No-Media Validation Suite\n\n- Ticket ID: `TKT-QA-004`\n- Title: `Exercise Search, Custom Exercise, Builder Publish, and No-Media Validation Suite`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/release`\n- Phase: `P0`\n- Epic: `EPIC-012`\n- Covered Requirement IDs: `PRD-042`, `ENG-017`, `UX-015`\n- Objective: Validate the exercise-system contract across catalog, custom authoring, builder integration, and the launch no-media rule.\n- In Scope: Search latency; similar exercises; custom exercise privacy; publish eligibility; no-media screen states; deterministic catalog content checks.\n- Out of Scope: Future media packs; favorites.\n- Dependencies: `TKT-P0-013` through `TKT-P0-019`\n- Source-of-Truth References: `yoked_prd.md \u00a711.4.1, \u00a711.4, \u00a726`, `yoked_engineering_spec.md \u00a73.4-\u00a73.7, \u00a72.3`, `yoked_ux_spec.md \u00a715-\u00a716, \u00a725-\u00a726`\n- Acceptance Criteria: Exercise surfaces show only text-first launch content, custom exercises never leak into marketplace publishing, and builder publish gating respects the documented rules.\n- Test Evidence Required: Catalog validation output; search performance tests; builder publish state evidence.\n- Human Actions Required: None.\n- Notes: This suite protects a large amount of subtle launch scope.\n"
+    },
+    {
+      "ticket_id": "TKT-QA-005",
+      "heading": "TKT-QA-005 Marketplace, Creator, Rating, Ranking, and Moderation Validation Suite",
+      "title": "Marketplace, Creator, Rating, Ranking, and Moderation Validation Suite",
+      "issue_title": "TKT-QA-005 Marketplace, Creator, Rating, Ranking, and Moderation Validation Suite",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/release"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-012",
+      "body": "## TKT-QA-005 Marketplace, Creator, Rating, Ranking, and Moderation Validation Suite\n\n- Ticket ID: `TKT-QA-005`\n- Title: `Marketplace, Creator, Rating, Ranking, and Moderation Validation Suite`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/release`\n- Phase: `P0`\n- Epic: `EPIC-012`\n- Covered Requirement IDs: `PRD-042`, `PRD-043`, `ENG-017`, `UX-015`\n- Objective: Validate that Explore, creator profile detail, ratings, ranking, and moderation behavior satisfy trust and scope rules.\n- In Scope: Browse ordering; creator credibility tiers; rating eligibility; blocked creator suppression; no-follow and no-comment launch state.\n- Out of Scope: P1 creator follow; social feed.\n- Dependencies: `TKT-P0-020` through `TKT-P0-024`\n- Source-of-Truth References: `yoked_prd.md \u00a711.7, \u00a712-\u00a713, \u00a726-\u00a727`, `yoked_engineering_spec.md \u00a78, \u00a72.3`, `yoked_ux_spec.md \u00a713, \u00a717-\u00a718, \u00a725-\u00a726`\n- Acceptance Criteria: Marketplace behavior matches the trust and ranking contract, and all deferred creator-social capabilities remain absent from launch surfaces.\n- Test Evidence Required: Ranking evidence; moderation suppression tests; rating-flow UI tests; creator-profile screenshot matrix.\n- Human Actions Required: None.\n- Notes: This suite protects marketplace credibility before launch.\n"
+    },
+    {
+      "ticket_id": "TKT-QA-006",
+      "heading": "TKT-QA-006 Security, Notifications, HealthKit, Performance Budgets, Analytics Integrity, and GA Release Checklist",
+      "title": "Security, Notifications, HealthKit, Performance Budgets, Analytics Integrity, and GA Release Checklist",
+      "issue_title": "TKT-QA-006 Security, Notifications, HealthKit, Performance Budgets, Analytics Integrity, and GA Release Checklist",
+      "kind": "kind/feature",
+      "priority": "priority/p0",
+      "areas": [
+        "area/release"
+      ],
+      "phase": "P0",
+      "epic": "EPIC-012",
+      "body": "## TKT-QA-006 Security, Notifications, HealthKit, Performance Budgets, Analytics Integrity, and GA Release Checklist\n\n- Ticket ID: `TKT-QA-006`\n- Title: `Security, Notifications, HealthKit, Performance Budgets, Analytics Integrity, and GA Release Checklist`\n- Kind: `kind/feature`\n- Priority: `priority/p0`\n- Area: `area/release`\n- Phase: `P0`\n- Epic: `EPIC-012`\n- Covered Requirement IDs: `MAN-001`, `AGT-001`, `PRD-022`, `PRD-042`, `PRD-043`, `ENG-012`, `ENG-016`, `ENG-017`, `AGT-004`, `CON-002`\n- Objective: Execute the final nonfunctional and release-process validation program and record sign-off evidence.\n- In Scope: Security checklist; permission audit; notification delivery verification; HealthKit sync verification; performance budgets; analytics-integrity audit; reviewer checklist; release evidence package.\n- Out of Scope: P1 or P2 release readiness.\n- Dependencies: All P0 implementation tickets, `TKT-HUM-005`, `TKT-HUM-006`, `TKT-HUM-008`\n- Source-of-Truth References: `source_of_truth_manifest.md`, `AGENTS.md`, `CONTRIBUTING.md`, `yoked_prd.md \u00a721-\u00a728`, `yoked_engineering_spec.md \u00a711-\u00a713`, `yoked_ux_spec.md \u00a725-\u00a726`\n- Acceptance Criteria: The launch package includes proof of security posture, performance within budget, analytics event integrity, and documented reviewer sign-off with no unresolved launch-versus-deferred contradiction.\n- Test Evidence Required: Security audit output; performance traces; analytics integrity logs; consolidated release checklist.\n- Human Actions Required: Final App Store and console verification steps.\n- Notes: This is the final gate before direct GitHub issue creation can turn into launch execution.\n\n## Dependency Graph\n\n1. `TKT-OPS-001` is the structural prerequisite for `TKT-P0-001`, `TKT-P0-035`, and all tickets that assume app or backend modules exist.\n2. `TKT-OPS-002` is the workflow prerequisite for issue creation quality and must land before high-volume ticket execution.\n3. `TKT-OPS-004` and `TKT-HUM-003` are the environment prerequisites for `TKT-P0-036` and `TKT-P0-037`.\n4. `TKT-P0-035` is the local-data prerequisite for nearly every product surface and directly gates `TKT-P0-003`, `TKT-P0-006`, `TKT-P0-012`, `TKT-P0-017`, `TKT-P0-026`, `TKT-P0-029`, and `TKT-P0-038`.\n5. `TKT-P0-036` and `TKT-P0-037` are the backend and sync prerequisites for billing state, marketplace state, support, governance, and release validation.\n6. `TKT-P0-001`, `TKT-P0-002`, `TKT-P0-003`, and `TKT-P0-004` form the shell-to-onboarding-to-paywall chain.\n7. `TKT-P0-006` through `TKT-P0-011` form the Train runtime chain and must be executed in order because entry, logging, timer recovery, load helper, PR logic, and completion integrity build on each other.\n8. `TKT-P0-012` through `TKT-P0-015` form the My Workouts and builder chain and depend on search (`TKT-P0-017`) plus AI generation (`TKT-P0-038`) where applicable.\n9. `TKT-P0-016` through `TKT-P0-019` form the exercise-system chain and should stabilize before builder and analytics QA.\n10. `TKT-P0-020` through `TKT-P0-024` form the Explore and creator-trust chain and depend on backend ranking plus entitlement state.\n11. `TKT-P0-025` through `TKT-P0-029` depend on analytics materialization from `TKT-P0-039`.\n12. `TKT-P0-031`, `TKT-P0-032`, and `TKT-P0-040` are blocked by `TKT-HUM-005` and `TKT-HUM-006` for end-to-end validation.\n13. `TKT-QA-001` through `TKT-QA-006` depend on the relevant P0 feature tickets and should be opened early but closed last.\n14. `EPIC-010` work begins only after `EPIC-001` through `EPIC-012` P0 obligations are complete and launch metrics are stable.\n15. `EPIC-011` work begins only after P0 and P1 deferred differentiators no longer threaten launch or early post-launch stability.\n\n## Launch Critical Path\n\n1. `TKT-OPS-001`, `TKT-OPS-002`, `TKT-OPS-004`\n2. `TKT-HUM-003`, `TKT-HUM-004`, `TKT-HUM-005`\n3. `TKT-P0-035`, `TKT-P0-036`, `TKT-P0-037`\n4. `TKT-P0-001`, `TKT-P0-002`, `TKT-P0-003`, `TKT-P0-004`, `TKT-P0-005`\n5. `TKT-P0-006`, `TKT-P0-007`, `TKT-P0-008`, `TKT-P0-009`, `TKT-P0-010`, `TKT-P0-011`\n6. `TKT-P0-012`, `TKT-P0-013`, `TKT-P0-014`, `TKT-P0-015`\n7. `TKT-P0-016`, `TKT-P0-017`, `TKT-P0-018`, `TKT-P0-019`\n8. `TKT-P0-020`, `TKT-P0-021`, `TKT-P0-022`, `TKT-P0-023`, `TKT-P0-024`\n9. `TKT-P0-025`, `TKT-P0-026`, `TKT-P0-027`, `TKT-P0-028`, `TKT-P0-029`\n10. `TKT-P0-030`, `TKT-P0-031`, `TKT-P0-032`, `TKT-P0-033`, `TKT-P0-034`\n11. `TKT-P0-038`, `TKT-P0-039`, `TKT-P0-040`, `TKT-P0-041`\n12. `TKT-QA-001`, `TKT-QA-002`, `TKT-QA-003`, `TKT-QA-004`, `TKT-QA-005`, `TKT-QA-006`\n13. `TKT-HUM-006`, `TKT-HUM-008`\n\nCritical-path rule: launch cannot be declared ready until every P0 feature, repo, QA, and human-action ticket above is either complete or explicitly waived by a human owner with source-of-truth justification.\n\n## Deferred Work Boundaries\n\n1. `priority/p1` tickets are roadmap commitments for explicit deferred scope and must not introduce dormant launch UI before P1 scheduling begins.\n2. `priority/p2` tickets are roadmap commitments for ecosystem, portability, and platform expansion and must not alter the P0 iPhone-only launch boundary.\n3. `TKT-P1-001` through `TKT-P1-013` do not authorize promotions, favorites, intensity capture, PR micro-feedback, advanced analytics, follow, appearance overrides, Live Activity, export, or coaching in launch builds.\n4. `TKT-P2-001` through `TKT-P2-009` do not authorize referrals, voice assistants, Strava, Fitbit, Apple Watch, import, public API, iPad or AirPlay, or exercise media in launch builds.\n5. Release validation tickets must explicitly assert the absence of deferred controls and deferred provider rows in the P0 product.\n6. If a deferred ticket needs groundwork in P0 code, that groundwork must remain invisible and non-blocking to launch behavior and still map to a P0 requirement rather than a deferred requirement.\n\n## Recommended GitHub Issue Creation Order\n\n1. Create the 12 epic issues first so every child issue can link upward immediately.\n2. Create `TKT-OPS-001` through `TKT-OPS-005`.\n3. Create `TKT-HUM-001` through `TKT-HUM-008`.\n4. Create backend foundation tickets `TKT-P0-035`, `TKT-P0-036`, `TKT-P0-037`, `TKT-P0-038`, `TKT-P0-039`.\n5. Create shell and monetization tickets `TKT-P0-001` through `TKT-P0-005`.\n6. Create Train runtime tickets `TKT-P0-006` through `TKT-P0-011`.\n7. Create My Workouts and builder tickets `TKT-P0-012` through `TKT-P0-015`.\n8. Create exercise-system tickets `TKT-P0-016` through `TKT-P0-019`.\n9. Create Explore and creator-trust tickets `TKT-P0-020` through `TKT-P0-024`.\n10. Create Home, analytics, and You tickets `TKT-P0-025` through `TKT-P0-034`.\n11. Create hardening tickets `TKT-P0-040` and `TKT-P0-041`.\n12. Create QA and release tickets `TKT-QA-001` through `TKT-QA-006`.\n13. Create deferred P1 tickets `TKT-P1-001` through `TKT-P1-013`.\n14. Create deferred P2 tickets `TKT-P2-001` through `TKT-P2-009`.\n\nIssue creation rule: every child issue should include its `Epic`, `Covered Requirement IDs`, `Source-of-Truth References`, and `Dependencies` exactly as written in this file.\n\n## GitHub Issue Body Template Standard\n\nUse the following structure for every epic, feature, QA, repo-ops, and human-action issue:\n\n```md\n[Title]\n<Ticket title from backlog pack>\n\n[Metadata]\n- Ticket ID:\n- Kind:\n- Priority:\n- Area:\n- Phase:\n- Epic:\n- Covered Requirement IDs:\n\n[Objective]\n\n[In Scope]\n\n[Out of Scope]\n\n[Dependencies]\n\n[Source-of-Truth References]\n\n[Acceptance Criteria]\n\n[Test Evidence Required]\n\n[Human Actions Required]\n\n[Notes]\n```\n\nIf the issue is a child ticket, add a final line `Closes` or `Advances` with the linked epic and any prerequisite tickets according to the chosen GitHub workflow style.\n\n## Definition of Ready\n\n1. A ticket has an assigned epic, exact `kind/*`, exact `priority/*`, and one approved `area/*` label.\n2. The ticket lists one or more covered requirement IDs that already exist in [docs/requirements_inventory.md](/Users/Apple/Documents/New_project/docs/requirements_inventory.md).\n3. The ticket cites the relevant source-of-truth sections directly from the active files or workflow files.\n4. Dependencies are explicit and do not rely on hidden assumptions.\n5. In Scope and Out of Scope make it obvious what is intentionally excluded.\n6. Acceptance Criteria are testable and not narrative.\n7. Test Evidence Required is specific enough to determine completion.\n8. Human Actions Required is populated with `None` or with the exact console or portal work still needed.\n\n## Definition of Done\n\n1. The implementation or human action matches the ticket objective without adding extra scope.\n2. Every acceptance criterion in the ticket is demonstrably satisfied.\n3. Required tests or validation evidence are attached or linked in the PR or issue.\n4. Source-of-truth references are cited in the PR and match the issue.\n5. Any required human follow-up is either completed or explicitly called out as remaining.\n6. Launch tickets do not introduce deferred controls, deferred providers, or phase-mismatched behavior.\n7. The traceability matrix remains accurate; if coverage changes, [docs/requirements_traceability_matrix.md](/Users/Apple/Documents/New_project/docs/requirements_traceability_matrix.md) and [docs/coverage_audit.md](/Users/Apple/Documents/New_project/docs/coverage_audit.md) must be updated in the same change.\n8. Repo and release tickets validate the workflow or runtime behavior they were created to enforce.\n\n## Coverage Audit Summary\n\n1. Total requirement IDs covered by this backlog pack: `94`\n2. Total ticket IDs in this backlog pack, including epics: `94`\n3. Epic count: `12`\n4. P0 feature ticket count: `41`\n5. P1 feature ticket count: `13`\n6. P2 feature ticket count: `9`\n7. Human-action ticket count: `8`\n8. Repo or CI or tooling ticket count: `5`\n9. QA or validation or release ticket count: `6`\n10. Requirements with no ticket coverage: `0`\n11. Tickets with no requirement coverage: `0`\n12. Non-epic overloaded tickets: `0`\n13. Phase inconsistencies detected during pack construction: `0`\n14. Launch-critical categories covered: app shell, auth, onboarding, paywall, entitlements, Train, My Workouts, catalog, Explore, creator trust, analytics, settings, integrations, backend, ads, security, QA, release, repo ops, human gating.\n15. Explicit deferred roadmap categories covered: promotions, favorites, intensity capture, PR micro-feedback, advanced analytics, follow, appearance overrides, Live Activity, export, coaching, referrals, voice assistants, Strava, Fitbit, Apple Watch, import, public API, iPad or AirPlay, exercise media.\n\nThis backlog pack is paired with [docs/requirements_traceability_matrix.md](/Users/Apple/Documents/New_project/docs/requirements_traceability_matrix.md) and [docs/coverage_audit.md](/Users/Apple/Documents/New_project/docs/coverage_audit.md) for final closed-loop verification.\n"
+    },
+    {
+      "ticket_id": "TKT-P1-001",
+      "heading": "TKT-P1-001 Promotions and Offer Mechanics",
+      "title": "Promotions and Offer Mechanics",
+      "issue_title": "TKT-P1-001 Promotions and Offer Mechanics",
+      "kind": "kind/feature",
+      "priority": "priority/p1",
+      "areas": [
+        "area/ios-foundation"
+      ],
+      "phase": "P1",
+      "epic": "EPIC-010",
+      "body": "## TKT-P1-001 Promotions and Offer Mechanics\n\n- Ticket ID: `TKT-P1-001`\n- Title: `Promotions and Offer Mechanics`\n- Kind: `kind/feature`\n- Priority: `priority/p1`\n- Area: `area/ios-foundation`\n- Phase: `P1`\n- Epic: `EPIC-010`\n- Covered Requirement IDs: `PRD-023`, `UX-013`\n- Objective: Add P1 promotional overlays and offer entry points without changing core launch packaging rules.\n- In Scope: Offer presentation logic; promo-code or offer-code entry; paywall overlay variants; analytics events for offers.\n- Out of Scope: Referral loops; permanent packaging changes; launch paywall triggers.\n- Dependencies: `TKT-P0-004`, `TKT-P0-005`, `TKT-P0-039`\n- Source-of-Truth References: `yoked_prd.md \u00a711.2 CF-008, \u00a717.3, \u00a725.2`, `yoked_ux_spec.md \u00a726`\n- Acceptance Criteria: Offers can be surfaced intentionally without displacing core subscription options; launch paywall behavior remains unchanged until P1 is scheduled.\n- Test Evidence Required: Offer-state UI tests; promo analytics validation.\n- Human Actions Required: Offer configuration in billing consoles if adopted.\n- Notes: No dormant offer UI ships in P0.\n"
+    },
+    {
+      "ticket_id": "TKT-P1-002",
+      "heading": "TKT-P1-002 Favorites UI and Preference Expansion",
+      "title": "Favorites UI and Preference Expansion",
+      "issue_title": "TKT-P1-002 Favorites UI and Preference Expansion",
+      "kind": "kind/feature",
+      "priority": "priority/p1",
+      "areas": [
+        "area/catalog"
+      ],
+      "phase": "P1",
+      "epic": "EPIC-010",
+      "body": "## TKT-P1-002 Favorites UI and Preference Expansion\n\n- Ticket ID: `TKT-P1-002`\n- Title: `Favorites UI and Preference Expansion`\n- Kind: `kind/feature`\n- Priority: `priority/p1`\n- Area: `area/catalog`\n- Phase: `P1`\n- Epic: `EPIC-010`\n- Covered Requirement IDs: `PRD-024`, `UX-013`\n- Objective: Add favorite-exercise behavior as a P1 expansion beyond launch exclude-only preferences.\n- In Scope: Favorite toggle; favorite filters; favorite-aware search ranking; preference migration from launch models.\n- Out of Scope: Launch search behavior changes; community favorites; marketplace likes.\n- Dependencies: `TKT-P0-017`, `TKT-P0-035`\n- Source-of-Truth References: `yoked_prd.md \u00a711.4 CF-016, \u00a725.2`, `yoked_ux_spec.md \u00a726`\n- Acceptance Criteria: Favorites operate as a distinct preference system without breaking existing exclude behavior; launch users can migrate cleanly into the richer model.\n- Test Evidence Required: Preference migration tests; search ranking tests; UI coverage.\n- Human Actions Required: None.\n- Notes: This ticket exists only because the PRD explicitly defers favorites out of launch.\n"
+    },
+    {
+      "ticket_id": "TKT-P1-003",
+      "heading": "TKT-P1-003 Effort and Intensity Capture with Coach Prompts",
+      "title": "Effort and Intensity Capture with Coach Prompts",
+      "issue_title": "TKT-P1-003 Effort and Intensity Capture with Coach Prompts",
+      "kind": "kind/feature",
+      "priority": "priority/p1",
+      "areas": [
+        "area/train"
+      ],
+      "phase": "P1",
+      "epic": "EPIC-010",
+      "body": "## TKT-P1-003 Effort and Intensity Capture with Coach Prompts\n\n- Ticket ID: `TKT-P1-003`\n- Title: `Effort and Intensity Capture with Coach Prompts`\n- Kind: `kind/feature`\n- Priority: `priority/p1`\n- Area: `area/train`\n- Phase: `P1`\n- Epic: `EPIC-010`\n- Covered Requirement IDs: `PRD-025`\n- Objective: Add optional RPE or intensity capture to Train without slowing the core logging path.\n- In Scope: Optional intensity input; coach-prompt copy; persistence; analytics event extension.\n- Out of Scope: Blocking required fields; autonomous coaching.\n- Dependencies: `TKT-P0-007`, `TKT-P0-039`\n- Source-of-Truth References: `yoked_prd.md \u00a711.5 CF-022, \u00a725.2`\n- Acceptance Criteria: Intensity capture stays optional and lightweight; set completion speed is not materially degraded; data persists for later analytics use.\n- Test Evidence Required: Train UI tests; latency measurements; persistence tests.\n- Human Actions Required: None.\n- Notes: Keep the core P0 logging path intact.\n"
+    },
+    {
+      "ticket_id": "TKT-P1-004",
+      "heading": "TKT-P1-004 In-Session PR Micro-Feedback",
+      "title": "In-Session PR Micro-Feedback",
+      "issue_title": "TKT-P1-004 In-Session PR Micro-Feedback",
+      "kind": "kind/feature",
+      "priority": "priority/p1",
+      "areas": [
+        "area/train"
+      ],
+      "phase": "P1",
+      "epic": "EPIC-010",
+      "body": "## TKT-P1-004 In-Session PR Micro-Feedback\n\n- Ticket ID: `TKT-P1-004`\n- Title: `In-Session PR Micro-Feedback`\n- Kind: `kind/feature`\n- Priority: `priority/p1`\n- Area: `area/train`\n- Phase: `P1`\n- Epic: `EPIC-010`\n- Covered Requirement IDs: `PRD-026`\n- Objective: Add lightweight PR celebration inside the active session once post-workout PR logic is stable.\n- In Scope: In-session PR trigger; micro-feedback UI; dedupe rules; haptic or animation hooks.\n- Out of Scope: Social sharing; achievements; large interruptive modals.\n- Dependencies: `TKT-P0-010`, `TKT-P0-011`\n- Source-of-Truth References: `yoked_prd.md \u00a711.5 CF-024, \u00a725.2`\n- Acceptance Criteria: PR feedback appears only when the documented PR criteria are met and does not interrupt logging or timer continuity.\n- Test Evidence Required: Trigger logic tests; interaction tests; no-duplication validation.\n- Human Actions Required: None.\n- Notes: This remains explicitly deferred from launch.\n"
+    },
+    {
+      "ticket_id": "TKT-P1-005",
+      "heading": "TKT-P1-005 Strength and Recovery Scoring",
+      "title": "Strength and Recovery Scoring",
+      "issue_title": "TKT-P1-005 Strength and Recovery Scoring",
+      "kind": "kind/feature",
+      "priority": "priority/p1",
+      "areas": [
+        "area/analytics"
+      ],
+      "phase": "P1",
+      "epic": "EPIC-010",
+      "body": "## TKT-P1-005 Strength and Recovery Scoring\n\n- Ticket ID: `TKT-P1-005`\n- Title: `Strength and Recovery Scoring`\n- Kind: `kind/feature`\n- Priority: `priority/p1`\n- Area: `area/analytics`\n- Phase: `P1`\n- Epic: `EPIC-010`\n- Covered Requirement IDs: `PRD-027`, `UX-013`\n- Objective: Add explainable strength and recovery scores to the progress surface.\n- In Scope: Score algorithms; confidence states; score cards; explanation copy; data-sufficiency rules.\n- Out of Scope: Medical claims; automatic program changes.\n- Dependencies: `TKT-P0-026`, `TKT-P0-039`\n- Source-of-Truth References: `yoked_prd.md \u00a711.6 CF-027, \u00a725.2`, `yoked_ux_spec.md \u00a726`\n- Acceptance Criteria: Scores show only when enough data exists; low-confidence states are explicit; launch analytics remain unchanged until P1 implementation begins.\n- Test Evidence Required: Algorithm tests; sparse-data state tests; UI coverage.\n- Human Actions Required: None.\n- Notes: This is a P1 analytical layer, not a launch KPI replacement.\n"
+    },
+    {
+      "ticket_id": "TKT-P1-006",
+      "heading": "TKT-P1-006 Cross-Exercise Rankings and Broader Trend Dashboards",
+      "title": "Cross-Exercise Rankings and Broader Trend Dashboards",
+      "issue_title": "TKT-P1-006 Cross-Exercise Rankings and Broader Trend Dashboards",
+      "kind": "kind/feature",
+      "priority": "priority/p1",
+      "areas": [
+        "area/analytics"
+      ],
+      "phase": "P1",
+      "epic": "EPIC-010",
+      "body": "## TKT-P1-006 Cross-Exercise Rankings and Broader Trend Dashboards\n\n- Ticket ID: `TKT-P1-006`\n- Title: `Cross-Exercise Rankings and Broader Trend Dashboards`\n- Kind: `kind/feature`\n- Priority: `priority/p1`\n- Area: `area/analytics`\n- Phase: `P1`\n- Epic: `EPIC-010`\n- Covered Requirement IDs: `PRD-028`, `UX-013`\n- Objective: Expand analytics beyond exact-variation exercise detail into broader rankings and trend dashboards.\n- In Scope: Trend dashboard data models; ranking views; multi-exercise comparison inputs; navigation from You Progress.\n- Out of Scope: Social leaderboards; marketplace ranking crossover.\n- Dependencies: `TKT-P0-019`, `TKT-P0-026`, `TKT-P0-039`\n- Source-of-Truth References: `yoked_prd.md \u00a711.6 CF-031, \u00a725.2`, `yoked_ux_spec.md \u00a726`\n- Acceptance Criteria: Broader trends are clearly separated from launch exact-variation analytics; dashboards do not alter the P0 overview card set until enabled.\n- Test Evidence Required: Projection tests; UI tests; comparison logic tests.\n- Human Actions Required: None.\n- Notes: Treat this as additive analytics scope, not a refactor of launch screens.\n"
+    },
+    {
+      "ticket_id": "TKT-P1-007",
+      "heading": "TKT-P1-007 Achievements and Milestones",
+      "title": "Achievements and Milestones",
+      "issue_title": "TKT-P1-007 Achievements and Milestones",
+      "kind": "kind/feature",
+      "priority": "priority/p1",
+      "areas": [
+        "area/analytics"
+      ],
+      "phase": "P1",
+      "epic": "EPIC-010",
+      "body": "## TKT-P1-007 Achievements and Milestones\n\n- Ticket ID: `TKT-P1-007`\n- Title: `Achievements and Milestones`\n- Kind: `kind/feature`\n- Priority: `priority/p1`\n- Area: `area/analytics`\n- Phase: `P1`\n- Epic: `EPIC-010`\n- Covered Requirement IDs: `PRD-029`, `UX-013`\n- Objective: Add an achievements layer driven by measurable completion outcomes.\n- In Scope: Achievement rules; milestone cards; earned-state history; analytics events for unlocks.\n- Out of Scope: Social brag posts; referral rewards.\n- Dependencies: `TKT-P0-011`, `TKT-P0-039`\n- Source-of-Truth References: `yoked_prd.md \u00a711.6 CF-035, \u00a725.2`, `yoked_ux_spec.md \u00a726`\n- Acceptance Criteria: Achievements unlock only from qualifying completion data and appear in dedicated P1 surfaces rather than launch overviews.\n- Test Evidence Required: Rule tests; unlock history tests; UI coverage.\n- Human Actions Required: None.\n- Notes: Keep achievement storage append-only to preserve user history.\n"
+    },
+    {
+      "ticket_id": "TKT-P1-008",
+      "heading": "TKT-P1-008 Streak and Continuity Metrics",
+      "title": "Streak and Continuity Metrics",
+      "issue_title": "TKT-P1-008 Streak and Continuity Metrics",
+      "kind": "kind/feature",
+      "priority": "priority/p1",
+      "areas": [
+        "area/analytics"
+      ],
+      "phase": "P1",
+      "epic": "EPIC-010",
+      "body": "## TKT-P1-008 Streak and Continuity Metrics\n\n- Ticket ID: `TKT-P1-008`\n- Title: `Streak and Continuity Metrics`\n- Kind: `kind/feature`\n- Priority: `priority/p1`\n- Area: `area/analytics`\n- Phase: `P1`\n- Epic: `EPIC-010`\n- Covered Requirement IDs: `PRD-030`, `UX-013`\n- Objective: Add streak tracking and continuity metrics for habit recovery.\n- In Scope: Streak calculation; streak cards; recovery messaging; notification hook inputs.\n- Out of Scope: Launch reminder rules; achievements duplication.\n- Dependencies: `TKT-P0-031`, `TKT-P0-039`\n- Source-of-Truth References: `yoked_prd.md \u00a711.6 CF-036, \u00a725.2`, `yoked_ux_spec.md \u00a726`\n- Acceptance Criteria: Streak logic is deterministic and transparent; missed-workout recovery messaging does not override user notification preferences.\n- Test Evidence Required: Streak-rule tests; UI tests; notification-hook validation.\n- Human Actions Required: None.\n- Notes: This capability is deferred because launch analytics intentionally stay simpler.\n"
+    },
+    {
+      "ticket_id": "TKT-P1-009",
+      "heading": "TKT-P1-009 Creator Follow Graph and Follow Surfaces",
+      "title": "Creator Follow Graph and Follow Surfaces",
+      "issue_title": "TKT-P1-009 Creator Follow Graph and Follow Surfaces",
+      "kind": "kind/feature",
+      "priority": "priority/p1",
+      "areas": [
+        "area/marketplace"
+      ],
+      "phase": "P1",
+      "epic": "EPIC-010",
+      "body": "## TKT-P1-009 Creator Follow Graph and Follow Surfaces\n\n- Ticket ID: `TKT-P1-009`\n- Title: `Creator Follow Graph and Follow Surfaces`\n- Kind: `kind/feature`\n- Priority: `priority/p1`\n- Area: `area/marketplace`\n- Phase: `P1`\n- Epic: `EPIC-010`\n- Covered Requirement IDs: `PRD-031`, `UX-013`\n- Objective: Add creator follow as a one-directional marketplace relationship without social feed expansion.\n- In Scope: Follow and unfollow state; follow list storage; creator detail follow CTA; creator-based browse filters if later scheduled.\n- Out of Scope: Messaging; comment threads; social feed.\n- Dependencies: `TKT-P0-022`, `TKT-P0-024`\n- Source-of-Truth References: `yoked_prd.md \u00a711.7 CF-039, \u00a713.3, \u00a725.2`, `yoked_ux_spec.md \u00a726`\n- Acceptance Criteria: Follow state appears only on P1 creator surfaces; it does not create a launch feed or social graph obligations beyond one-directional follow storage.\n- Test Evidence Required: Follow-state tests; creator-profile UI tests; browse-filter tests if included.\n- Human Actions Required: None.\n- Notes: This ticket must remain decoupled from any social-feature expansion.\n"
+    },
+    {
+      "ticket_id": "TKT-P1-010",
+      "heading": "TKT-P1-010 Theme, App Icon, and Manual Language Override Settings",
+      "title": "Theme, App Icon, and Manual Language Override Settings",
+      "issue_title": "TKT-P1-010 Theme, App Icon, and Manual Language Override Settings",
+      "kind": "kind/feature",
+      "priority": "priority/p1",
+      "areas": [
+        "area/ios-foundation"
+      ],
+      "phase": "P1",
+      "epic": "EPIC-010",
+      "body": "## TKT-P1-010 Theme, App Icon, and Manual Language Override Settings\n\n- Ticket ID: `TKT-P1-010`\n- Title: `Theme, App Icon, and Manual Language Override Settings`\n- Kind: `kind/feature`\n- Priority: `priority/p1`\n- Area: `area/ios-foundation`\n- Phase: `P1`\n- Epic: `EPIC-010`\n- Covered Requirement IDs: `PRD-032`, `ENG-013`, `UX-013`\n- Objective: Add the deferred appearance and localization override settings surface.\n- In Scope: Theme selection; alternate icon selection; manual language override; persisted user settings; relaunch or refresh behavior.\n- Out of Scope: Launch settings; complex multi-brand theming system.\n- Dependencies: `TKT-P0-030`, `TKT-P0-036`\n- Source-of-Truth References: `yoked_prd.md \u00a711.8 CF-044, \u00a725.2`, `yoked_engineering_spec.md deferred compatibility references`, `yoked_ux_spec.md \u00a726`\n- Acceptance Criteria: New settings persist and apply as documented; the launch-only unit preference remains the only P0 visible setting until P1 implementation starts.\n- Test Evidence Required: Settings persistence tests; app icon switch tests; locale override tests.\n- Human Actions Required: Alternate icon assets and localization resources if adopted.\n- Notes: These controls are explicitly absent from launch UI.\n"
+    },
+    {
+      "ticket_id": "TKT-P1-011",
+      "heading": "TKT-P1-011 Live Activity Lock-Screen Runtime",
+      "title": "Live Activity Lock-Screen Runtime",
+      "issue_title": "TKT-P1-011 Live Activity Lock-Screen Runtime",
+      "kind": "kind/feature",
+      "priority": "priority/p1",
+      "areas": [
+        "area/train"
+      ],
+      "phase": "P1",
+      "epic": "EPIC-010",
+      "body": "## TKT-P1-011 Live Activity Lock-Screen Runtime\n\n- Ticket ID: `TKT-P1-011`\n- Title: `Live Activity Lock-Screen Runtime`\n- Kind: `kind/feature`\n- Priority: `priority/p1`\n- Area: `area/train`\n- Phase: `P1`\n- Epic: `EPIC-010`\n- Covered Requirement IDs: `PRD-033`, `ENG-013`, `UX-013`\n- Objective: Add Live Activity projection for active Train sessions as a deferred platform extension.\n- In Scope: Activity lifecycle; lock-screen presentation; minimal session metadata; start, update, and stop rules.\n- Out of Scope: Apple Watch; widgets; launch runtime assumptions.\n- Dependencies: `TKT-P0-006`, `TKT-P0-008`, `TKT-HUM-005`\n- Source-of-Truth References: `yoked_prd.md \u00a711.9 CF-048, \u00a725.2`, `yoked_engineering_spec.md deferred compatibility references`, `yoked_ux_spec.md \u00a726`\n- Acceptance Criteria: Live Activity reflects only the active Train session and follows platform limits; no launch code path assumes its presence.\n- Test Evidence Required: Activity lifecycle tests; session-projection integration tests.\n- Human Actions Required: Live Activity capability enablement.\n- Notes: This feature remains deferred even though the shell may later support it cleanly.\n"
+    },
+    {
+      "ticket_id": "TKT-P1-012",
+      "heading": "TKT-P1-012 CSV Export Jobs and Portability UI",
+      "title": "CSV Export Jobs and Portability UI",
+      "issue_title": "TKT-P1-012 CSV Export Jobs and Portability UI",
+      "kind": "kind/feature",
+      "priority": "priority/p1",
+      "areas": [
+        "area/backend"
+      ],
+      "phase": "P1",
+      "epic": "EPIC-010",
+      "body": "## TKT-P1-012 CSV Export Jobs and Portability UI\n\n- Ticket ID: `TKT-P1-012`\n- Title: `CSV Export Jobs and Portability UI`\n- Kind: `kind/feature`\n- Priority: `priority/p1`\n- Area: `area/backend`\n- Phase: `P1`\n- Epic: `EPIC-010`\n- Covered Requirement IDs: `PRD-034`, `ENG-013`, `UX-013`\n- Objective: Add asynchronous CSV export as the first real portability job after launch.\n- In Scope: Export request UI; job state; completion delivery; CSV schema; server job orchestration; governance event logging.\n- Out of Scope: Launch transfer guidance only; import jobs; public API.\n- Dependencies: `TKT-P0-034`, `TKT-P0-036`\n- Source-of-Truth References: `yoked_prd.md \u00a711.9 CF-052, \u00a720.2-\u00a720.3, \u00a725.2`, `yoked_engineering_spec.md deferred compatibility references`, `yoked_ux_spec.md \u00a726`\n- Acceptance Criteria: Export requests create visible asynchronous jobs; exported data reflects the documented portability scope; the P0 unavailable-state guidance is replaced only when this ticket is implemented.\n- Test Evidence Required: Export job tests; CSV schema validation; UI progress-state tests.\n- Human Actions Required: Data-retention and export-policy review if required by release process.\n- Notes: This is a governance feature, not a launch blocker.\n"
+    },
+    {
+      "ticket_id": "TKT-P1-013",
+      "heading": "TKT-P1-013 Personal Coach and Trainer Recommendation Surfaces",
+      "title": "Personal Coach and Trainer Recommendation Surfaces",
+      "issue_title": "TKT-P1-013 Personal Coach and Trainer Recommendation Surfaces",
+      "kind": "kind/feature",
+      "priority": "priority/p1",
+      "areas": [
+        "area/analytics"
+      ],
+      "phase": "P1",
+      "epic": "EPIC-010",
+      "body": "## TKT-P1-013 Personal Coach and Trainer Recommendation Surfaces\n\n- Ticket ID: `TKT-P1-013`\n- Title: `Personal Coach and Trainer Recommendation Surfaces`\n- Kind: `kind/feature`\n- Priority: `priority/p1`\n- Area: `area/analytics`\n- Phase: `P1`\n- Epic: `EPIC-010`\n- Covered Requirement IDs: `PRD-035`, `UX-013`\n- Objective: Add explainable coach or trainer recommendations as a P1 product extension.\n- In Scope: Recommendation cards; explanation metadata; opt-in data use; coach-entry navigation.\n- Out of Scope: Chatbot assistant; automatic program rewrites; medical advice.\n- Dependencies: `TKT-P1-005`, `TKT-P1-006`\n- Source-of-Truth References: `yoked_prd.md \u00a711.10 CF-053, \u00a725.2`, `yoked_ux_spec.md \u00a726`\n- Acceptance Criteria: Recommendations explain why they appear and what input data they rely on; no launch overview surface reserves dormant space for them.\n- Test Evidence Required: Recommendation rule tests; UI state tests; explanation metadata validation.\n- Human Actions Required: None.\n- Notes: This ticket exists because the PRD explicitly names coach or trainer surfaces as post-launch scope.\n\n## P2 Ticket Inventory\n"
+    },
+    {
+      "ticket_id": "TKT-P2-001",
+      "heading": "TKT-P2-001 Referral and Free-Pass Growth Loops",
+      "title": "Referral and Free-Pass Growth Loops",
+      "issue_title": "TKT-P2-001 Referral and Free-Pass Growth Loops",
+      "kind": "kind/feature",
+      "priority": "priority/p2",
+      "areas": [
+        "area/release"
+      ],
+      "phase": "P2",
+      "epic": "EPIC-011",
+      "body": "## TKT-P2-001 Referral and Free-Pass Growth Loops\n\n- Ticket ID: `TKT-P2-001`\n- Title: `Referral and Free-Pass Growth Loops`\n- Kind: `kind/feature`\n- Priority: `priority/p2`\n- Area: `area/release`\n- Phase: `P2`\n- Epic: `EPIC-011`\n- Covered Requirement IDs: `PRD-036`\n- Objective: Add referrals and free-pass style growth loops only after the core product proves value.\n- In Scope: Referral code generation; free-pass eligibility; landing and redemption flows; growth analytics.\n- Out of Scope: Launch paywall changes; social invite feeds.\n- Dependencies: `TKT-P1-001`, `TKT-P0-039`\n- Source-of-Truth References: `yoked_prd.md \u00a711.2 CF-010, \u00a725.3`\n- Acceptance Criteria: Referral surfaces remain outside launch-critical roots and do not distort core monetization rules until P2 is scheduled.\n- Test Evidence Required: Referral rule tests; redemption flow tests.\n- Human Actions Required: Billing and campaign setup if adopted.\n- Notes: This remains intentionally absent from launch and P1.\n"
+    },
+    {
+      "ticket_id": "TKT-P2-002",
+      "heading": "TKT-P2-002 Voice Assistant Train Intents",
+      "title": "Voice Assistant Train Intents",
+      "issue_title": "TKT-P2-002 Voice Assistant Train Intents",
+      "kind": "kind/feature",
+      "priority": "priority/p2",
+      "areas": [
+        "area/train"
+      ],
+      "phase": "P2",
+      "epic": "EPIC-011",
+      "body": "## TKT-P2-002 Voice Assistant Train Intents\n\n- Ticket ID: `TKT-P2-002`\n- Title: `Voice Assistant Train Intents`\n- Kind: `kind/feature`\n- Priority: `priority/p2`\n- Area: `area/train`\n- Phase: `P2`\n- Epic: `EPIC-011`\n- Covered Requirement IDs: `PRD-037`, `UX-014`\n- Objective: Add explicit voice assistant commands for Train workflows.\n- In Scope: Supported voice intents; session-safe execution rules; confirmation responses; privacy guardrails.\n- Out of Scope: General-purpose assistant chat; launch onboarding dependency.\n- Dependencies: `TKT-P0-006`, `TKT-P0-007`\n- Source-of-Truth References: `yoked_prd.md \u00a711.9 CF-049, \u00a725.3`, `yoked_ux_spec.md \u00a726`\n- Acceptance Criteria: Voice commands map only to approved Train actions and never become required for core usage; no P0 or P1 surface assumes voice support.\n- Test Evidence Required: Intent handler tests; Train safety-rule tests.\n- Human Actions Required: Platform-intent approval if required.\n- Notes: This ticket is deferred because launch must work fully without voice.\n"
+    },
+    {
+      "ticket_id": "TKT-P2-003",
+      "heading": "TKT-P2-003 Strava Integration",
+      "title": "Strava Integration",
+      "issue_title": "TKT-P2-003 Strava Integration",
+      "kind": "kind/feature",
+      "priority": "priority/p2",
+      "areas": [
+        "area/health"
+      ],
+      "phase": "P2",
+      "epic": "EPIC-011",
+      "body": "## TKT-P2-003 Strava Integration\n\n- Ticket ID: `TKT-P2-003`\n- Title: `Strava Integration`\n- Kind: `kind/feature`\n- Priority: `priority/p2`\n- Area: `area/health`\n- Phase: `P2`\n- Epic: `EPIC-011`\n- Covered Requirement IDs: `PRD-038`, `UX-014`\n- Objective: Add Strava as a post-launch integration without altering the Apple-Health-only launch contract.\n- In Scope: Strava connect and disconnect flow; sync-status surface; data mapping; retry states.\n- Out of Scope: Launch integrations screen; Apple Health behavior changes.\n- Dependencies: `TKT-P0-032`\n- Source-of-Truth References: `yoked_prd.md \u00a711.9 CF-050, \u00a718.2, \u00a725.3`, `yoked_ux_spec.md \u00a726`\n- Acceptance Criteria: Strava rows and sync states appear only when this ticket is intentionally implemented; launch settings remain unchanged until then.\n- Test Evidence Required: OAuth flow tests; mapping tests; integration-state tests.\n- Human Actions Required: Strava partner and OAuth setup.\n- Notes: Treat provider-specific rules as separate from Apple Health.\n"
+    },
+    {
+      "ticket_id": "TKT-P2-004",
+      "heading": "TKT-P2-004 Fitbit Integration",
+      "title": "Fitbit Integration",
+      "issue_title": "TKT-P2-004 Fitbit Integration",
+      "kind": "kind/feature",
+      "priority": "priority/p2",
+      "areas": [
+        "area/health"
+      ],
+      "phase": "P2",
+      "epic": "EPIC-011",
+      "body": "## TKT-P2-004 Fitbit Integration\n\n- Ticket ID: `TKT-P2-004`\n- Title: `Fitbit Integration`\n- Kind: `kind/feature`\n- Priority: `priority/p2`\n- Area: `area/health`\n- Phase: `P2`\n- Epic: `EPIC-011`\n- Covered Requirement IDs: `PRD-038`, `UX-014`\n- Objective: Add Fitbit as a separate post-launch integration stream.\n- In Scope: Fitbit connect and disconnect flow; sync-status UI; payload mapping; retry and revoke handling.\n- Out of Scope: Launch settings; Apple Health contract changes.\n- Dependencies: `TKT-P0-032`\n- Source-of-Truth References: `yoked_prd.md \u00a711.9 CF-050, \u00a718.2, \u00a725.3`, `yoked_ux_spec.md \u00a726`\n- Acceptance Criteria: Fitbit is isolated as a separate provider with dedicated states; launch users do not see dormant Fitbit rows.\n- Test Evidence Required: OAuth flow tests; provider-state tests; mapping validation.\n- Human Actions Required: Fitbit partner and OAuth setup.\n- Notes: This remains P2 because only Apple Health is authorized for launch.\n"
+    },
+    {
+      "ticket_id": "TKT-P2-005",
+      "heading": "TKT-P2-005 Apple Watch Runtime and Companion Architecture",
+      "title": "Apple Watch Runtime and Companion Architecture",
+      "issue_title": "TKT-P2-005 Apple Watch Runtime and Companion Architecture",
+      "kind": "kind/feature",
+      "priority": "priority/p2",
+      "areas": [
+        "area/health"
+      ],
+      "phase": "P2",
+      "epic": "EPIC-011",
+      "body": "## TKT-P2-005 Apple Watch Runtime and Companion Architecture\n\n- Ticket ID: `TKT-P2-005`\n- Title: `Apple Watch Runtime and Companion Architecture`\n- Kind: `kind/feature`\n- Priority: `priority/p2`\n- Area: `area/health`\n- Phase: `P2`\n- Epic: `EPIC-011`\n- Covered Requirement IDs: `PRD-038`, `ENG-014`, `UX-014`\n- Objective: Implement the Apple Watch runtime only after the dedicated watch architecture addendum is complete.\n- In Scope: Watch companion target; session-authority rules; data transport; watch UI shell; handoff to iPhone source of truth.\n- Out of Scope: P0 Train execution; Live Activity; launch sync contracts.\n- Dependencies: `ENG-014` design completion, `TKT-P0-037`\n- Source-of-Truth References: `yoked_prd.md \u00a711.9 CF-050, \u00a725.3`, `yoked_engineering_spec.md \u00a710.2`, `yoked_ux_spec.md \u00a726`\n- Acceptance Criteria: Watch execution follows the documented session-authority rules and remains fully absent from launch code paths until P2 delivery is scheduled.\n- Test Evidence Required: Companion integration tests; transport reliability tests; watch-to-phone authority tests.\n- Human Actions Required: Apple Watch capabilities and provisioning.\n- Notes: No watch placeholders or launch-target assumptions are allowed before this ticket.\n"
+    },
+    {
+      "ticket_id": "TKT-P2-006",
+      "heading": "TKT-P2-006 Data Import Flows and Mapping Engine",
+      "title": "Data Import Flows and Mapping Engine",
+      "issue_title": "TKT-P2-006 Data Import Flows and Mapping Engine",
+      "kind": "kind/feature",
+      "priority": "priority/p2",
+      "areas": [
+        "area/backend"
+      ],
+      "phase": "P2",
+      "epic": "EPIC-011",
+      "body": "## TKT-P2-006 Data Import Flows and Mapping Engine\n\n- Ticket ID: `TKT-P2-006`\n- Title: `Data Import Flows and Mapping Engine`\n- Kind: `kind/feature`\n- Priority: `priority/p2`\n- Area: `area/backend`\n- Phase: `P2`\n- Epic: `EPIC-011`\n- Covered Requirement IDs: `PRD-039`, `ENG-015`, `UX-014`\n- Objective: Add user-facing import flows for third-party data once portability scope expands beyond launch guidance.\n- In Scope: Import request UI; staging and validation; mapping engine; import review state; failure reporting.\n- Out of Scope: Launch transfer guidance; CSV export-only flows; public API key issuance.\n- Dependencies: `TKT-P2-007`, `TKT-P0-034`\n- Source-of-Truth References: `yoked_prd.md \u00a711.9 CF-052, \u00a725.3`, `yoked_engineering_spec.md P2-only governance/import contracts`, `yoked_ux_spec.md \u00a726`\n- Acceptance Criteria: Imports run through a reviewable validation path; launch surfaces remain unchanged until this P2 work is scheduled.\n- Test Evidence Required: Mapping tests; import-validation tests; failure-state UI tests.\n- Human Actions Required: Provider-specific approvals if source systems are integrated.\n- Notes: Import is explicitly deferred and must not leak into launch governance UI.\n"
+    },
+    {
+      "ticket_id": "TKT-P2-007",
+      "heading": "TKT-P2-007 Public API and External Integration Intake",
+      "title": "Public API and External Integration Intake",
+      "issue_title": "TKT-P2-007 Public API and External Integration Intake",
+      "kind": "kind/feature",
+      "priority": "priority/p2",
+      "areas": [
+        "area/backend"
+      ],
+      "phase": "P2",
+      "epic": "EPIC-011",
+      "body": "## TKT-P2-007 Public API and External Integration Intake\n\n- Ticket ID: `TKT-P2-007`\n- Title: `Public API and External Integration Intake`\n- Kind: `kind/feature`\n- Priority: `priority/p2`\n- Area: `area/backend`\n- Phase: `P2`\n- Epic: `EPIC-011`\n- Covered Requirement IDs: `PRD-039`, `ENG-015`, `UX-014`\n- Objective: Add a governed public API and external integration intake process after launch stability is proven.\n- In Scope: Public API boundary definition; intake form or request path; auth model; rate limiting; governance review state.\n- Out of Scope: Internal launch APIs; direct partner-only shortcuts without governance.\n- Dependencies: `TKT-P0-036`, `TKT-P2-006`\n- Source-of-Truth References: `yoked_prd.md \u00a711.9 CF-052, \u00a725.3`, `yoked_engineering_spec.md P2-only endpoint contracts`, `yoked_ux_spec.md \u00a726`\n- Acceptance Criteria: External access is governed and isolated from internal launch APIs; no launch settings or support screen exposes dormant public API controls.\n- Test Evidence Required: API boundary tests; auth and rate-limit tests; intake-flow validation.\n- Human Actions Required: Legal and partner review if public API is exposed.\n- Notes: Treat this as a separate platform program, not a quick extension of P0 endpoints.\n"
+    },
+    {
+      "ticket_id": "TKT-P2-008",
+      "heading": "TKT-P2-008 iPad and AirPlay or TV Casting Expansion",
+      "title": "iPad and AirPlay or TV Casting Expansion",
+      "issue_title": "TKT-P2-008 iPad and AirPlay or TV Casting Expansion",
+      "kind": "kind/feature",
+      "priority": "priority/p2",
+      "areas": [
+        "area/ios-foundation"
+      ],
+      "phase": "P2",
+      "epic": "EPIC-011",
+      "body": "## TKT-P2-008 iPad and AirPlay or TV Casting Expansion\n\n- Ticket ID: `TKT-P2-008`\n- Title: `iPad and AirPlay or TV Casting Expansion`\n- Kind: `kind/feature`\n- Priority: `priority/p2`\n- Area: `area/ios-foundation`\n- Phase: `P2`\n- Epic: `EPIC-011`\n- Covered Requirement IDs: `PRD-040`, `ENG-015`, `UX-014`\n- Objective: Expand Yoked beyond iPhone-only launch to iPad and optional AirPlay or TV casting experiences.\n- In Scope: Larger-screen layout strategy; iPad navigation reconsideration; casting surface review; platform-specific QA plans.\n- Out of Scope: Launch layout assumptions; watchOS; Android.\n- Dependencies: Stable P0 iPhone product and separate design review.\n- Source-of-Truth References: `yoked_prd.md \u00a718.5, \u00a725.3`, `yoked_engineering_spec.md deferred platform contracts`, `yoked_ux_spec.md \u00a72, \u00a726`\n- Acceptance Criteria: Expanded layouts do not back-port constraints into the iPhone-only launch implementation; launch acceptance criteria remain phone-specific until this ticket is actively delivered.\n- Test Evidence Required: Responsive-layout tests; casting validation if included; platform QA checklist.\n- Human Actions Required: Platform release planning decisions.\n- Notes: This stays explicitly outside launch and P1.\n"
+    },
+    {
+      "ticket_id": "TKT-P2-009",
+      "heading": "TKT-P2-009 Exercise Visuals and Media-Pack Pipeline",
+      "title": "Exercise Visuals and Media-Pack Pipeline",
+      "issue_title": "TKT-P2-009 Exercise Visuals and Media-Pack Pipeline",
+      "kind": "kind/feature",
+      "priority": "priority/p2",
+      "areas": [
+        "area/catalog"
+      ],
+      "phase": "P2",
+      "epic": "EPIC-011",
+      "body": "## TKT-P2-009 Exercise Visuals and Media-Pack Pipeline\n\n- Ticket ID: `TKT-P2-009`\n- Title: `Exercise Visuals and Media-Pack Pipeline`\n- Kind: `kind/feature`\n- Priority: `priority/p2`\n- Area: `area/catalog`\n- Phase: `P2`\n- Epic: `EPIC-011`\n- Covered Requirement IDs: `PRD-041`, `UX-014`\n- Objective: Add future exercise visuals and premium media-pack support without weakening the text-first launch catalog.\n- In Scope: Media asset model; media-pack entitlement handling; exercise-detail media rendering; pipeline extensions to the catalog toolchain.\n- Out of Scope: Launch text-first layouts; placeholder imagery; third-party media bundles without governance.\n- Dependencies: `TKT-P0-016`, `TKT-P0-019`\n- Source-of-Truth References: `yoked_prd.md \u00a711.4.1, \u00a717.2.1, \u00a726`, `yoked_ux_spec.md \u00a726`\n- Acceptance Criteria: Exercise media appears only when the supporting catalog and entitlement pipeline exist; launch screens remain fully functional with no media assumptions before P2 delivery.\n- Test Evidence Required: Media-pipeline tests; entitlement tests; exercise-detail UI tests with and without media.\n- Human Actions Required: Media licensing and asset-production decisions if adopted.\n- Notes: This ticket is explicitly downstream of the launch no-media rule.\n\n## Human-Action Ticket Inventory\n"
+    }
+  ]
+}
