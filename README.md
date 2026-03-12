@@ -1,10 +1,17 @@
 # Yoked
 
-Yoked is a iPhone workout and logging app
+Yoked is a launch-scope iPhone workout app defined by a spec-first repository.
 
-## Authoritative Files
+This repo currently contains:
 
-The launch implementation must follow these four files:
+1. active product, engineering, and UX source-of-truth files,
+2. analysis and reference material,
+3. tooling and launch assets,
+4. GitHub and Codex operating-system scaffolding for the implementation phase.
+
+## Upstream Product Truth
+
+The product, engineering, and launch UX truth for this repository lives in these four files:
 
 1. `01-product-foundation/source_of_truth_manifest.md`
 2. `01-product-foundation/yoked_prd.md`
@@ -12,6 +19,23 @@ The launch implementation must follow these four files:
 4. `02-ux-spec/yoked_ux_spec.md`
 
 Read the manifest first.
+
+Rules:
+
+1. These four files govern product behavior, launch-versus-deferred scope, implementation mechanics, and launch UX.
+2. Archive, reference-only, and analysis files do not override these four files.
+3. If product truth changes, downstream planning artifacts must be regenerated from these four files.
+
+## Derived Execution Artifacts
+
+The repository may contain generated planning, roadmap, traceability, audit, issue-manifest, or other execution artifacts under `docs/`.
+
+Rules:
+
+1. Generated execution artifacts are downstream work products, not upstream product truth.
+2. Generated execution artifacts may be used for issue creation, roadmap execution, tracking, and coverage validation.
+3. Generated execution artifacts never override the four upstream source-of-truth files.
+4. If a generated execution artifact conflicts with upstream product truth, the artifact must be regenerated.
 
 ## Current Repository Layout
 
@@ -25,17 +49,19 @@ Read the manifest first.
 - `07-future/`: non-launch placeholders or future planning material
 - `.github/`: GitHub issue, PR, label, and workflow scaffolding
 - `docs/codex/`: Codex setup docs, config example, and canonical agent prompt source files
+- `docs/`: derived planning artifacts, execution docs, and repo-specific operational docs
 
 ## How Work Should Be Tracked
 
 Use GitHub-native workflow:
 
 1. create or select a GitHub issue,
-2. implement against that issue,
-3. open a pull request linked to the issue,
-4. include exact source-of-truth references,
-5. include test evidence,
-6. merge only after review and required checks pass.
+2. if a generated execution artifact exists for roadmap or issue creation, use it as the operational issue-definition source,
+3. implement against that issue,
+4. open a pull request linked to the issue,
+5. include exact source-of-truth references,
+6. include test evidence,
+7. merge only after review and required checks pass.
 
 ## Codex Setup
 
@@ -46,3 +72,7 @@ Codex setup instructions live in:
 - `docs/codex/setup.md`
 - `docs/codex/config.example.toml`
 - `docs/codex/agents/`
+
+## What Is Not Here Yet
+
+The app and backend implementation directories are not established yet. During the setup phase, the repo structure should remain additive and should not churn the existing numbered folders.
